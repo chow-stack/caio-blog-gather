@@ -3,12 +3,14 @@ import json
 import os
 import re
 import smtplib
+import time
 from datetime import date, datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
 from google import genai
+from google.genai import errors as genai_errors
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 SCRIPT_DIR = Path(__file__).parent
@@ -18,7 +20,10 @@ EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
 SMOL_SOURCE = "news.smol.ai"
-MODEL = "gemini-2.5-flash"
+MODELS = [
+    "gemini-3.0-flash",       # primary — newest, best quality
+    "gemini-3.1-flash-lite",  # fallback — 500 RPD, much more available under load
+]
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
 ALL_SECTIONS = ["top_stories", "important_developments", "builder_tools", "market_signals", "other_notable"]
@@ -124,8 +129,22 @@ def strip_fences(text: str) -> str:
 
 
 def call_gemini(client: genai.Client, prompt: str) -> str:
-    response = client.models.generate_content(model=MODEL, contents=prompt)
-    return response.text
+    for model in [MODEL, FALLBACK_MODEL]:
+        for attempt in range(3):
+            try:
+                response = client.models.generate_content(model=model, contents=prompt)
+                if model != MODEL:
+                    print(f"  (used fallback model: {model})")
+                return response.text
+            except genai_errors.ServerError as e:
+                if "503" in str(e) or "UNAVAILABLE" in str(e):
+                    wait = 2 ** (attempt + 1)  # 2s, 4s, 8s
+                    print(f"  503 on {model} (attempt {attempt + 1}/3), retrying in {wait}s...")
+                    time.sleep(wait)
+                else:
+                    raise
+        print(f"  {model} failed after 3 attempts, trying fallback...")
+    raise RuntimeError("All models unavailable after retries — try again later.")
 
 
 def select_to_scrape(candidates: list[dict], client: genai.Client) -> list[dict]:
