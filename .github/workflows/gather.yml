@@ -2,8 +2,8 @@ name: Daily Gather
 
 on:
   schedule:
-    # Every day at 1 PM UTC (9 AM ET / 8 AM CT)
-    - cron: '0 13 * * *'
+    # Every day at 12:37 PM UTC (8:37 AM EDT / 7:37 AM EST)
+    - cron: '37 12 * * *'
   workflow_dispatch: # manual trigger for testing
 
 permissions:
