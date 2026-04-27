@@ -1,0 +1,46 @@
+name: Daily Gather
+
+on:
+  schedule:
+    # Mon–Fri at 1 PM UTC (9 AM ET / 8 AM CT)
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch: # manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  gather:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install browser (crawl4ai / Patchright)
+        run: crawl4ai-setup
+
+      - name: Create vault log path
+        # gather.py writes to ../caio-os/Blog/log.md — stub the directory so the
+        # script doesn't crash. The log file is committed for visibility.
+        run: mkdir -p ../caio-os/Blog
+
+      - name: Run gather.py
+        run: python gather.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add candidates/ seen_urls.json
+          git diff --staged --quiet || git commit -m "gather: $(date -u +%Y-%m-%d)"
+          git push
