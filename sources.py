@@ -9,18 +9,6 @@ RSS_SOURCES = [
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
     "https://simonwillison.net/atom/everything/",
+    "https://news.smol.ai/rss.xml",
+    "https://techcrunch.com/category/artificial-intelligence/feed/",
 ]
-
-SOURCES = [
-    "https://news.smol.ai",
-    "https://aibreakfast.beehiiv.com/",
-    "https://techcrunch.com/category/artificial-intelligence/",
-]
-
-# link_type: "internal" = same-domain links, "external" = off-site links
-# url_contains / url_pattern: filter which links to keep
-SOURCE_CONFIG = {
-    "news.smol.ai":            {"link_type": "internal", "url_pattern": r"/issues/\d{2}-"},
-    "aibreakfast.beehiiv.com": {"link_type": "internal", "url_contains": "/p/"},
-    "techcrunch.com":          {"link_type": "internal", "url_pattern": r"/\d{4}/\d{2}/"},
-}

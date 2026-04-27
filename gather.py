@@ -1,4 +1,3 @@
-import asyncio
 import json
 import re
 from datetime import date, datetime, timezone, timedelta
@@ -6,9 +5,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import feedparser
-from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
-from sources import SOURCES, SOURCE_CONFIG, RSS_SOURCES, VAULT_PATH
+from sources import RSS_SOURCES, VAULT_PATH
 
 SCRIPT_DIR = Path(__file__).parent
 VAULT = SCRIPT_DIR / VAULT_PATH
@@ -35,15 +33,10 @@ def domain(url: str) -> str:
 
 
 def clean_title(text: str, src_domain: str) -> str:
-    text = " ".join(text.split())  # normalize whitespace
+    text = " ".join(text.split())
     if src_domain == "news.smol.ai":
-        # "Apr 23 GPT 5.5 Show details" → "GPT 5.5"
         text = re.sub(r"\s*Show details.*$", "", text, flags=re.IGNORECASE).strip()
         text = re.sub(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\s+", "", text).strip()
-    elif src_domain == "aibreakfast.beehiiv.com":
-        # "Apr 24, 2026•5 min readTitle hereAI Breakfast" → "Title here"
-        text = re.sub(r"^[A-Z][a-z]+ \d+,?\s*\d{4}[•·\s]+\d+\s*min\s*read\s*\d*", "", text).strip()
-        text = re.sub(r"AI Breakfast$", "", text).strip()
     return text
 
 
@@ -56,51 +49,11 @@ def is_junk(title: str, url: str) -> bool:
         return True
     if any(w in title.lower() for w in SKIP_TITLE_WORDS):
         return True
-    parsed = urlparse(url)
-    if Path(parsed.path).suffix.lower() in IMAGE_EXTS:
+    if Path(urlparse(url).path).suffix.lower() in IMAGE_EXTS:
         return True
     if domain(url) in SKIP_DOMAINS:
         return True
     return False
-
-
-def date_from_url(url: str) -> str | None:
-    m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
-    if m:
-        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}T00:00:00+00:00"
-    return None
-
-
-def extract_links(result, src_url: str) -> list[dict]:
-    src_domain = domain(src_url)
-    cfg = SOURCE_CONFIG.get(src_domain, {"link_type": "external"})
-    link_type = cfg.get("link_type", "external")
-    url_contains = cfg.get("url_contains", "")
-    url_pattern = cfg.get("url_pattern", "")
-
-    raw = result.links.get(link_type, [])
-    seen_hrefs: set[str] = set()
-    items = []
-
-    for link in raw:
-        href = link.get("href", "").strip()
-        raw_text = (link.get("text") or link.get("title") or "").strip()
-
-        if not href or href in seen_hrefs:
-            continue
-        if url_contains and url_contains not in href:
-            continue
-        if url_pattern and not re.search(url_pattern, href):
-            continue
-
-        title = clean_title(raw_text, src_domain)
-        if is_junk(title, href):
-            continue
-
-        seen_hrefs.add(href)
-        items.append({"title": title, "url": href})
-
-    return items
 
 
 def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | None]:
@@ -116,7 +69,6 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
             title = entry.get("title", "").strip()
             if not url or not title or url in seen:
                 continue
-            # parse published date; skip entries older than 3 days
             published = entry.get("published_parsed") or entry.get("updated_parsed")
             pub_date_str = None
             if published:
@@ -124,6 +76,7 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
                 if pub_dt < cutoff:
                     continue
                 pub_date_str = pub_dt.isoformat()
+            title = clean_title(title, src)
             if is_junk(title, url):
                 continue
             candidates.append({"title": title, "url": url, "source": src, "date_found": today, "pub_date": pub_date_str})
@@ -132,85 +85,29 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
         return [], str(e)
 
 
-async def crawl_source(
-    crawler: AsyncWebCrawler,
-    run_config: CrawlerRunConfig,
-    source_url: str,
-    seen: set,
-    today: str,
-) -> tuple[list, str | None]:
-    try:
-        result = await crawler.arun(url=source_url, config=run_config)
-        if not result.success:
-            return [], "crawl returned success=False"
-        links = extract_links(result, source_url)
-        candidates = [
-            {"title": lnk["title"], "url": lnk["url"], "source": domain(source_url), "date_found": today, "pub_date": date_from_url(lnk["url"])}
-            for lnk in links
-            if lnk["url"] not in seen
-        ]
-        return candidates, None
-    except Exception as e:
-        return [], str(e)
-
-
-async def main():
+def main():
     today = date.today().isoformat()
     CANDIDATES_DIR.mkdir(parents=True, exist_ok=True)
 
     seen = load_seen()
+    results = [parse_rss_feed(feed_url, seen, today) for feed_url in RSS_SOURCES]
 
-    # --- RSS feeds (synchronous, fast) ---
-    rss_results = [parse_rss_feed(feed_url, seen, today) for feed_url in RSS_SOURCES]
-    rss_candidates = []
-    for candidates, _ in rss_results:
-        rss_candidates.extend(candidates)
+    all_candidates = []
+    for candidates, _ in results:
+        all_candidates.extend(candidates)
         seen.update(c["url"] for c in candidates)
-
-    # --- HTML sources (async crawl4ai) ---
-    browser_config = BrowserConfig(headless=True, enable_stealth=True)
-    run_config = CrawlerRunConfig(
-        cache_mode=CacheMode.BYPASS,
-        scan_full_page=True,
-        remove_consent_popups=True,
-    )
-
-    async with AsyncWebCrawler(config=browser_config) as crawler:
-        tasks = [crawl_source(crawler, run_config, src, seen, today) for src in SOURCES]
-        html_results = await asyncio.gather(*tasks)
-
-    html_candidates = []
-    for (candidates, _), src in zip(html_results, SOURCES):
-        html_candidates.extend(candidates)
-        seen.update(c["url"] for c in candidates)
-
-    all_candidates = rss_candidates + html_candidates
 
     out_file = CANDIDATES_DIR / f"{today}.json"
     out_file.write_text(json.dumps(all_candidates, indent=2, ensure_ascii=False))
     save_seen(seen)
 
-    # --- log ---
     source_sections = []
-
-    for (candidates, error), feed_url in zip(rss_results, RSS_SOURCES):
+    for (candidates, error), feed_url in zip(results, RSS_SOURCES):
         src_domain = domain(feed_url)
         header = f"### {src_domain} (RSS) — {len(candidates)}"
         if error:
             header += f" (ERROR: {error})"
-        lines = [header]
-        for c in candidates:
-            lines.append(f"- [{c['title']}]({c['url']})")
-        source_sections.append("\n".join(lines))
-
-    for (candidates, error), src in zip(html_results, SOURCES):
-        src_domain = domain(src)
-        header = f"### {src_domain} — {len(candidates)}"
-        if error:
-            header += f" (ERROR: {error})"
-        lines = [header]
-        for c in candidates:
-            lines.append(f"- [{c['title']}]({c['url']})")
+        lines = [header] + [f"- [{c['title']}]({c['url']})" for c in candidates]
         source_sections.append("\n".join(lines))
 
     log_entry = (
@@ -218,19 +115,15 @@ async def main():
         + "\n\n".join(source_sections)
         + "\n"
     )
-
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     with LOG_FILE.open("a") as f:
         f.write(log_entry)
 
     print(f"Done. {len(all_candidates)} candidates → {out_file}")
-    for (_, error), feed_url in zip(rss_results, RSS_SOURCES):
+    for (_, error), feed_url in zip(results, RSS_SOURCES):
         if error:
             print(f"  ERROR {domain(feed_url)}: {error}")
-    for (_, error), src in zip(html_results, SOURCES):
-        if error:
-            print(f"  ERROR {domain(src)}: {error}")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

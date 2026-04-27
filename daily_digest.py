@@ -17,6 +17,7 @@ CANDIDATES_DIR = SCRIPT_DIR / "candidates"
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
+SMOL_SOURCE = "news.smol.ai"
 MODEL = "gemini-2.5-flash"
 
 # Call 1: titles only → select what's worth scraping
@@ -26,7 +27,7 @@ and writes a weekly blog.
 
 He cares about: new model releases, tool features (Claude, ChatGPT, Cursor, Gemini, etc.), \
 agent workflows, prompt techniques, open-source releases runnable on consumer hardware, \
-surprising or non-obvious AI developments.
+surprising, unique or non-obvious AI developments.
 
 Skip: funding rounds, acquisitions, valuations, vague research with no demo, \
 enterprise-only tools, generic opinion pieces.
@@ -43,6 +44,7 @@ You are building a daily AI digest for Caio, a college student who builds with A
 
 Read these articles and return a single JSON object with this exact structure:
 {{
+  "subject_line": "6-10 words capturing the day's most important story — specific, no clickbait",
   "tldr": ["bullet 1", "bullet 2", "bullet 3"],
   "top_stories": [
     {{"title": "short clean title", "url": "...", "source": "...", \
@@ -60,17 +62,21 @@ Read these articles and return a single JSON object with this exact structure:
 }}
 
 Rules:
-- tldr: 3-4 bullets on the day's themes — specific and high-signal ("GPT-5 released" not "big news today")
+- subject_line: lead with the biggest story ("GPT-5 released, Anthropic enters enterprise" not "Big day for AI")
+- tldr: 3-4 bullets on the day's themes — specific and high-signal
 - top_stories: max 5, most impactful/actionable — must have both what + why
 - important_developments: notable but not top-tier
 - builder_tools: tools, APIs, open-source, prompt techniques usable today
 - market_signals: company moves worth tracking — keep minimal, skip pure funding/valuation news
+- news.smol.ai articles are the most curated — always prioritize them for top_stories when relevant
 - every article goes in exactly one category, or is dropped if not worth including
 - shorten and clean titles — remove clickbait, trim length
 - return JSON only, no markdown, no explanation
 
 Articles:
 {articles_text}"""
+
+FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
 
 def load_candidates(today: str) -> list[dict]:
@@ -95,7 +101,7 @@ def filter_by_recency(candidates: list[dict], hours: int = 24) -> list[dict]:
             except ValueError:
                 result.append(c)  # unparseable date → include rather than drop
         else:
-            result.append(c)  # HTML sources have no pub_date — always include
+            result.append(c)  # no pub_date → always include
     return result
 
 
@@ -112,9 +118,18 @@ def call_gemini(client: genai.Client, prompt: str) -> str:
 
 
 def select_to_scrape(candidates: list[dict], client: genai.Client) -> list[dict]:
-    slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in candidates]
-    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=SCRAPE_TOP_N)
-    return json.loads(strip_fences(call_gemini(client, prompt)))
+    # smol.ai articles are always included — they're the most curated source
+    smol = [c for c in candidates if c["source"] == SMOL_SOURCE]
+    others = [c for c in candidates if c["source"] != SMOL_SOURCE]
+
+    remaining = SCRAPE_TOP_N - len(smol)
+    if remaining <= 0 or not others:
+        return smol[:SCRAPE_TOP_N]
+
+    slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in others]
+    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=remaining)
+    llm_selected = json.loads(strip_fences(call_gemini(client, prompt)))
+    return smol + llm_selected
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
@@ -147,7 +162,8 @@ def build_digest(scraped: list[dict], client: genai.Client) -> dict:
     return json.loads(strip_fences(call_gemini(client, prompt)))
 
 
-SEP = '<p style="color:#ccc;margin:14px 0;letter-spacing:1px;font-size:13px;">━━━━━━━━━━━━━━━━━━</p>'
+def a(href: str, text: str) -> str:
+    return f'<a href="{href}" style="color:#111;text-decoration:underline;text-underline-offset:2px;">{text}</a>'
 
 
 def render_top_stories(items: list[dict]) -> str:
@@ -155,12 +171,12 @@ def render_top_stories(items: list[dict]) -> str:
         return ""
     parts = []
     for s in items:
-        link = f'<a href="{s["url"]}" style="color:#0055cc;text-decoration:none;">{s["title"]}</a>'
+        src = f'<span style="color:#888;font-size:12px;font-weight:400;margin-left:6px;">{s.get("source","")}</span>'
         parts.append(
-            f'<div style="margin-bottom:12px;">'
-            f'<p style="margin:0;">• {link} <span style="color:#999;font-size:11px;">({s.get("source","")})</span></p>'
-            f'<p style="margin:2px 0 1px 14px;color:#333;">→ {s["what"]}</p>'
-            f'<p style="margin:1px 0 0 14px;color:#666;">→ {s["why"]}</p>'
+            f'<div style="margin-bottom:20px;">'
+            f'<p style="margin:0 0 3px;font-size:14px;font-weight:600;line-height:1.4;">{a(s["url"], s["title"])}{src}</p>'
+            f'<p style="margin:0 0 2px;font-size:13px;color:#333;line-height:1.5;">{s["what"]}</p>'
+            f'<p style="margin:0;font-size:13px;color:#555;font-style:italic;line-height:1.5;">{s["why"]}</p>'
             f'</div>'
         )
     return "\n".join(parts)
@@ -171,41 +187,74 @@ def render_bullets(items: list[dict]) -> str:
         return ""
     parts = []
     for s in items:
-        link = f'<a href="{s["url"]}" style="color:#0055cc;text-decoration:none;">{s["title"]}</a>'
+        src = f'<span style="color:#888;font-size:12px;"> ({s.get("source","")})</span>'
         parts.append(
-            f'<p style="margin:4px 0;">• {link} '
-            f'<span style="color:#999;font-size:11px;">({s.get("source","")})</span>'
-            f' — {s["what"]}</p>'
+            f'<p style="margin:0 0 10px;font-size:13px;line-height:1.5;">'
+            f'<span style="font-weight:600;">{a(s["url"], s["title"])}</span>{src}'
+            f' &mdash; {s["what"]}</p>'
         )
     return "\n".join(parts)
 
 
-def section(emoji: str, title: str, content: str) -> str:
-    if not content:
-        return ""
+def section_label(title: str) -> str:
     return (
-        f'{SEP}'
-        f'<p style="margin:12px 0 8px;font-weight:bold;">{emoji} {title}</p>'
-        f'{content}'
+        f'<p style="margin:0 0 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;'
+        f'text-transform:uppercase;color:#888;">{title}</p>'
     )
 
 
-def build_email_html(digest: dict, total_candidates: int, recent_count: int, today: str) -> str:
-    tldr_html = "\n".join(f'<p style="margin:3px 0;">• {b}</p>' for b in digest.get("tldr", []))
+def hr() -> str:
+    return '<hr style="border:none;border-top:1px solid #e8e8e8;margin:24px 0;">'
 
-    return f"""<html><body style="font-family:monospace;max-width:620px;margin:0 auto;padding:20px 20px 32px;color:#222;line-height:1.6;font-size:13px;">
-  <h2 style="margin-bottom:2px;font-size:15px;letter-spacing:0.5px;">AI Digest — {today} ET</h2>
-  <p style="color:#aaa;font-size:11px;margin:0 0 4px;">{recent_count} articles from last 24h &nbsp;·&nbsp; filtered from {total_candidates} candidates</p>
-  {SEP}
-  <p style="margin:12px 0 8px;font-weight:bold;">🧠 TL;DR</p>
-  {tldr_html}
-  {section("🔥", "Top Stories", render_top_stories(digest.get("top_stories", [])))}
-  {section("⚡", "Important Developments", render_bullets(digest.get("important_developments", [])))}
-  {section("🛠️", "Builder Tools / Open Source", render_bullets(digest.get("builder_tools", [])))}
-  {section("📊", "Market Signals", render_bullets(digest.get("market_signals", [])))}
-  {SEP}
-  <p style="color:#ccc;font-size:11px;margin-top:4px;">caio-blog-gather &nbsp;·&nbsp; automated daily digest</p>
-</body></html>"""
+
+def build_email_html(digest: dict, total_candidates: int, recent_count: int, today_label: str) -> str:
+    tldr_items = "".join(
+        f'<li style="margin-bottom:6px;font-size:14px;line-height:1.5;">{b}</li>'
+        for b in digest.get("tldr", [])
+    )
+
+    top = render_top_stories(digest.get("top_stories", []))
+    devs = render_bullets(digest.get("important_developments", []))
+    tools = render_bullets(digest.get("builder_tools", []))
+    market = render_bullets(digest.get("market_signals", []))
+
+    def section(label: str, content: str) -> str:
+        if not content:
+            return ""
+        return f'{hr()}{section_label(label)}{content}'
+
+    return f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:{FONT};max-width:600px;margin:0 auto;padding:32px 24px 48px;color:#111;background:#fff;-webkit-font-smoothing:antialiased;">
+
+  <div style="margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid #111;">
+    <h1 style="font-size:22px;font-weight:700;margin:0 0 6px;letter-spacing:-0.3px;">AI Daily</h1>
+    <p style="margin:0;font-size:13px;color:#888;">{today_label} &nbsp;&middot;&nbsp; {recent_count} articles &nbsp;&middot;&nbsp; {total_candidates} candidates</p>
+  </div>
+
+  {section_label("Today at a glance")}
+  <ul style="margin:0 0 0 4px;padding:0 0 0 16px;list-style:disc;">
+    {tldr_items}
+  </ul>
+
+  {section("Top Stories", top)}
+  {section("Important Developments", devs)}
+  {section("Builder Tools &amp; Open Source", tools)}
+  {section("Market Signals", market)}
+
+  {hr()}
+  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; automated</p>
+
+</body>
+</html>"""
+
+
+def format_subject(digest: dict, today_label: str) -> str:
+    custom = digest.get("subject_line", "").strip()
+    if custom:
+        return f"{custom} — {today_label}"
+    return f"AI Daily — {today_label}"
 
 
 def send_email(subject: str, html: str, app_password: str):
@@ -223,7 +272,9 @@ def send_email(subject: str, html: str, app_password: str):
 async def main():
     api_key = os.environ["GEMINI_API_KEY"]
     app_password = os.environ["GMAIL_APP_PASSWORD"]
+    now = datetime.now(timezone.utc)
     today = date.today().isoformat()
+    today_label = now.strftime("%A, %B %-d")  # e.g. "Monday, April 28"
 
     candidates = load_candidates(today)
     if not candidates:
@@ -247,9 +298,10 @@ async def main():
     print("Building digest (LLM call 2)...")
     digest = build_digest(scraped, client)
 
-    html = build_email_html(digest, len(candidates), len(recent), today)
-    send_email(f"AI Digest — {today}", html, app_password)
-    print(f"Done. Email sent for {today}.")
+    subject = format_subject(digest, today_label)
+    html = build_email_html(digest, len(candidates), len(recent), today_label)
+    send_email(subject, html, app_password)
+    print(f"Done. Sent: {subject}")
 
 
 if __name__ == "__main__":
