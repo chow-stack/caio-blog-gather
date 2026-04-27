@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 from pathlib import Path
 
 from google import genai
-from google.genai import errors as genai_errors
+from google.genai import errors as genai_errors, types
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 SCRIPT_DIR = Path(__file__).parent
@@ -21,8 +21,8 @@ EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
 SMOL_SOURCE = "news.smol.ai"
 MODELS = [
-    "gemini-3-flash",       # primary — newest, best quality
-    "gemini-3.1-flash-lite",  # fallback — 500 RPD, much more available under load
+    "gemini-2.5-flash",       # primary — best price-performance, stable GA
+    "gemini-2.5-flash-lite",  # fallback — cheaper, higher quota headroom
 ]
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
@@ -128,18 +128,23 @@ def strip_fences(text: str) -> str:
     return text.strip()
 
 
-def call_gemini(client: genai.Client, prompt: str) -> str:
+def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -> str:
+    config = types.GenerateContentConfig(response_mime_type="application/json") if json_mode else None
     for model in MODELS:
         for attempt in range(3):
             try:
-                response = client.models.generate_content(model=model, contents=prompt)
+                response = client.models.generate_content(
+                    model=model,
+                    contents=prompt,
+                    config=config,
+                )
                 if model != MODELS[0]:
                     print(f"  (used fallback model: {model})")
                 return response.text
-            except genai_errors.ServerError as e:
-                if "503" in str(e) or "UNAVAILABLE" in str(e):
+            except genai_errors.APIError as e:
+                if e.code in (503, 429):
                     wait = 2 ** (attempt + 1)  # 2s, 4s, 8s
-                    print(f"  503 on {model} (attempt {attempt + 1}/3), retrying in {wait}s...")
+                    print(f"  {e.code} on {model} (attempt {attempt + 1}/3), retrying in {wait}s...")
                     time.sleep(wait)
                 else:
                     raise
@@ -157,7 +162,7 @@ def select_to_scrape(candidates: list[dict], client: genai.Client) -> list[dict]
 
     slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in others]
     prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=remaining)
-    llm_selected = json.loads(strip_fences(call_gemini(client, prompt)))
+    llm_selected = json.loads(strip_fences(call_gemini(client, prompt, json_mode=True)))
     return smol + llm_selected
 
 
@@ -191,7 +196,7 @@ def build_digest(scraped: list[dict], client: genai.Client) -> dict:
         articles_text += item["content"] if item.get("content") else "[Content could not be retrieved]"
         articles_text += "\n"
     prompt = DIGEST_PROMPT.format(n_articles=len(scraped), articles_text=articles_text)
-    return json.loads(strip_fences(call_gemini(client, prompt)))
+    return json.loads(strip_fences(call_gemini(client, prompt, json_mode=True)))
 
 
 def validate_and_patch(digest: dict, scraped: list[dict]) -> tuple[dict, int]:
