@@ -3,7 +3,7 @@ import json
 import os
 import re
 import smtplib
-from datetime import date
+from datetime import date, datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -16,43 +16,58 @@ CANDIDATES_DIR = SCRIPT_DIR / "candidates"
 
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
-TOP_N = 10
+SCRAPE_TOP_N = 15
 MODEL = "gemini-2.5-flash"
 
-FILTER_PROMPT = """\
-You are filtering AI news for Caio, a college student who writes a weekly blog about practical AI.
+# Call 1: titles only → select what's worth scraping
+SELECT_PROMPT = """\
+You are selecting AI news articles to read in full for Caio, a college student who builds with AI \
+and writes a weekly blog.
 
-He cares about: new model releases, new tool features (Claude, ChatGPT, Cursor, Gemini, etc.),
-agent workflows, prompt techniques, open-source releases runnable on consumer hardware,
-surprising or non-obvious developments.
+He cares about: new model releases, tool features (Claude, ChatGPT, Cursor, Gemini, etc.), \
+agent workflows, prompt techniques, open-source releases runnable on consumer hardware, \
+surprising or non-obvious AI developments.
 
-He does NOT care about: funding rounds, acquisitions, company valuations, vague research with
-no demo, enterprise-only tools, generic opinion pieces.
+Skip: funding rounds, acquisitions, valuations, vague research with no demo, \
+enterprise-only tools, generic opinion pieces.
 
-Today's candidates:
+Candidates:
 {candidates_json}
 
-Return the {top_n} most relevant as JSON only — no markdown, no explanation:
-[{{"title": "...", "url": "...", "source": "...", "date_found": "...", "reason": "one line why this matters"}}]"""
+Return the {top_n} most worth reading in full as JSON only — no markdown:
+[{{"title": "...", "url": "...", "source": "..."}}]"""
 
-SUMMARY_PROMPT = """\
-Summarize these AI news articles for Caio, a college student building with AI who writes a weekly blog.
+# Call 2: full content → complete structured digest in one shot
+DIGEST_PROMPT = """\
+You are building a daily AI digest for Caio, a college student who builds with AI and writes a weekly blog.
 
-For each article return a JSON array with this structure:
-[{{
-  "title": "...",
-  "url": "...",
-  "source": "...",
-  "what": "one sentence — what actually happened in plain English",
-  "why": "one sentence — why this matters to someone building with AI",
-  "blog": true or false,
-  "blog_angle": "one-line angle if blog is true, else null"
-}}]
+Read these articles and return a single JSON object with this exact structure:
+{{
+  "tldr": ["bullet 1", "bullet 2", "bullet 3"],
+  "top_stories": [
+    {{"title": "short clean title", "url": "...", "source": "...", \
+"what": "1 sentence — what happened", "why": "1 sentence — why it matters to builders"}}
+  ],
+  "important_developments": [
+    {{"title": "short clean title", "url": "...", "source": "...", "what": "1 sentence"}}
+  ],
+  "builder_tools": [
+    {{"title": "short clean title", "url": "...", "source": "...", "what": "1 sentence"}}
+  ],
+  "market_signals": [
+    {{"title": "short clean title", "url": "...", "source": "...", "what": "1 sentence"}}
+  ]
+}}
 
-If an article's content is marked [Content could not be retrieved], summarize from the title alone
-and set blog to false.
-
-Return JSON only — no markdown, no explanation.
+Rules:
+- tldr: 3-4 bullets on the day's themes — specific and high-signal ("GPT-5 released" not "big news today")
+- top_stories: max 5, most impactful/actionable — must have both what + why
+- important_developments: notable but not top-tier
+- builder_tools: tools, APIs, open-source, prompt techniques usable today
+- market_signals: company moves worth tracking — keep minimal, skip pure funding/valuation news
+- every article goes in exactly one category, or is dropped if not worth including
+- shorten and clean titles — remove clickbait, trim length
+- return JSON only, no markdown, no explanation
 
 Articles:
 {articles_text}"""
@@ -65,11 +80,30 @@ def load_candidates(today: str) -> list[dict]:
     return json.loads(path.read_text())
 
 
-def parse_json_response(text: str) -> list:
+def filter_by_recency(candidates: list[dict], hours: int = 24) -> list[dict]:
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    result = []
+    for c in candidates:
+        pub = c.get("pub_date")
+        if pub:
+            try:
+                dt = datetime.fromisoformat(pub)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                if dt >= cutoff:
+                    result.append(c)
+            except ValueError:
+                result.append(c)  # unparseable date → include rather than drop
+        else:
+            result.append(c)  # HTML sources have no pub_date — always include
+    return result
+
+
+def strip_fences(text: str) -> str:
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
-    return json.loads(text.strip())
+    return text.strip()
 
 
 def call_gemini(client: genai.Client, prompt: str) -> str:
@@ -77,13 +111,10 @@ def call_gemini(client: genai.Client, prompt: str) -> str:
     return response.text
 
 
-def filter_candidates(candidates: list[dict], client: genai.Client) -> list[dict]:
-    slim = [
-        {"title": c["title"], "url": c["url"], "source": c["source"], "date_found": c["date_found"]}
-        for c in candidates
-    ]
-    prompt = FILTER_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=TOP_N)
-    return parse_json_response(call_gemini(client, prompt))
+def select_to_scrape(candidates: list[dict], client: genai.Client) -> list[dict]:
+    slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in candidates]
+    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=SCRAPE_TOP_N)
+    return json.loads(strip_fences(call_gemini(client, prompt)))
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
@@ -106,39 +137,74 @@ async def scrape_articles(items: list[dict]) -> list[dict]:
     return list(results)
 
 
-def summarize_articles(items: list[dict], client: genai.Client) -> list[dict]:
+def build_digest(scraped: list[dict], client: genai.Client) -> dict:
     articles_text = ""
-    for i, item in enumerate(items, 1):
-        articles_text += f"\n---\nARTICLE {i}: {item['title']}\nURL: {item['url']}\n"
+    for i, item in enumerate(scraped, 1):
+        articles_text += f"\n---\nARTICLE {i}: {item['title']}\nURL: {item['url']}\nSOURCE: {item.get('source', '')}\n"
         articles_text += item["content"] if item.get("content") else "[Content could not be retrieved]"
         articles_text += "\n"
-    prompt = SUMMARY_PROMPT.format(articles_text=articles_text)
-    return parse_json_response(call_gemini(client, prompt))
+    prompt = DIGEST_PROMPT.format(articles_text=articles_text)
+    return json.loads(strip_fences(call_gemini(client, prompt)))
 
 
-def build_email_html(summaries: list[dict], total_candidates: int, today: str) -> str:
-    items_html = ""
-    for s in summaries:
-        blog_html = ""
-        if s.get("blog") and s.get("blog_angle"):
-            blog_html = f'<p style="margin:4px 0;color:#1a7f4b;font-size:12px;">Blog angle: {s["blog_angle"]}</p>'
-        items_html += f"""
-        <div style="margin-bottom:24px;border-left:3px solid #0066cc;padding-left:14px;">
-          <p style="margin:0 0 4px 0;font-size:15px;">
-            <strong><a href="{s['url']}" style="color:#0066cc;text-decoration:none;">{s['title']}</a></strong>
-            <span style="color:#999;font-size:11px;margin-left:6px;">{s.get('source', '')}</span>
-          </p>
-          <p style="margin:4px 0;font-size:13px;">{s['what']}</p>
-          <p style="margin:4px 0;font-size:13px;color:#555;">{s['why']}</p>
-          {blog_html}
-        </div>"""
+SEP = '<p style="color:#ccc;margin:14px 0;letter-spacing:1px;font-size:13px;">━━━━━━━━━━━━━━━━━━</p>'
 
-    return f"""<html><body style="font-family:monospace;max-width:620px;margin:0 auto;padding:20px;color:#222;line-height:1.5;">
-  <h2 style="margin-bottom:4px;">AI Digest — {today}</h2>
-  <p style="color:#999;font-size:12px;margin-top:0;">{len(summaries)} articles &middot; filtered from {total_candidates} candidates</p>
-  {items_html}
-  <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
-  <p style="color:#bbb;font-size:11px;">caio-blog-gather &middot; automated daily digest</p>
+
+def render_top_stories(items: list[dict]) -> str:
+    if not items:
+        return ""
+    parts = []
+    for s in items:
+        link = f'<a href="{s["url"]}" style="color:#0055cc;text-decoration:none;">{s["title"]}</a>'
+        parts.append(
+            f'<div style="margin-bottom:12px;">'
+            f'<p style="margin:0;">• {link} <span style="color:#999;font-size:11px;">({s.get("source","")})</span></p>'
+            f'<p style="margin:2px 0 1px 14px;color:#333;">→ {s["what"]}</p>'
+            f'<p style="margin:1px 0 0 14px;color:#666;">→ {s["why"]}</p>'
+            f'</div>'
+        )
+    return "\n".join(parts)
+
+
+def render_bullets(items: list[dict]) -> str:
+    if not items:
+        return ""
+    parts = []
+    for s in items:
+        link = f'<a href="{s["url"]}" style="color:#0055cc;text-decoration:none;">{s["title"]}</a>'
+        parts.append(
+            f'<p style="margin:4px 0;">• {link} '
+            f'<span style="color:#999;font-size:11px;">({s.get("source","")})</span>'
+            f' — {s["what"]}</p>'
+        )
+    return "\n".join(parts)
+
+
+def section(emoji: str, title: str, content: str) -> str:
+    if not content:
+        return ""
+    return (
+        f'{SEP}'
+        f'<p style="margin:12px 0 8px;font-weight:bold;">{emoji} {title}</p>'
+        f'{content}'
+    )
+
+
+def build_email_html(digest: dict, total_candidates: int, recent_count: int, today: str) -> str:
+    tldr_html = "\n".join(f'<p style="margin:3px 0;">• {b}</p>' for b in digest.get("tldr", []))
+
+    return f"""<html><body style="font-family:monospace;max-width:620px;margin:0 auto;padding:20px 20px 32px;color:#222;line-height:1.6;font-size:13px;">
+  <h2 style="margin-bottom:2px;font-size:15px;letter-spacing:0.5px;">AI Digest — {today} ET</h2>
+  <p style="color:#aaa;font-size:11px;margin:0 0 4px;">{recent_count} articles from last 24h &nbsp;·&nbsp; filtered from {total_candidates} candidates</p>
+  {SEP}
+  <p style="margin:12px 0 8px;font-weight:bold;">🧠 TL;DR</p>
+  {tldr_html}
+  {section("🔥", "Top Stories", render_top_stories(digest.get("top_stories", [])))}
+  {section("⚡", "Important Developments", render_bullets(digest.get("important_developments", [])))}
+  {section("🛠️", "Builder Tools / Open Source", render_bullets(digest.get("builder_tools", [])))}
+  {section("📊", "Market Signals", render_bullets(digest.get("market_signals", [])))}
+  {SEP}
+  <p style="color:#ccc;font-size:11px;margin-top:4px;">caio-blog-gather &nbsp;·&nbsp; automated daily digest</p>
 </body></html>"""
 
 
@@ -166,16 +232,22 @@ async def main():
 
     client = genai.Client(api_key=api_key)
 
-    print(f"Filtering {len(candidates)} candidates...")
-    filtered = filter_candidates(candidates, client)
-    print(f"Selected {len(filtered)}. Scraping full content...")
+    recent = filter_by_recency(candidates)
+    print(f"{len(recent)}/{len(candidates)} candidates pass 24h filter.")
+    if not recent:
+        print("No recent candidates, skipping digest.")
+        return
 
-    scraped = await scrape_articles(filtered)
+    print(f"Selecting top {SCRAPE_TOP_N} to scrape (LLM call 1)...")
+    selected = select_to_scrape(recent, client)
+    print(f"Scraping {len(selected)} articles...")
 
-    print("Summarizing...")
-    summaries = summarize_articles(scraped, client)
+    scraped = await scrape_articles(selected)
 
-    html = build_email_html(summaries, len(candidates), today)
+    print("Building digest (LLM call 2)...")
+    digest = build_digest(scraped, client)
+
+    html = build_email_html(digest, len(candidates), len(recent), today)
     send_email(f"AI Digest — {today}", html, app_password)
     print(f"Done. Email sent for {today}.")
 

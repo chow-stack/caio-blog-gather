@@ -111,13 +111,15 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
                 continue
             # parse published date; skip entries older than 3 days
             published = entry.get("published_parsed") or entry.get("updated_parsed")
+            pub_date_str = None
             if published:
                 pub_dt = datetime(*published[:6], tzinfo=timezone.utc)
                 if pub_dt < cutoff:
                     continue
+                pub_date_str = pub_dt.isoformat()
             if is_junk(title, url):
                 continue
-            candidates.append({"title": title, "url": url, "source": src, "date_found": today})
+            candidates.append({"title": title, "url": url, "source": src, "date_found": today, "pub_date": pub_date_str})
         return candidates, None
     except Exception as e:
         return [], str(e)
