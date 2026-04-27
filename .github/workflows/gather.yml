@@ -31,7 +31,7 @@ jobs:
 
       - name: Create vault log path
         # gather.py writes to ../caio-os/Blog/log.md — stub the directory so the
-        # script doesn't crash. The log file is committed for visibility.
+        # script doesn't crash.
         run: mkdir -p ../caio-os/Blog
 
       - name: Run gather.py
@@ -44,3 +44,9 @@ jobs:
           git add candidates/ seen_urls.json
           git diff --staged --quiet || git commit -m "gather: $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Run daily_digest.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python daily_digest.py
