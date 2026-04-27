@@ -1,5 +1,5 @@
 """
-Step 1 of the Friday blog build.
+Step 1 of the Sunday blog build.
 Reads all candidate files from the current ISO week, merges them,
 writes candidates/this_week.json, and prints a formatted list for Claude to review.
 """

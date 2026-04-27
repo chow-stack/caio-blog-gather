@@ -1,5 +1,5 @@
 """
-Step 2 of the Friday blog build.
+Step 2 of the Sunday blog build.
 Reads candidates/selected.json (written by Claude after filtering),
 scrapes each article, creates source files, updates index and log.
 """
@@ -97,7 +97,7 @@ def update_index(items_with_slugs: list[tuple[dict, str]]):
 
 async def main():
     if not SELECTED_FILE.exists():
-        print(f"ERROR: {SELECTED_FILE} not found. Run friday_prepare.py first, then have Claude write selected.json.")
+        print(f"ERROR: {SELECTED_FILE} not found. Run sunday_prepare.py first, then have Claude write selected.json.")
         return
 
     items = json.loads(SELECTED_FILE.read_text())
@@ -129,7 +129,7 @@ async def main():
         update_index(successful)
 
     titles = ", ".join(item["title"][:60] for item, _ in successful)
-    log_entry = f"\n## {today} | friday-build | {len(successful)} sources scraped\n- Items: {titles}\n"
+    log_entry = f"\n## {today} | sunday-build | {len(successful)} sources scraped\n- Items: {titles}\n"
     if errors:
         log_entry += "\n".join(f"- ERROR: {e}" for e in errors) + "\n"
 
