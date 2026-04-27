@@ -129,11 +129,11 @@ def strip_fences(text: str) -> str:
 
 
 def call_gemini(client: genai.Client, prompt: str) -> str:
-    for model in [MODEL, FALLBACK_MODEL]:
+    for model in MODELS:
         for attempt in range(3):
             try:
                 response = client.models.generate_content(model=model, contents=prompt)
-                if model != MODEL:
+                if model != MODELS[0]:
                     print(f"  (used fallback model: {model})")
                 return response.text
             except genai_errors.ServerError as e:
