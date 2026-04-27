@@ -64,6 +64,13 @@ def is_junk(title: str, url: str) -> bool:
     return False
 
 
+def date_from_url(url: str) -> str | None:
+    m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}T00:00:00+00:00"
+    return None
+
+
 def extract_links(result, src_url: str) -> list[dict]:
     src_domain = domain(src_url)
     cfg = SOURCE_CONFIG.get(src_domain, {"link_type": "external"})
@@ -138,7 +145,7 @@ async def crawl_source(
             return [], "crawl returned success=False"
         links = extract_links(result, source_url)
         candidates = [
-            {"title": lnk["title"], "url": lnk["url"], "source": domain(source_url), "date_found": today}
+            {"title": lnk["title"], "url": lnk["url"], "source": domain(source_url), "date_found": today, "pub_date": date_from_url(lnk["url"])}
             for lnk in links
             if lnk["url"] not in seen
         ]

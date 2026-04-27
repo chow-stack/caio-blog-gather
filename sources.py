@@ -6,6 +6,8 @@ RSS_SOURCES = [
     "https://huggingface.co/blog/feed.xml",
     "https://deepmind.google/blog/rss.xml",
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml",
+    "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+    "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
     "https://simonwillison.net/atom/everything/",
 ]
 
