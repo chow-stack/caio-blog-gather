@@ -17,7 +17,7 @@ CANDIDATES_DIR = SCRIPT_DIR / "candidates"
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 TOP_N = 10
-MODEL = "gemini-2.0-flash-lite"
+MODEL = "gemini-2.5-flash"
 
 FILTER_PROMPT = """\
 You are filtering AI news for Caio, a college student who writes a weekly blog about practical AI.
