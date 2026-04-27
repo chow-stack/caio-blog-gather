@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 SCRIPT_DIR = Path(__file__).parent
@@ -17,6 +17,7 @@ CANDIDATES_DIR = SCRIPT_DIR / "candidates"
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 TOP_N = 10
+MODEL = "gemini-2.0-flash-lite"
 
 FILTER_PROMPT = """\
 You are filtering AI news for Caio, a college student who writes a weekly blog about practical AI.
@@ -71,16 +72,18 @@ def parse_json_response(text: str) -> list:
     return json.loads(text.strip())
 
 
-def filter_candidates(candidates: list[dict], api_key: str) -> list[dict]:
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash")
+def call_gemini(client: genai.Client, prompt: str) -> str:
+    response = client.models.generate_content(model=MODEL, contents=prompt)
+    return response.text
+
+
+def filter_candidates(candidates: list[dict], client: genai.Client) -> list[dict]:
     slim = [
         {"title": c["title"], "url": c["url"], "source": c["source"], "date_found": c["date_found"]}
         for c in candidates
     ]
     prompt = FILTER_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=TOP_N)
-    response = model.generate_content(prompt)
-    return parse_json_response(response.text)
+    return parse_json_response(call_gemini(client, prompt))
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
@@ -103,17 +106,14 @@ async def scrape_articles(items: list[dict]) -> list[dict]:
     return list(results)
 
 
-def summarize_articles(items: list[dict], api_key: str) -> list[dict]:
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash")
+def summarize_articles(items: list[dict], client: genai.Client) -> list[dict]:
     articles_text = ""
     for i, item in enumerate(items, 1):
         articles_text += f"\n---\nARTICLE {i}: {item['title']}\nURL: {item['url']}\n"
         articles_text += item["content"] if item.get("content") else "[Content could not be retrieved]"
         articles_text += "\n"
     prompt = SUMMARY_PROMPT.format(articles_text=articles_text)
-    response = model.generate_content(prompt)
-    return parse_json_response(response.text)
+    return parse_json_response(call_gemini(client, prompt))
 
 
 def build_email_html(summaries: list[dict], total_candidates: int, today: str) -> str:
@@ -164,14 +164,16 @@ async def main():
         print(f"No candidates for {today}, skipping digest.")
         return
 
+    client = genai.Client(api_key=api_key)
+
     print(f"Filtering {len(candidates)} candidates...")
-    filtered = filter_candidates(candidates, api_key)
+    filtered = filter_candidates(candidates, client)
     print(f"Selected {len(filtered)}. Scraping full content...")
 
     scraped = await scrape_articles(filtered)
 
     print("Summarizing...")
-    summaries = summarize_articles(scraped, api_key)
+    summaries = summarize_articles(scraped, client)
 
     html = build_email_html(summaries, len(candidates), today)
     send_email(f"AI Digest — {today}", html, app_password)
