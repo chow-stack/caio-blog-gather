@@ -21,7 +21,7 @@ EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
 SMOL_SOURCE = "news.smol.ai"
 MODELS = [
-    "gemini-3.0-flash",       # primary — newest, best quality
+    "gemini-3-flash",       # primary — newest, best quality
     "gemini-3.1-flash-lite",  # fallback — 500 RPD, much more available under load
 ]
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
