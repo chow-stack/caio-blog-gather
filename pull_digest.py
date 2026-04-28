@@ -32,10 +32,7 @@ SECTION_LABELS = {
     "other_notable": "Other Notable",
 }
 
-RATING_HINT = (
-    "> **Rating options:** `like` · `dislike/enterprise` · `dislike/vague` · "
-    "`dislike/funding` · `dislike/no-demo` · `dislike/opinion` · `skip`"
-)
+RATING_HINT = "> **Rating:** `like` · `neutral` · `dislike` — add an optional `note:` line below for context"
 
 
 def git_pull():
@@ -64,7 +61,7 @@ def render_article(item: dict, is_top: bool) -> str:
         lines.append(f"> {what}")
     if is_top and why:
         lines.append(f"> *{why}*")
-    lines.append("rating: ")
+    lines.append("rating: \nnote: ")
     return "\n".join(lines)
 
 
