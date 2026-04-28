@@ -53,3 +53,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python daily_digest.py
+
+      - name: Commit digest
+        run: |
+          git add digests/
+          git diff --staged --quiet || git commit -m "digest: $(date -u +%Y-%m-%d)"
+          git push
