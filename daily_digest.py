@@ -15,6 +15,7 @@ from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 SCRIPT_DIR = Path(__file__).parent
 CANDIDATES_DIR = SCRIPT_DIR / "candidates"
+DIGESTS_DIR = SCRIPT_DIR / "digests"
 
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
@@ -372,6 +373,11 @@ async def main():
     html = build_email_html(digest, n_articles, len(candidates), today_label)
     send_email(subject, html, app_password)
     print(f"Done. Sent: {subject} ({n_articles} articles in digest)")
+
+    DIGESTS_DIR.mkdir(exist_ok=True)
+    digest_path = DIGESTS_DIR / f"{today}.json"
+    digest_path.write_text(json.dumps(digest, indent=2, ensure_ascii=False))
+    print(f"Digest saved: {digest_path}")
 
 
 if __name__ == "__main__":
