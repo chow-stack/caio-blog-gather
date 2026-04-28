@@ -282,6 +282,29 @@ def section_block(label: str, content: str) -> str:
     return f'{hr()}{section_label(label)}{content}'
 
 
+def build_empty_email_html(today_label: str, reason: str) -> str:
+    return f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:{FONT};max-width:600px;margin:0 auto;padding:32px 24px 48px;color:#111;background:#fff;-webkit-font-smoothing:antialiased;">
+
+  <div style="margin-bottom:40px;padding-bottom:20px;border-bottom:2px solid #111;">
+    <h1 style="font-size:22px;font-weight:700;margin:0 0 6px;letter-spacing:-0.3px;">AI Daily</h1>
+    <p style="margin:0;font-size:13px;color:#888;">{today_label}</p>
+  </div>
+
+  <div style="padding:48px 0;text-align:center;">
+    <p style="margin:0 0 12px;font-size:32px;font-weight:300;letter-spacing:-0.5px;color:#111;">Nothing new today.</p>
+    <p style="margin:0;font-size:14px;color:#999;line-height:1.6;">{reason}<br>The system is running normally.</p>
+  </div>
+
+  <hr style="border:none;border-top:1px solid #e8e8e8;margin:40px 0 24px;">
+  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; automated</p>
+
+</body>
+</html>"""
+
+
 def build_email_html(digest: dict, n_articles: int, total_candidates: int, today_label: str) -> str:
     tldr_items = "".join(
         f'<li style="margin-bottom:6px;font-size:14px;line-height:1.5;">{b}</li>'
@@ -344,7 +367,9 @@ async def main():
 
     candidates = load_candidates(today)
     if not candidates:
-        print(f"No candidates for {today}, skipping digest.")
+        print(f"No candidates for {today} — sending empty digest.")
+        html = build_empty_email_html(today_label, "No articles were found across all sources.")
+        send_email(f"AI Daily — {today_label}", html, app_password)
         return
 
     client = genai.Client(api_key=api_key)
@@ -352,7 +377,9 @@ async def main():
     recent = filter_by_recency(candidates)
     print(f"{len(recent)}/{len(candidates)} candidates pass 24h filter.")
     if not recent:
-        print("No recent candidates, skipping digest.")
+        print("No recent candidates — sending empty digest.")
+        html = build_empty_email_html(today_label, f"All {len(candidates)} candidate{'s' if len(candidates) != 1 else ''} found today were older than 24 hours.")
+        send_email(f"AI Daily — {today_label}", html, app_password)
         return
 
     print(f"Selecting top {SCRAPE_TOP_N} to scrape (LLM call 1)...")

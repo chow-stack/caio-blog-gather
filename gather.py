@@ -56,14 +56,19 @@ def is_junk(title: str, url: str) -> bool:
     return False
 
 
+SMOL_SOURCE = "news.smol.ai"
+
+
 def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | None]:
     cutoff = datetime.now(timezone.utc) - timedelta(days=3)
+    is_smol = domain(feed_url) == SMOL_SOURCE
     try:
         feed = feedparser.parse(feed_url)
         if feed.bozo and not feed.entries:
             return [], f"parse error: {feed.bozo_exception}"
         src = domain(feed.get("feed", {}).get("link", feed_url) or feed_url) or domain(feed_url)
         candidates = []
+        smol_latest_added = False
         for entry in feed.entries:
             url = entry.get("link", "").strip().split("#atom-")[0]
             title = entry.get("title", "").strip()
@@ -73,13 +78,16 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
             pub_date_str = None
             if published:
                 pub_dt = datetime(*published[:6], tzinfo=timezone.utc)
-                if pub_dt < cutoff:
+                # For smol.ai, always include the single latest entry regardless of age
+                if pub_dt < cutoff and not (is_smol and not smol_latest_added):
                     continue
                 pub_date_str = pub_dt.isoformat()
             title = clean_title(title, src)
             if is_junk(title, url):
                 continue
             candidates.append({"title": title, "url": url, "source": src, "date_found": today, "pub_date": pub_date_str})
+            if is_smol:
+                smol_latest_added = True
         return candidates, None
     except Exception as e:
         return [], str(e)
