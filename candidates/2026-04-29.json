@@ -1,205 +1,37 @@
 [
   {
-    "title": "We decreased our LLM costs with Opus",
-    "url": "https://www.mendral.com/blog/frontier-model-lower-costs",
+    "title": "Letting AI play my game – building an agentic test harness to help play-testing",
+    "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
     "source": "news.ycombinator.com",
     "date_found": "2026-04-29",
-    "pub_date": "2026-04-29T00:57:12+00:00"
+    "pub_date": "2026-04-29T12:43:12+00:00"
   },
   {
-    "title": "A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all",
-    "url": "https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files",
+    "title": "He asked AI to count carbs 27000 times. It couldn't give the same answer twice",
+    "url": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/",
     "source": "news.ycombinator.com",
     "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T18:26:53+00:00"
+    "pub_date": "2026-04-29T12:38:50+00:00"
   },
   {
-    "title": "Claude.ai unavailable and elevated errors on the API",
-    "url": "https://status.claude.com/incidents/9l93x2ht4s5w",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T18:01:21+00:00"
-  },
-  {
-    "title": "AI's economics don't make sense",
-    "url": "https://www.wheresyoured.at/ais-economics-dont-make-sense/",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T16:39:53+00:00"
-  },
-  {
-    "title": "Google and Pentagon reportedly agree on deal for 'any lawful' use of AI",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T15:49:22+00:00"
-  },
-  {
-    "title": "AI's biggest critic has lost the plot",
-    "url": "https://www.theargumentmag.com/p/ais-biggest-critic-has-lost-the-plot",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T13:33:33+00:00"
-  },
-  {
-    "title": "OpenAI misses revenue, is the AI bubble bursting?",
-    "url": "https://www.cnbc.com/2026/04/28/openai-reportedly-missed-revenue-targets-shares-of-oracle-and-these-chip-stocks-are-falling.html",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T12:15:13+00:00"
-  },
-  {
-    "title": "VibeVoice: Open-source frontier voice AI",
-    "url": "https://github.com/microsoft/VibeVoice",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T11:56:04+00:00"
-  },
-  {
-    "title": "Utah greenlights 9GW AI campus using over twice state electricity",
-    "url": "https://www.tomshardware.com/tech-industry/kevin-o-learys-9-gw-utah-data-center-campus-approved",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T11:25:09+00:00"
-  },
-  {
-    "title": "AI vendor lock-in bites back",
-    "url": "https://www.theregister.com/2026/04/28/locked_stocked_and_losing_budget/",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T10:46:20+00:00"
-  },
-  {
-    "title": "EU tells Google to open up AI on Android; Google says \"unwarranted intervention\"",
-    "url": "https://arstechnica.com/ai/2026/04/europe-could-force-google-to-open-android-to-other-ai-assistants/",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T06:59:39+00:00"
-  },
-  {
-    "title": "San Francisco, AI capital of the world, is an economic laggard",
-    "url": "https://www.economist.com/finance-and-economics/2026/04/26/san-francisco-ai-capital-of-the-world-is-an-economic-laggard",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T04:32:42+00:00"
-  },
-  {
-    "title": "Show HN: PrePrompt – rewrites vague prompts before they reach the LLM",
-    "url": "https://preprompt.org/",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T02:49:25+00:00"
-  },
-  {
-    "title": "Generative AI Vegetarianism",
-    "url": "https://sboots.ca/2026/03/11/generative-ai-vegetarianism/",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T00:07:39+00:00"
-  },
-  {
-    "title": "Claude Pro: Opus model will only be available if extra usage is enabled",
-    "url": "https://support.claude.com/en/articles/11940350-claude-code-model-configuration",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-27T22:13:17+00:00"
-  },
-  {
-    "title": "Talkie: a 13B vintage language model from 1930",
-    "url": "https://talkie-lm.com/introducing-talkie",
-    "source": "news.ycombinator.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-27T21:55:48+00:00"
-  },
-  {
-    "title": "Cybersecurity in the Intelligence Age",
-    "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
-    "source": "openai.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-29T04:00:00+00:00"
-  },
-  {
-    "title": "Our commitment to community safety",
-    "url": "https://openai.com/index/our-commitment-to-community-safety",
-    "source": "openai.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T00:00:00+00:00"
-  },
-  {
-    "title": "OpenAI models, Codex, and Managed Agents come to AWS",
-    "url": "https://openai.com/index/openai-on-aws",
-    "source": "openai.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T00:00:00+00:00"
-  },
-  {
-    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
-    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
-    "source": "huggingface.co",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T15:58:57+00:00"
-  },
-  {
-    "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development",
-    "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
-    "source": "claude.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T00:00:00+00:00"
-  },
-  {
-    "title": "Quoting OpenAI Codex base_instructions",
-    "url": "https://simonwillison.net/2026/Apr/28/openai-codex/",
-    "source": "simonwillison.net",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T22:02:53+00:00"
-  },
-  {
-    "title": "DeepSeek v4",
-    "url": "https://news.smol.ai/issues/26-04-24-deepseek-v4/",
+    "title": "GPT 5.5",
+    "url": "https://news.smol.ai/issues/26-04-23-gpt-55/",
     "source": "news.smol.ai",
     "date_found": "2026-04-29",
-    "pub_date": "2026-04-24T05:44:39+00:00"
+    "pub_date": "2026-04-23T05:44:39+00:00"
   },
   {
-    "title": "Coby Adcock’s Scout AI raises $100 million to train its models for war. We visited its bootcamp",
-    "url": "https://techcrunch.com/2026/04/29/coby-adcocks-scout-ai-raises-100-million-to-train-models-for-war-we-visited-its-bootcamp/",
+    "title": "Firestorm Labs raises $82M to take drone factories into the field",
+    "url": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
     "source": "techcrunch.com",
     "date_found": "2026-04-29",
-    "pub_date": "2026-04-29T09:45:00+00:00"
+    "pub_date": "2026-04-29T13:10:57+00:00"
   },
   {
-    "title": "At his OpenAI trial, Musk relitigates an old friendship",
-    "url": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/",
+    "title": "Meet Shapes, the app bringing humans and AI into the same group chats",
+    "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
     "source": "techcrunch.com",
     "date_found": "2026-04-29",
-    "pub_date": "2026-04-29T00:40:16+00:00"
-  },
-  {
-    "title": "Amazon is already offering new OpenAI products on AWS",
-    "url": "https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/",
-    "source": "techcrunch.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T19:48:02+00:00"
-  },
-  {
-    "title": "Amazon launches an AI-powered audio Q&A experience on product pages",
-    "url": "https://techcrunch.com/2026/04/28/amazon-launches-an-ai-powered-audio-qa-experience-on-product-pages/",
-    "source": "techcrunch.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T18:49:54+00:00"
-  },
-  {
-    "title": "Google expands Pentagon’s access to its AI after Anthropic’s refusal",
-    "url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
-    "source": "techcrunch.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T18:15:00+00:00"
-  },
-  {
-    "title": "Lovable launches its vibe-coding app on iOS and Android",
-    "url": "https://techcrunch.com/2026/04/28/lovable-launches-its-vibe-coding-app-on-ios-and-android/",
-    "source": "techcrunch.com",
-    "date_found": "2026-04-29",
-    "pub_date": "2026-04-28T16:09:30+00:00"
+    "pub_date": "2026-04-29T13:00:00+00:00"
   }
 ]
