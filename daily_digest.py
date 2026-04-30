@@ -129,7 +129,8 @@ def strip_fences(text: str) -> str:
     return text.strip()
 
 
-def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -> str:
+def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -> tuple[str, str]:
+    """Returns (response_text, model_used)."""
     config = types.GenerateContentConfig(response_mime_type="application/json") if json_mode else None
     for model in MODELS:
         for attempt in range(3):
@@ -141,7 +142,7 @@ def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -
                 )
                 if model != MODELS[0]:
                     print(f"  (used fallback model: {model})")
-                return response.text
+                return response.text, model
             except genai_errors.APIError as e:
                 if e.code in (503, 429):
                     wait = 2 ** (attempt + 1)  # 2s, 4s, 8s
@@ -153,18 +154,20 @@ def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -
     raise RuntimeError("All models unavailable after retries — try again later.")
 
 
-def select_to_scrape(candidates: list[dict], client: genai.Client) -> list[dict]:
+def select_to_scrape(candidates: list[dict], client: genai.Client) -> tuple[list[dict], str | None]:
+    """Returns (selected_articles, model_used). model_used is None if no LLM call was made."""
     smol = [c for c in candidates if c["source"] == SMOL_SOURCE]
     others = [c for c in candidates if c["source"] != SMOL_SOURCE]
 
     remaining = SCRAPE_TOP_N - len(smol)
     if remaining <= 0 or not others:
-        return smol[:SCRAPE_TOP_N]
+        return smol[:SCRAPE_TOP_N], None
 
     slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in others]
     prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=remaining)
-    llm_selected = json.loads(strip_fences(call_gemini(client, prompt, json_mode=True)))
-    return smol + llm_selected
+    text, model_used = call_gemini(client, prompt, json_mode=True)
+    llm_selected = json.loads(strip_fences(text))
+    return smol + llm_selected, model_used
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
@@ -187,7 +190,8 @@ async def scrape_articles(items: list[dict]) -> list[dict]:
     return list(results)
 
 
-def build_digest(scraped: list[dict], client: genai.Client) -> dict:
+def build_digest(scraped: list[dict], client: genai.Client) -> tuple[dict, str]:
+    """Returns (digest, model_used)."""
     articles_text = ""
     for i, item in enumerate(scraped, 1):
         articles_text += (
@@ -197,7 +201,8 @@ def build_digest(scraped: list[dict], client: genai.Client) -> dict:
         articles_text += item["content"] if item.get("content") else "[Content could not be retrieved]"
         articles_text += "\n"
     prompt = DIGEST_PROMPT.format(n_articles=len(scraped), articles_text=articles_text)
-    return json.loads(strip_fences(call_gemini(client, prompt, json_mode=True)))
+    text, model_used = call_gemini(client, prompt, json_mode=True)
+    return json.loads(strip_fences(text)), model_used
 
 
 def validate_and_patch(digest: dict, scraped: list[dict]) -> tuple[dict, int]:
@@ -305,7 +310,19 @@ def build_empty_email_html(today_label: str, reason: str) -> str:
 </html>"""
 
 
-def build_email_html(digest: dict, n_articles: int, total_candidates: int, today_label: str) -> str:
+def format_models_used(model_select: str | None, model_digest: str) -> str:
+    primary = MODELS[0]
+    parts = []
+    if model_select and model_select != primary:
+        parts.append(f"select: {model_select}")
+    if model_digest != primary:
+        parts.append(f"digest: {model_digest}")
+    if parts:
+        return f"{primary} + fallback ({', '.join(parts)})"
+    return primary
+
+
+def build_email_html(digest: dict, n_articles: int, total_candidates: int, today_label: str, model_select: str | None, model_digest: str) -> str:
     tldr_items = "".join(
         f'<li style="margin-bottom:6px;font-size:14px;line-height:1.5;">{b}</li>'
         for b in digest.get("tldr", [])
@@ -333,7 +350,7 @@ def build_email_html(digest: dict, n_articles: int, total_candidates: int, today
   {section_block("Other Notable Items", render_bullets(digest.get("other_notable", [])))}
 
   {hr()}
-  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; automated</p>
+  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; {format_models_used(model_select, model_digest)}</p>
 
 </body>
 </html>"""
@@ -383,13 +400,13 @@ async def main():
         return
 
     print(f"Selecting top {SCRAPE_TOP_N} to scrape (LLM call 1)...")
-    selected = select_to_scrape(recent, client)
+    selected, model_select = select_to_scrape(recent, client)
     print(f"Scraping {len(selected)} articles...")
 
     scraped = await scrape_articles(selected)
 
     print("Building digest (LLM call 2)...")
-    digest = build_digest(scraped, client)
+    digest, model_digest = build_digest(scraped, client)
 
     digest, n_missing = validate_and_patch(digest, scraped)
     if n_missing:
@@ -397,12 +414,13 @@ async def main():
 
     n_articles = sum(len(digest.get(s, [])) for s in ALL_SECTIONS)
     subject = format_subject(digest, today_label)
-    html = build_email_html(digest, n_articles, len(candidates), today_label)
+    html = build_email_html(digest, n_articles, len(candidates), today_label, model_select, model_digest)
     send_email(subject, html, app_password)
     print(f"Done. Sent: {subject} ({n_articles} articles in digest)")
 
     DIGESTS_DIR.mkdir(exist_ok=True)
     digest_path = DIGESTS_DIR / f"{today}.json"
+    digest["_meta"] = {"model_select": model_select, "model_digest": model_digest}
     digest_path.write_text(json.dumps(digest, indent=2, ensure_ascii=False))
     print(f"Digest saved: {digest_path}")
 
