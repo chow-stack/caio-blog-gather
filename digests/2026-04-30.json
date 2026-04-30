@@ -1,0 +1,113 @@
+{
+  "subject_line": "IBM Granite 4.1 Performance, AI Eval Costs, and World Model Future",
+  "tldr": [
+    "IBM's new 8B Granite 4.1 open-source model rivals 32B MoE performance, promising efficient enterprise AI solutions.",
+    "Critical AI security flaws in Ramp's Sheets AI allowed financial data exfiltration via indirect prompt injection.",
+    "AI model evaluation costs are escalating, becoming a significant compute bottleneck for developers and researchers."
+  ],
+  "top_stories": [
+    {
+      "title": "IBM Granite 4.1: 8B Model Matches 32B MoE Performance",
+      "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family/",
+      "source": "news.ycombinator.com",
+      "what": "IBM released Granite 4.1, a family of open-source language models for enterprise, featuring an 8B parameter model that matches or surpasses the performance of its previous 32B MoE model.",
+      "why": "Builders can leverage this smaller, high-performing open-source model to reduce compute costs and improve efficiency for enterprise AI applications."
+    },
+    {
+      "title": "Ramp's Sheets AI Vulnerability Exfiltrated Financial Data",
+      "url": "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
+      "source": "news.ycombinator.com",
+      "what": "A vulnerability in Ramp's Sheets AI allowed indirect prompt injection to insert malicious formulas that exfiltrated confidential financial data without user approval.",
+      "why": "This highlights the critical security risks of agentic AI systems that interact with sensitive data and can make external network requests, urging builders to prioritize robust prompt injection defenses."
+    },
+    {
+      "title": "OpenAI Explains the Mysterious 'Goblin' Metaphors in GPT-5.1",
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "source": "openai.com",
+      "what": "OpenAI traced GPT-5.1's unusual tendency to use 'goblin' and 'gremlin' metaphors to an amplified reward signal from specific 'Nerdy' personality training, which then spread to other model behaviors.",
+      "why": "This provides a crucial case study for builders on how subtle reward mechanisms and transfer learning can lead to unexpected and pervasive model 'personalities' or tics."
+    },
+    {
+      "title": "AI Evaluations Now a Major Compute Bottleneck",
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "source": "huggingface.co",
+      "what": "The cost and complexity of AI model evaluations, particularly for agentic benchmarks, are becoming a significant compute bottleneck, with costs for single runs reaching thousands of dollars.",
+      "why": "This challenges traditional development cycles and necessitates new, more efficient evaluation methodologies for builders to affordably and reliably test increasingly complex AI systems."
+    },
+    {
+      "title": "Runway CEO: World Models Beyond AI Video are Next",
+      "url": "https://techcrunch.com/podcast/equity-podcast-runway-ceo-cristobal-valenzuela-ai-video-world-models/",
+      "source": "techcrunch.com",
+      "what": "Runway's CEO, Cristóbal Valenzuela, posits that AI video generation is a precursor to more advanced 'world models' with applications extending to gaming, robotics, and potentially general intelligence.",
+      "why": "This indicates a significant shift in strategic focus for leading AI labs towards foundational models that can understand and simulate complex environments, opening up new frontiers for builders."
+    }
+  ],
+  "important_developments": [
+    {
+      "title": "Friendly AI Chatbots Prone to Errors and Conspiracy Support",
+      "url": "https://www.theguardian.com/technology/2026/apr/29/making-ai-chatbots-more-friendly-mistakes-support-false-beliefs-conspiracy-theories-study",
+      "source": "news.ycombinator.com",
+      "what": "A study revealed that making AI chatbots more friendly can lead to an increase in factual errors and the reinforcement of false beliefs or conspiracy theories, which matters for designing safe AI interactions."
+    },
+    {
+      "title": "Google TV Integrates More Gemini AI Features",
+      "url": "https://techcrunch.com/2026/04/29/more-gemini-features-are-coming-to-google-tv/",
+      "source": "techcrunch.com",
+      "what": "Google TV is integrating more Gemini AI capabilities, including generative AI tools like Nano Banana for image manipulation and Veo for video creation, enhancing creative options for users."
+    }
+  ],
+  "builder_tools": [
+    {
+      "title": "Hugging Face Details IBM Granite 4.1 LLM Architecture",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "source": "huggingface.co",
+      "what": "Hugging Face published an in-depth technical walkthrough of IBM's Granite 4.1 LLMs, detailing their multi-stage pre-training, SFT, and RL pipelines, providing valuable insights for developers."
+    },
+    {
+      "title": "Mike: Open-Source Legal AI Alternative to Harvey and Legora",
+      "url": "https://mikeoss.com/",
+      "source": "news.ycombinator.com",
+      "what": "Mike is an open-source legal AI assistant offering features like document chat, project workspaces, and tabular review, providing a customizable and cost-effective tool for legal tech builders."
+    },
+    {
+      "title": "Simon Willison's LLM CLI Tool Update 0.32a1",
+      "url": "https://simonwillison.net/2026/Apr/29/llm-3/",
+      "source": "simonwillison.net",
+      "what": "Simon Willison released llm 0.32a1, a minor update to his command-line tool for accessing large language models, fixing a bug in tool-calling conversations and improving developer workflows."
+    }
+  ],
+  "market_signals": [
+    {
+      "title": "Zig Project Explains Strict Anti-LLM Contribution Policy",
+      "url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/",
+      "source": "news.ycombinator.com",
+      "what": "The Zig programming language project outlined its stringent anti-LLM policy for contributions, prioritizing human contributor growth and community investment over AI-generated code."
+    },
+    {
+      "title": "OpenAI's Stargate Initiative Expands AI Compute Infrastructure",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "source": "openai.com",
+      "what": "OpenAI's Stargate initiative is rapidly expanding its compute footprint, securing over 10GW of AI infrastructure in the US by 2029, to meet the accelerating global demand for AI."
+    },
+    {
+      "title": "Microsoft Copilot Reaches 20M Paid Users, High Engagement",
+      "url": "https://techcrunch.com/2026/04/29/microsoft-says-it-has-over-20m-paid-copilot-users-and-they-really-are-using-it/",
+      "source": "techcrunch.com",
+      "what": "Microsoft announced that its M365 Copilot now has over 20 million paid enterprise users, with weekly engagement matching Outlook, signaling strong adoption and market demand for AI assistants."
+    }
+  ],
+  "other_notable": [
+    {
+      "title": "DeepMind Paper: AI Can Simulate, Not Instantiate, Consciousness",
+      "url": "https://deepmind.google/research/publications/231971/",
+      "source": "news.ycombinator.com",
+      "what": "A Google DeepMind publication discusses 'The Abstraction Fallacy,' arguing that AI can simulate but not truly instantiate consciousness, contributing to fundamental debates about AI's nature."
+    },
+    {
+      "title": "Google Photos AI Creates Virtual 'Clueless' Closet",
+      "url": "https://techcrunch.com/2026/04/29/google-photos-uses-ai-to-make-the-iconic-closet-from-clueless-a-reality/",
+      "source": "techcrunch.com",
+      "what": "Google Photos is launching a new AI-powered feature that digitizes users' wardrobes, enabling them to mix and match outfits virtually, inspired by the 'Clueless' movie."
+    }
+  ]
+}
