@@ -1,7 +1,8 @@
 """
 Step 2 of the Sunday blog build.
 Reads candidates/selected.json (written by Claude after filtering),
-scrapes each article, creates source files, updates index and log.
+scrapes each article, writes raw files to Blog/raw/.
+Claude then processes Blog/raw/ → Blog/wiki/sources/ and writes the draft outline.
 """
 
 import asyncio
@@ -19,8 +20,7 @@ from sources import VAULT_PATH
 SCRIPT_DIR = Path(__file__).parent
 VAULT = SCRIPT_DIR / VAULT_PATH
 SELECTED_FILE = SCRIPT_DIR / "candidates" / "selected.json"
-SOURCES_DIR = VAULT / "Blog" / "wiki" / "sources"
-INDEX_FILE = VAULT / "Blog" / "wiki" / "index.md"
+RAW_DIR = VAULT / "Blog" / "raw"
 LOG_FILE = VAULT / "Blog" / "log.md"
 TEMPLATE_FILE = VAULT / "Archive" / "templates" / "source.md"
 
@@ -65,7 +65,7 @@ async def scrape_item(
     template: str,
 ) -> tuple[str | None, str | None]:
     slug = slugify(item["title"])
-    out_path = SOURCES_DIR / f"{item['date_found']}-{slug}.md"
+    out_path = RAW_DIR / f"{item['date_found']}-{slug}.md"
     try:
         result = await crawler.arun(url=item["url"], config=run_config)
         if not result.success:
@@ -73,26 +73,11 @@ async def scrape_item(
         md = result.markdown
         full_text = (md.fit_markdown or md.raw_markdown) if hasattr(md, "fit_markdown") else (md or "")
         content = render_source(template, item, full_text)
-        SOURCES_DIR.mkdir(parents=True, exist_ok=True)
+        RAW_DIR.mkdir(parents=True, exist_ok=True)
         out_path.write_text(content, encoding="utf-8")
         return slug, None
     except Exception as e:
         return None, f"{item['title'][:60]}: {e}"
-
-
-def update_index(items_with_slugs: list[tuple[dict, str]]):
-    monday, sunday = week_bounds()
-    n = len(items_with_slugs)
-    header = f"## Week {monday} / {sunday} — {n} sources"
-    existing = INDEX_FILE.read_text(encoding="utf-8") if INDEX_FILE.exists() else ""
-    if header in existing:
-        return
-    rows = "\n".join(
-        f"| {item['date_found']} | [[Blog/wiki/sources/{item['date_found']}-{slug}|{item['title']}]] |"
-        for item, slug in items_with_slugs
-    )
-    table = f"\n{header}\n| Date | Title |\n|---|---|\n{rows}\n"
-    INDEX_FILE.write_text(table + "\n" + existing, encoding="utf-8")
 
 
 async def main():
@@ -125,11 +110,8 @@ async def main():
     successful = [(item, slug) for (slug, _), item in zip(results, items) if slug]
     errors = [err for _, err in results if err]
 
-    if successful:
-        update_index(successful)
-
     titles = ", ".join(item["title"][:60] for item, _ in successful)
-    log_entry = f"\n## {today} | sunday-build | {len(successful)} sources scraped\n- Items: {titles}\n"
+    log_entry = f"\n## {today} | sunday-scrape | {len(successful)} raw files written to Blog/raw/\n- Items: {titles}\n"
     if errors:
         log_entry += "\n".join(f"- ERROR: {e}" for e in errors) + "\n"
 
@@ -137,8 +119,8 @@ async def main():
     with LOG_FILE.open("a") as f:
         f.write(log_entry)
 
-    print(f"\nDone. {len(successful)} source files written to {SOURCES_DIR}")
-    print("\nSource files created:")
+    print(f"\nDone. {len(successful)} raw files written to {RAW_DIR}")
+    print("\nRaw files created:")
     for item, slug in successful:
         print(f"  - {item['date_found']}-{slug}.md")
 
@@ -152,7 +134,7 @@ async def main():
     for f in (SCRIPT_DIR / "candidates").glob("????-??-??.json"):
         f.unlink(missing_ok=True)
 
-    print(f"\nNext: Claude reads the source files and writes the draft outline.")
+    print(f"\nNext: Claude processes Blog/raw/ → Blog/wiki/sources/ and writes the draft outline.")
 
 
 if __name__ == "__main__":
