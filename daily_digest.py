@@ -34,12 +34,34 @@ SELECT_PROMPT = """\
 You are selecting AI news articles to read in full for Caio, a college student who builds with AI \
 and writes a weekly blog.
 
-He cares about: new model releases, tool features (Claude, ChatGPT, Cursor, Gemini, etc.), \
-agent workflows, prompt techniques, open-source releases runnable on consumer hardware, \
-surprising, unique or non-obvious AI developments.
+For each article, ask: does this change how someone understands AI, can use AI, or knows where AI \
+is going? If yes, keep it. If it just measures, counts, negotiates, or patches something without \
+adding insight, skip it.
 
-Skip: funding rounds, acquisitions, valuations, vague research with no demo, \
-enterprise-only tools, generic opinion pieces.
+Keep:
+- AI doing something new — a capability, product, behavior, or use case that didn't exist or \
+wasn't obvious before (new models, agent workflows, AI in unexpected industries or products)
+- How AI models actually work, fail, or surprise — training dynamics, design tradeoffs, \
+unexpected outputs, real incidents with specific consequences, research with an accessible insight
+- Anything that changes how you build with AI — tools, techniques, architectures, prompting \
+approaches, agent patterns, practical guides; applicable today or worth understanding for later
+- Moves by major players that signal the direction AI is heading — what the move means, \
+not the legal mechanics of it
+- AI appearing in everyday products and apps people actually use (phones, cars, YouTube, Amazon, \
+creative software, etc.)
+
+Skip:
+- Financial performance, revenue targets, stock reactions, user count milestones — measuring \
+without insight
+- Deal terms, contract clauses, legal specifics — business mechanics with no directional signal
+- Outages and status updates
+- Articles with no real substance — one-sentence posts, link-only pages, minor version bumps, \
+patch notes
+- Deep technical implementation walkthroughs with no accessible punchline or new takeaway
+- Announcements of things that don't exist yet with nothing to try
+- Social or political controversy without a clear insight about the technology itself
+- Geographic adoption stats or engagement metrics with no new capability shown
+- Duplicate coverage of the same story — include only the best source, drop the rest
 
 Candidates:
 {candidates_json}
@@ -56,25 +78,36 @@ Do not drop, merge, summarize away, or ignore any article. \
 Top Stories may contain a maximum of 5 articles, but all remaining articles must be placed into \
 Important Developments, Builder Tools & Open Source, Market Signals, or Other Notable Items.
 
+If multiple articles cover the same story or release, place the best one in the appropriate section \
+and consolidate the others under it — do not give each its own entry.
+
 Return a single JSON object with this exact structure:
 {{
   "subject_line": "6-10 words capturing the day's biggest story — specific, no clickbait",
   "tldr": ["bullet 1", "bullet 2", "bullet 3"],
   "top_stories": [
     {{"title": "short clean title", "url": "...", "source": "...", \
-"what": "1 sentence — what happened", "why": "1 sentence — why it matters to builders"}}
+"what": "1 sentence — what happened", "why": "1 sentence — why it matters to builders", \
+"bullets": ["2-3 short bullets: specific data points, key causes, or actionable insights \
+beyond the what/why — e.g. exact numbers, what triggered the event, how to apply it"]}}
   ],
   "important_developments": [
     {{"title": "short clean title", "url": "...", "source": "...", \
-"what": "1 sentence — what happened and why it matters"}}
+"what": "1 sentence — what happened and why it matters", \
+"bullets": ["1-2 short bullets with a specific detail, number, or insight from the article — \
+omit if the article has no depth beyond the headline"]}}
   ],
   "builder_tools": [
     {{"title": "short clean title", "url": "...", "source": "...", \
-"what": "1 sentence — what happened and why it matters"}}
+"what": "1 sentence — what happened and why it matters", \
+"bullets": ["1-2 short bullets with a specific detail, number, or insight from the article — \
+omit if the article has no depth beyond the headline"]}}
   ],
   "market_signals": [
     {{"title": "short clean title", "url": "...", "source": "...", \
-"what": "1 sentence — what happened and why it matters"}}
+"what": "1 sentence — what happened and why it matters", \
+"bullets": ["1-2 short bullets with a specific detail, number, or insight from the article — \
+omit if the article has no depth beyond the headline"]}}
   ],
   "other_notable": [
     {{"title": "short clean title", "url": "...", "source": "...", \
@@ -83,13 +116,15 @@ Return a single JSON object with this exact structure:
 }}
 
 Section rules:
-- top_stories: max 5, the most impactful/actionable articles — must have both what + why
+- top_stories: max 5, the most impactful/actionable articles — must have what, why, and bullets
 - important_developments: product updates, model news, company moves not in top stories
 - builder_tools: tools, APIs, open-source projects, prompt techniques usable today
 - market_signals: funding, enterprise strategy, policy, major business moves
-- other_notable: anything that does not fit cleanly elsewhere — use this rather than dropping articles
+- other_notable: anything that does not fit cleanly elsewhere — use this rather than dropping articles; \
+  bullets optional here since these are low-priority
 - news.smol.ai articles are the most curated — prioritize them for top_stories
 - shorten and clean titles — remove clickbait, no truncation with "..."
+- bullets must be grounded in actual article content — do not invent or speculate
 - return JSON only, no markdown, no explanation
 
 Articles:
@@ -238,19 +273,34 @@ def src_tag(source: str) -> str:
     return f'<span style="color:#888;font-size:12px;font-weight:400;"> ({source})</span>'
 
 
+def render_sub_bullets(bullets: list[str], indent: str = "18px") -> str:
+    if not bullets:
+        return ""
+    items = "".join(
+        f'<li style="margin-bottom:3px;font-size:12px;color:#444;line-height:1.5;">{b}</li>'
+        for b in bullets
+    )
+    return (
+        f'<ul style="margin:5px 0 0 {indent};padding:0 0 0 14px;list-style:disc;">'
+        f'{items}</ul>'
+    )
+
+
 def render_top_stories(items: list[dict]) -> str:
     if not items:
         return ""
     parts = []
     for i, s in enumerate(items, 1):
+        sub = render_sub_bullets(s.get("bullets", []))
         parts.append(
             f'<div style="margin-bottom:20px;">'
             f'<p style="margin:0 0 4px;font-size:14px;font-weight:600;line-height:1.4;">'
             f'{i}. {a(s["url"], s["title"])}{src_tag(s.get("source", ""))}</p>'
             f'<p style="margin:0 0 2px 18px;font-size:13px;color:#333;line-height:1.5;">'
             f'&rarr; {s["what"]}</p>'
-            f'<p style="margin:0 0 0 18px;font-size:13px;color:#555;font-style:italic;line-height:1.5;">'
+            f'<p style="margin:0 0 2px 18px;font-size:13px;color:#555;font-style:italic;line-height:1.5;">'
             f'&rarr; {s["why"]}</p>'
+            f'{sub}'
             f'</div>'
         )
     return "\n".join(parts)
@@ -261,11 +311,15 @@ def render_bullets(items: list[dict]) -> str:
         return ""
     parts = []
     for s in items:
+        sub = render_sub_bullets(s.get("bullets", []), indent="16px")
         parts.append(
-            f'<p style="margin:0 0 10px;font-size:13px;line-height:1.5;">'
+            f'<div style="margin-bottom:10px;">'
+            f'<p style="margin:0;font-size:13px;line-height:1.5;">'
             f'&bull; <span style="font-weight:600;">{a(s["url"], s["title"])}</span>'
             f'{src_tag(s.get("source", ""))}'
             f' &mdash; {s["what"]}</p>'
+            f'{sub}'
+            f'</div>'
         )
     return "\n".join(parts)
 
