@@ -1,0 +1,198 @@
+[
+  {
+    "title": "Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library",
+    "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T16:09:26+00:00"
+  },
+  {
+    "title": "The More Young People Use AI, the More They Hate It",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/920401/gen-z-ai",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T14:34:36+00:00"
+  },
+  {
+    "title": "Chrome looks set to ship an LLM Prompt API to the web. We oppose this API",
+    "url": "https://mastodon.social/@firefoxwebdevs/116492853483021978",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T09:16:07+00:00"
+  },
+  {
+    "title": "Clojure us the future of AI coding, but you won't use it",
+    "url": "https://latypoff.com/clojure-is-the-future-of-ai-coding-but-you-wont-use-it/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-29T19:19:03+00:00"
+  },
+  {
+    "title": "Introducing Advanced Account Security",
+    "url": "https://openai.com/index/advanced-account-security",
+    "source": "openai.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Enabling a new model for healthcare with AI co-clinician",
+    "url": "https://deepmind.google/blog/ai-co-clinician/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T12:14:15+00:00"
+  },
+  {
+    "title": "How Kepler built verifiable AI for financial services with Claude",
+    "url": "https://claude.com/blog/how-kepler-built-verifiable-ai-for-financial-services-with-claude",
+    "source": "claude.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Lessons from building Claude Code: Prompt caching is everything",
+    "url": "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything",
+    "source": "claude.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Security is now in public beta",
+    "url": "https://claude.com/blog/claude-security-public-beta",
+    "source": "claude.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Building AI agents for the enterprise",
+    "url": "https://claude.com/blog/building-ai-agents-for-the-enterprise",
+    "source": "claude.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Apr 30, 2026Societal ImpactsHow people ask Claude for personal guidance",
+    "url": "https://www.anthropic.com/research/claude-personal-guidance",
+    "source": "anthropic.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T00:00:00+00:00"
+  },
+  {
+    "title": "Codex CLI 0.128.0 adds /goal",
+    "url": "https://simonwillison.net/2026/Apr/30/codex-goals/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T23:23:17+00:00"
+  },
+  {
+    "title": "Our evaluation of OpenAI's GPT-5.5 cyber capabilities",
+    "url": "https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T23:03:24+00:00"
+  },
+  {
+    "title": "Quoting Andrew Kelley",
+    "url": "https://simonwillison.net/2026/Apr/30/andrew-kelley/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T21:24:55+00:00"
+  },
+  {
+    "title": "We need RSS for sharing abundant vibe-coded apps",
+    "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T18:38:48+00:00"
+  },
+  {
+    "title": "Anthropic's Claude Opus 4.7",
+    "url": "https://news.smol.ai/issues/26-04-16-opus-47/",
+    "source": "news.smol.ai",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-16T05:44:39+00:00"
+  },
+  {
+    "title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet",
+    "url": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-05-01T02:00:00+00:00"
+  },
+  {
+    "title": "Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks",
+    "url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T23:07:56+00:00"
+  },
+  {
+    "title": "Apple was surprised by AI-driven demand for Macs",
+    "url": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T22:12:52+00:00"
+  },
+  {
+    "title": "Legal AI startup Legora hits $5.6B valuation and its battle with Harvey just got hotter",
+    "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T20:14:47+00:00"
+  },
+  {
+    "title": "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too",
+    "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T19:27:41+00:00"
+  },
+  {
+    "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+    "url": "https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T18:20:03+00:00"
+  },
+  {
+    "title": "Elon Musk testifies that xAI trained Grok on OpenAI models",
+    "url": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T18:03:57+00:00"
+  },
+  {
+    "title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder",
+    "url": "https://techcrunch.com/2026/04/30/fda-approval-fundraising-and-the-reality-of-building-in-healthcare-according-to-bioticsai-founder/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T17:53:53+00:00"
+  },
+  {
+    "title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles",
+    "url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T17:46:54+00:00"
+  },
+  {
+    "title": "Stripe introduces Link, a digital wallet that autonomous AI agents can use, too",
+    "url": "https://techcrunch.com/2026/04/30/stripe-link-digital-wallet-ai-agents-shopping/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T17:15:19+00:00"
+  },
+  {
+    "title": "Salesforce is crowdsourcing its AI roadmap — with customers",
+    "url": "https://techcrunch.com/2026/04/30/salesforce-is-crowdsourcing-its-ai-roadmap-with-customers/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T16:06:49+00:00"
+  },
+  {
+    "title": "Meta says its business AI now facilitates 10 million conversations a week",
+    "url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-01",
+    "pub_date": "2026-04-30T12:08:45+00:00"
+  }
+]
