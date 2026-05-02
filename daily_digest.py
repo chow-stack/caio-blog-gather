@@ -86,9 +86,9 @@ Return a single JSON object with this exact structure:
   "tldr": ["bullet 1", "bullet 2", "bullet 3"],
   "top_stories": [
     {{"title": "short clean title", "url": "...", "source": "...", \
-"what": "1 sentence — what happened", "why": "1 sentence — why it matters to builders", \
+"what": "1 sentence — what happened and why it matters to builders", \
 "bullets": ["2-3 short bullets: specific data points, key causes, or actionable insights \
-beyond the what/why — e.g. exact numbers, what triggered the event, how to apply it"]}}
+beyond the what — e.g. exact numbers, what triggered the event, how to apply it"]}}
   ],
   "important_developments": [
     {{"title": "short clean title", "url": "...", "source": "...", \
@@ -115,7 +115,7 @@ omit if the article has no depth beyond the headline"]}}
 }}
 
 Section rules:
-- top_stories: max 5, the most impactful/actionable articles — must have what, why, and bullets
+- top_stories: max 5, the most impactful/actionable articles — must have what and bullets
 - important_developments: product updates, model news, company moves not in top stories
 - builder_tools: tools, APIs, open-source projects, prompt techniques usable today
 - market_signals: funding, enterprise strategy, policy, major business moves
@@ -136,7 +136,7 @@ def load_candidates(today: str) -> list[dict]:
     return json.loads(path.read_text())
 
 
-def filter_by_recency(candidates: list[dict], hours: int = 24) -> list[dict]:
+def filter_by_recency(candidates: list[dict], hours: int = 48) -> list[dict]:
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     result = []
     for c in candidates:
@@ -283,15 +283,13 @@ def render_top_stories(items: list[dict]) -> str:
         return ""
     parts = []
     for i, s in enumerate(items, 1):
-        sub = render_sub_bullets(s.get("bullets", []))
+        sub = render_sub_bullets(s.get("bullets", []), indent="16px")
         parts.append(
-            f'<div style="margin-bottom:20px;">'
-            f'<p style="margin:0 0 4px;font-size:14px;font-weight:600;line-height:1.4;">'
-            f'{i}. {a(s["url"], s["title"])}{src_tag(s.get("source", ""))}</p>'
-            f'<p style="margin:0 0 2px 18px;font-size:13px;color:#333;line-height:1.5;">'
-            f'&rarr; {s["what"]}</p>'
-            f'<p style="margin:0 0 2px 18px;font-size:13px;color:#555;font-style:italic;line-height:1.5;">'
-            f'&rarr; {s["why"]}</p>'
+            f'<div style="margin-bottom:10px;">'
+            f'<p style="margin:0;font-size:13px;line-height:1.5;">'
+            f'<span style="font-weight:600;">{i}. {a(s["url"], s["title"])}</span>'
+            f'{src_tag(s.get("source", ""))}'
+            f' &mdash; {s["what"]}</p>'
             f'{sub}'
             f'</div>'
         )
