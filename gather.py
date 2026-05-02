@@ -16,8 +16,6 @@ SEEN_FILE = SCRIPT_DIR / "seen_urls.json"
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp", ".ico", ".avif"}
 SKIP_DOMAINS = {"x.com", "twitter.com", "instagram.com", "facebook.com", "youtube.com", "linkedin.com"}
-SKIP_TITLES = {"not much happened today", "see all issues", "issues", "subscribe", "upgrade"}
-SKIP_TITLE_WORDS = {"terms", "privacy", "cookie", "report abuse", "powered by", "licensing", "accessibility"}
 
 
 def load_seen() -> set:
@@ -32,22 +30,14 @@ def domain(url: str) -> str:
     return urlparse(url).netloc.removeprefix("www.")
 
 
-def clean_title(text: str, src_domain: str) -> str:
-    text = " ".join(text.split())
-    if src_domain == "news.smol.ai":
-        text = re.sub(r"\s*Show details.*$", "", text, flags=re.IGNORECASE).strip()
-        text = re.sub(r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\s+", "", text).strip()
-    return text
+def clean_title(text: str) -> str:
+    return " ".join(text.split())
 
 
 def is_junk(title: str, url: str) -> bool:
     if not title or len(title) < 5:
         return True
-    if title.lower() in SKIP_TITLES:
-        return True
     if title.startswith(("![", "http", "#")):
-        return True
-    if any(w in title.lower() for w in SKIP_TITLE_WORDS):
         return True
     if Path(urlparse(url).path).suffix.lower() in IMAGE_EXTS:
         return True
@@ -56,19 +46,14 @@ def is_junk(title: str, url: str) -> bool:
     return False
 
 
-SMOL_SOURCE = "news.smol.ai"
-
-
 def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | None]:
     cutoff = datetime.now(timezone.utc) - timedelta(days=3)
-    is_smol = domain(feed_url) == SMOL_SOURCE
     try:
         feed = feedparser.parse(feed_url)
         if feed.bozo and not feed.entries:
             return [], f"parse error: {feed.bozo_exception}"
         src = domain(feed.get("feed", {}).get("link", feed_url) or feed_url) or domain(feed_url)
         candidates = []
-        smol_latest_added = False
         for entry in feed.entries:
             url = entry.get("link", "").strip().split("#atom-")[0]
             title = entry.get("title", "").strip()
@@ -78,16 +63,13 @@ def parse_rss_feed(feed_url: str, seen: set, today: str) -> tuple[list, str | No
             pub_date_str = None
             if published:
                 pub_dt = datetime(*published[:6], tzinfo=timezone.utc)
-                # For smol.ai, always include the single latest entry regardless of age
-                if pub_dt < cutoff and not (is_smol and not smol_latest_added):
+                if pub_dt < cutoff:
                     continue
                 pub_date_str = pub_dt.isoformat()
-            title = clean_title(title, src)
+            title = clean_title(title)
             if is_junk(title, url):
                 continue
             candidates.append({"title": title, "url": url, "source": src, "date_found": today, "pub_date": pub_date_str})
-            if is_smol:
-                smol_latest_added = True
         return candidates, None
     except Exception as e:
         return [], str(e)

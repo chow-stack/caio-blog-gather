@@ -9,6 +9,5 @@ RSS_SOURCES = [
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
     "https://simonwillison.net/atom/everything/",
-    "https://news.smol.ai/rss.xml",
     "https://techcrunch.com/category/artificial-intelligence/feed/",
 ]

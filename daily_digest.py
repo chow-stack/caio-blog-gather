@@ -20,7 +20,6 @@ DIGESTS_DIR = SCRIPT_DIR / "digests"
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
-SMOL_SOURCE = "news.smol.ai"
 MODELS = [
     "gemini-2.5-flash",       # primary — best price-performance, stable GA
     "gemini-2.5-flash-lite",  # fallback — cheaper, higher quota headroom
@@ -122,7 +121,6 @@ Section rules:
 - market_signals: funding, enterprise strategy, policy, major business moves
 - other_notable: anything that does not fit cleanly elsewhere — use this rather than dropping articles; \
   bullets optional here since these are low-priority
-- news.smol.ai articles are the most curated — prioritize them for top_stories
 - shorten and clean titles — remove clickbait, no truncation with "..."
 - bullets must be grounded in actual article content — do not invent or speculate
 - return JSON only, no markdown, no explanation
@@ -191,18 +189,12 @@ def call_gemini(client: genai.Client, prompt: str, *, json_mode: bool = False) -
 
 def select_to_scrape(candidates: list[dict], client: genai.Client) -> tuple[list[dict], str | None]:
     """Returns (selected_articles, model_used). model_used is None if no LLM call was made."""
-    smol = [c for c in candidates if c["source"] == SMOL_SOURCE]
-    others = [c for c in candidates if c["source"] != SMOL_SOURCE]
-
-    remaining = SCRAPE_TOP_N - len(smol)
-    if remaining <= 0 or not others:
-        return smol[:SCRAPE_TOP_N], None
-
-    slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in others]
-    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=remaining)
+    if not candidates:
+        return [], None
+    slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in candidates]
+    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=SCRAPE_TOP_N)
     text, model_used = call_gemini(client, prompt, json_mode=True)
-    llm_selected = json.loads(strip_fences(text))
-    return smol + llm_selected, model_used
+    return json.loads(strip_fences(text)), model_used
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
