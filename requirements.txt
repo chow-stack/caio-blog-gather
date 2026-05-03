@@ -1,3 +1,4 @@
 crawl4ai
 feedparser
 google-genai
+python-dotenv

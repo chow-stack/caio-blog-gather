@@ -25,6 +25,7 @@ import time
 from datetime import date, timedelta
 from pathlib import Path
 
+from dotenv import load_dotenv
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from crawl4ai.content_filter_strategy import PruningContentFilter
 from crawl4ai.markdown_generation_strategy import DefaultMarkdownGenerator
@@ -442,6 +443,7 @@ def write_log(processed: list[dict], draft_name: str):
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 async def main():
+    load_dotenv(SCRIPT_DIR / ".env")
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise SystemExit("ERROR: GEMINI_API_KEY not set.")
