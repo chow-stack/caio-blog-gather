@@ -1,0 +1,184 @@
+[
+  {
+    "title": "When everyone has AI and the company still learns nothing",
+    "url": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-05T09:30:22+00:00"
+  },
+  {
+    "title": "Google Chrome silently installs a 4 GB AI model on your device without consent",
+    "url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-05T07:34:55+00:00"
+  },
+  {
+    "title": "Train Your Own LLM from Scratch",
+    "url": "https://github.com/angelos-p/llm-from-scratch",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-05T04:09:17+00:00"
+  },
+  {
+    "title": "AI startup JuliaHub raises $65M to rival Simulink",
+    "url": "https://www.axios.com/2026/04/30/bob-muglia-ai-hardware-engineering",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T20:27:55+00:00"
+  },
+  {
+    "title": "How OpenAI delivers low-latency voice AI at scale",
+    "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T19:42:47+00:00"
+  },
+  {
+    "title": "Usage-based pricing killing your vibe, here's how to roll your own local AI",
+    "url": "https://www.theregister.com/2026/05/02/local_ai_coding_agents/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T18:19:04+00:00"
+  },
+  {
+    "title": "OpenAI, Google, and Microsoft Back Bill to Fund 'AI Literacy' in Schools",
+    "url": "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T16:21:38+00:00"
+  },
+  {
+    "title": "AI deleted my most tests, and said \"All Tests Pass\"",
+    "url": "https://typia.io/blog/ai-deleted-my-tests-and-said-all-tests-pass/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-03T15:15:02+00:00"
+  },
+  {
+    "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+    "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+    "source": "openai.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T21:00:00+00:00"
+  },
+  {
+    "title": "How OpenAI delivers low-latency voice AI at scale",
+    "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+    "source": "openai.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T00:00:00+00:00"
+  },
+  {
+    "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs",
+    "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+    "source": "anthropic.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T00:00:00+00:00"
+  },
+  {
+    "title": "Quoting John Gruber",
+    "url": "https://simonwillison.net/2026/May/5/john-gruber/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-05T00:46:29+00:00"
+  },
+  {
+    "title": "Granite 4.1 3B SVG Pelican Gallery",
+    "url": "https://simonwillison.net/2026/May/4/granite-41-3b-svg-pelican-gallery/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T23:49:24+00:00"
+  },
+  {
+    "title": "Quoting Andy Masley",
+    "url": "https://simonwillison.net/2026/May/4/andy-masley/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T22:51:09+00:00"
+  },
+  {
+    "title": "April 2026 newsletter",
+    "url": "https://simonwillison.net/2026/May/4/april-newsletter/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T22:38:36+00:00"
+  },
+  {
+    "title": "TRE Python binding — ReDoS robustness demo",
+    "url": "https://simonwillison.net/2026/May/4/tre-python-binding/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T17:52:00+00:00"
+  },
+  {
+    "title": "Redis Array Playground",
+    "url": "https://simonwillison.net/2026/May/4/redis-array/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T15:53:57+00:00"
+  },
+  {
+    "title": "As workers worry about AI, Nvidia’s Jensen Huang says AI is ‘creating an enormous number of jobs’",
+    "url": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-05T03:31:54+00:00"
+  },
+  {
+    "title": "OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO",
+    "url": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T21:53:21+00:00"
+  },
+  {
+    "title": "Image AI models now drive app growth, beating chatbot upgrades",
+    "url": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T19:12:49+00:00"
+  },
+  {
+    "title": "Elon Musk’s only AI expert witness at the OpenAI trial fears an AGI arms race",
+    "url": "https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T16:57:47+00:00"
+  },
+  {
+    "title": "Sierra raises $950M as the race to own enterprise AI gets serious",
+    "url": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T16:45:55+00:00"
+  },
+  {
+    "title": "Elon Musk sent ominous texts to Greg Brockman, Sam Altman after asking for a settlement, OpenAI claims",
+    "url": "https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T16:36:03+00:00"
+  },
+  {
+    "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+    "url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T15:59:24+00:00"
+  },
+  {
+    "title": "5 days only: Bring a partner or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+    "url": "https://techcrunch.com/2026/05/04/5-days-only-bring-a-partner-or-colleague-and-get-50-off-a-second-techcrunch-disrupt-2026-pass/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T14:00:00+00:00"
+  },
+  {
+    "title": "DoorDash adds AI tools to speed up merchant onboarding, edit photos of dishes",
+    "url": "https://techcrunch.com/2026/05/04/doordash-adds-ai-tools-to-speed-up-merchant-onboarding-edit-photos-of-dishes/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-05",
+    "pub_date": "2026-05-04T13:00:00+00:00"
+  }
+]
