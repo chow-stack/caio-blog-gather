@@ -1,0 +1,275 @@
+[
+  {
+    "title": "ZAYA1-8B: An 8B Moe Model with 760M Active Params Matching DeepSeek-R1 on Math",
+    "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-07T08:56:51+00:00"
+  },
+  {
+    "title": "Making LLM Training Faster with Unsloth and NVIDIA",
+    "url": "https://unsloth.ai/blog/nvidia-collab",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-07T07:15:11+00:00"
+  },
+  {
+    "title": "Richard Dawkins concludes AI is conscious, even if it doesn't know it",
+    "url": "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T22:47:45+00:00"
+  },
+  {
+    "title": "MIT’s virtual violin offers luthiers a new design tool",
+    "url": "https://arstechnica.com/science/2026/05/mits-virtual-violin-offers-luthiers-a-new-design-tool/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T20:02:42+00:00"
+  },
+  {
+    "title": "Learning the Integral of a Diffusion Model",
+    "url": "https://sander.ai/2026/05/06/flow-maps.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T18:46:27+00:00"
+  },
+  {
+    "title": "Canadian fiddler sues Google after AI Overview claimed he was a sex offender",
+    "url": "https://www.theguardian.com/music/2026/may/05/canadian-ashley-macisaac-fiddler-musician-singer-songwriter-sues-google-ai-sex-offender-ntwnfb",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T16:12:50+00:00"
+  },
+  {
+    "title": "Google Chrome silently installs 4 GB Gemini Nano AI model without consent",
+    "url": "https://alternativeto.net/news/2026/5/google-chrome-silently-installs-4-gb-gemini-nano-ai-model-to-user-device-without-consent/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T14:27:25+00:00"
+  },
+  {
+    "title": "Show HN: Adam – An embeddable cross-platform AI agent library",
+    "url": "https://github.com/sqliteai/adam",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T12:56:29+00:00"
+  },
+  {
+    "title": "Building the deployment tool I wish I had",
+    "url": "https://ruuda.nl/2026/deptool",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T12:49:04+00:00"
+  },
+  {
+    "title": "Visualize Any Hugging Face Model",
+    "url": "https://hfviewer.com/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T09:53:35+00:00"
+  },
+  {
+    "title": "Academics Need to Wake Up on AI",
+    "url": "https://www.popularbydesign.org/p/academics-need-to-wake-up-on-ai",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T06:34:32+00:00"
+  },
+  {
+    "title": "SubQ: Sub-quadratic LLM built for 12M-token context",
+    "url": "https://subq.ai/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-05T18:06:57+00:00"
+  },
+  {
+    "title": "Ask HN: Is there a term for feeling sad about forced AI adoption?",
+    "url": "https://news.ycombinator.com/item?id=48026211",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-05T18:04:36+00:00"
+  },
+  {
+    "title": "Parloa builds service agents customers want to talk to",
+    "url": "https://openai.com/index/parloa",
+    "source": "openai.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-07T11:00:00+00:00"
+  },
+  {
+    "title": "Introducing ChatGPT Futures: Class of 2026",
+    "url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
+    "source": "openai.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "Uber uses OpenAI to help people earn smarter and book faster",
+    "url": "https://openai.com/index/uber",
+    "source": "openai.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "How frontier enterprises are building an AI advantage",
+    "url": "https://openai.com/index/introducing-b2b-signals",
+    "source": "openai.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+    "url": "https://openai.com/index/singular-bank",
+    "source": "openai.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+    "source": "huggingface.co",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T19:06:55+00:00"
+  },
+  {
+    "title": "New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration",
+    "url": "https://claude.com/blog/new-in-claude-managed-agents",
+    "source": "claude.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+    "url": "https://www.anthropic.com/news/higher-limits-spacex",
+    "source": "anthropic.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T00:00:00+00:00"
+  },
+  {
+    "title": "May 7, 2026PolicyFocus areas for The Anthropic Institute",
+    "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
+    "source": "anthropic.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-07T00:00:00+00:00"
+  },
+  {
+    "title": "Live blog: Code w/ Claude 2026",
+    "url": "https://simonwillison.net/2026/May/6/code-w-claude-2026/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:58:27+00:00"
+  },
+  {
+    "title": "Vibe coding and agentic engineering are getting closer than I'd like",
+    "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T14:24:08+00:00"
+  },
+  {
+    "title": "Five architects of the AI economy explain where the wheels are coming off",
+    "url": "https://techcrunch.com/2026/05/06/five-architects-of-the-ai-economy-explain-where-the-wheels-are-coming-off/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-07T05:25:10+00:00"
+  },
+  {
+    "title": "Barry Diller trusts Sam Altman. But ‘trust is irrelevant’ as AGI nears, he says.",
+    "url": "https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T21:57:56+00:00"
+  },
+  {
+    "title": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+    "url": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T21:43:24+00:00"
+  },
+  {
+    "title": "Is xAI a neocloud now?",
+    "url": "https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T21:32:55+00:00"
+  },
+  {
+    "title": "How Elon Musk left OpenAI, according to Greg Brockman",
+    "url": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T18:23:54+00:00"
+  },
+  {
+    "title": "SpaceX may spend up to $119B on ‘Terafab’ chip factory in Texas",
+    "url": "https://techcrunch.com/2026/05/06/spacex-may-spend-up-to-119-billion-on-terafab-chip-factory-in-texas/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T17:23:08+00:00"
+  },
+  {
+    "title": "DeepSeek could hit $45B valuation from its first investment round",
+    "url": "https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T17:20:34+00:00"
+  },
+  {
+    "title": "Google updates AI search to include quotes from Reddit and other sources",
+    "url": "https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:49:39+00:00"
+  },
+  {
+    "title": "Khosla-backed robotics startup Genesis AI has gone full stack, demo shows",
+    "url": "https://techcrunch.com/2026/05/06/khosla-backed-robotics-startup-genesis-ai-has-gone-full-stack-demo-shows/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:46:38+00:00"
+  },
+  {
+    "title": "Tinder owner Match Group is slowing hiring to pay for its increased use of AI tools",
+    "url": "https://techcrunch.com/2026/05/06/tinder-owner-match-group-is-slowing-hiring-to-pay-for-its-increased-use-of-ai-tools/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:27:36+00:00"
+  },
+  {
+    "title": "Apple to pay $250M to settle lawsuit over Siri’s delayed AI features",
+    "url": "https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:12:49+00:00"
+  },
+  {
+    "title": "Ethos raises $22.75M from a16z for its expert network with voice onboarding",
+    "url": "https://techcrunch.com/2026/05/06/ethos-raises-22-75m-from-a16z-for-its-expert-network-with-voice-onboarding/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T15:00:00+00:00"
+  },
+  {
+    "title": "At TechCrunch Disrupt 2026, all your M&A questions will be answered",
+    "url": "https://techcrunch.com/2026/05/06/at-techcrunch-disrupt-2026-all-your-ma-questions-will-be-answered/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T14:30:00+00:00"
+  },
+  {
+    "title": "3 days left to lock in 50% off a second ticket to TechCrunch Disrupt 2026",
+    "url": "https://techcrunch.com/2026/05/06/3-days-left-to-lock-in-50-off-a-second-ticket-to-techcrunch-disrupt-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T14:00:00+00:00"
+  },
+  {
+    "title": "AI boom pushes Samsung to $1T",
+    "url": "https://techcrunch.com/2026/05/06/ai-boom-pushes-samsung-to-1t/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-07",
+    "pub_date": "2026-05-06T13:54:09+00:00"
+  }
+]
