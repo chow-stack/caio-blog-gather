@@ -1,5 +1,3 @@
-VAULT_PATH = "../caio-os"
-
 RSS_SOURCES = [
     "https://hnrss.org/newest?q=AI+model+OR+AI+tool+OR+LLM&points=20",
     "https://openai.com/news/rss.xml",

@@ -29,8 +29,7 @@ ALL_SECTIONS = ["top_stories", "important_developments", "builder_tools", "marke
 
 # Call 1: titles only → select what's worth scraping
 SELECT_PROMPT = """\
-You are selecting AI news articles to read in full for Caio, a college student who builds with AI \
-and writes a weekly blog.
+You are selecting AI news articles to read in full for Caio, a college student who builds with AI.
 
 For each article, ask: does this change how someone understands AI, can use AI, or knows where AI \
 is going? If yes, keep it. If it just measures, counts, negotiates, or patches something without \
@@ -347,7 +346,7 @@ def build_empty_email_html(today_label: str, reason: str) -> str:
   </div>
 
   <hr style="border:none;border-top:1px solid #e8e8e8;margin:40px 0 24px;">
-  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; automated</p>
+  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-os-scripts &nbsp;&middot;&nbsp; automated</p>
 
 </body>
 </html>"""
@@ -393,7 +392,7 @@ def build_email_html(digest: dict, n_articles: int, total_candidates: int, today
   {section_block("Other Notable Items", render_bullets(digest.get("other_notable", [])))}
 
   {hr()}
-  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-blog-gather &nbsp;&middot;&nbsp; {format_models_used(model_select, model_digest)}</p>
+  <p style="margin:0;font-size:11px;color:#bbb;">AI Daily &nbsp;&middot;&nbsp; caio-os-scripts &nbsp;&middot;&nbsp; {format_models_used(model_select, model_digest)}</p>
 
 </body>
 </html>"""

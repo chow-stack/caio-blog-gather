@@ -6,12 +6,10 @@ from urllib.parse import urlparse
 
 import feedparser
 
-from sources import RSS_SOURCES, VAULT_PATH
+from sources import RSS_SOURCES
 
 SCRIPT_DIR = Path(__file__).parent
-VAULT = SCRIPT_DIR / VAULT_PATH
 CANDIDATES_DIR = SCRIPT_DIR / "candidates"
-LOG_FILE = VAULT / "Blog" / "log.md"
 SEEN_FILE = SCRIPT_DIR / "seen_urls.json"
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp", ".ico", ".avif"}
@@ -90,24 +88,6 @@ def main():
     out_file = CANDIDATES_DIR / f"{today}.json"
     out_file.write_text(json.dumps(all_candidates, indent=2, ensure_ascii=False))
     save_seen(seen)
-
-    source_sections = []
-    for (candidates, error), feed_url in zip(results, RSS_SOURCES):
-        src_domain = domain(feed_url)
-        header = f"### {src_domain} (RSS) — {len(candidates)}"
-        if error:
-            header += f" (ERROR: {error})"
-        lines = [header] + [f"- [{c['title']}]({c['url']})" for c in candidates]
-        source_sections.append("\n".join(lines))
-
-    log_entry = (
-        f"\n## {today} | gather | {len(all_candidates)} new candidates\n\n"
-        + "\n\n".join(source_sections)
-        + "\n"
-    )
-    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with LOG_FILE.open("a") as f:
-        f.write(log_entry)
 
     print(f"Done. {len(all_candidates)} candidates → {out_file}")
     for (_, error), feed_url in zip(results, RSS_SOURCES):

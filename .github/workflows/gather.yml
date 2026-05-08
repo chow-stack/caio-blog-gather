@@ -29,11 +29,6 @@ jobs:
       - name: Install browser (crawl4ai / Patchright)
         run: crawl4ai-setup
 
-      - name: Create vault log path
-        # gather.py writes to ../caio-os/Blog/log.md — stub the directory so the
-        # script doesn't crash.
-        run: mkdir -p ../caio-os/Blog
-
       - name: Run gather.py
         run: python gather.py
 
