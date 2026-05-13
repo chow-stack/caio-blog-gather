@@ -1,0 +1,163 @@
+[
+  {
+    "title": "How finance teams use Codex",
+    "url": "https://openai.com/academy/how-finance-teams-use-codex",
+    "source": "openai.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T15:00:00+00:00"
+  },
+  {
+    "title": "How NVIDIA engineers and researchers build with Codex",
+    "url": "https://openai.com/index/nvidia",
+    "source": "openai.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "What Parameter Golf taught us about AI-assisted research",
+    "url": "https://openai.com/index/what-parameter-golf-taught-us",
+    "source": "openai.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "AutoScout24 scales engineering with AI-powered workflows",
+    "url": "https://openai.com/index/autoscout24",
+    "source": "openai.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "How Anthropic's cybersecurity team built a threat detection platform with Claude Code",
+    "url": "https://claude.com/blog/how-anthropic-uses-claude-cybersecurity",
+    "source": "claude.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "Claude for the legal industry",
+    "url": "https://claude.com/blog/claude-for-the-legal-industry",
+    "source": "claude.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "Code w/ Claude SF 2026: Building on the AI exponential",
+    "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+    "source": "claude.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T00:00:00+00:00"
+  },
+  {
+    "title": "CSP Allow-list Experiment",
+    "url": "https://simonwillison.net/2026/May/13/csp-allow/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-13T04:50:45+00:00"
+  },
+  {
+    "title": "datasette 1.0a29",
+    "url": "https://simonwillison.net/2026/May/12/datasette/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T23:41:06+00:00"
+  },
+  {
+    "title": "Quoting Mo Bitar",
+    "url": "https://simonwillison.net/2026/May/12/mo-bitar/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T22:59:58+00:00"
+  },
+  {
+    "title": "Quoting Mitchell Hashimoto",
+    "url": "https://simonwillison.net/2026/May/12/mitchell-hashimoto/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T22:21:51+00:00"
+  },
+  {
+    "title": "llm 0.32a2",
+    "url": "https://simonwillison.net/2026/May/12/llm/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:45:07+00:00"
+  },
+  {
+    "title": "Medicare’s new payment model is built for AI, and most of the tech world has no idea",
+    "url": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-13T00:26:48+00:00"
+  },
+  {
+    "title": "Musk mulled handing OpenAI to his children, Altman testifies",
+    "url": "https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T18:05:15+00:00"
+  },
+  {
+    "title": "Anthropic warns investors against secondary platforms offering access to its shares",
+    "url": "https://techcrunch.com/2026/05/12/anthropic-warns-investors-against-secondary-platforms-offering-access-to-its-shares/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:36:34+00:00"
+  },
+  {
+    "title": "Report: Google and SpaceX in talks to put data centers into orbit",
+    "url": "https://techcrunch.com/2026/05/12/report-google-and-spacex-in-talks-to-put-data-centers-into-orbit/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:30:57+00:00"
+  },
+  {
+    "title": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets",
+    "url": "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:01:00+00:00"
+  },
+  {
+    "title": "Google adds Gemini-powered dictation to Gboard, which could be bad news for dictation startups",
+    "url": "https://techcrunch.com/2026/05/12/google-adds-gemini-powered-dictation-to-gboard-which-could-be-bad-news-for-dictation-startups/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:00:00+00:00"
+  },
+  {
+    "title": "The AI legal services industry is heating up — Anthropic is getting in on the action",
+    "url": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:00:00+00:00"
+  },
+  {
+    "title": "Google brings agentic AI and vibe-coded widgets to Android",
+    "url": "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:00:00+00:00"
+  },
+  {
+    "title": "Google’s ‘Create My Widget’ feature will let you vibe-code your own widgets",
+    "url": "https://techcrunch.com/2026/05/12/googles-create-my-widget-feature-will-let-you-vibe-code-your-own-widgets/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T17:00:00+00:00"
+  },
+  {
+    "title": "Threads tests a Meta AI integration that works similarly to Grok",
+    "url": "https://techcrunch.com/2026/05/12/threads-tests-a-meta-ai-integration-that-works-similarly-to-grok/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T16:34:36+00:00"
+  },
+  {
+    "title": "Dessn raises $6M for its production-focused design tool",
+    "url": "https://techcrunch.com/2026/05/12/dessn-raises-6m-for-its-production-focused-design-tool/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-13",
+    "pub_date": "2026-05-12T13:00:00+00:00"
+  }
+]
