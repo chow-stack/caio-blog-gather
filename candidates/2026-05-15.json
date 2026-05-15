@@ -1,0 +1,261 @@
+[
+  {
+    "title": "Overseas fakers using AI videos to push a narrative of UK decline, BBC finds",
+    "url": "https://www.bbc.co.uk/news/articles/ckgpyn30dp3o",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T09:57:03+00:00"
+  },
+  {
+    "title": "UK sovereign LLM inference",
+    "url": "https://relax.ai/docs",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T09:27:26+00:00"
+  },
+  {
+    "title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
+    "url": "https://github.com/Andyyyy64/whichllm",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T09:19:24+00:00"
+  },
+  {
+    "title": "Show HN: GlycemicGPT – Open-source AI-powered diabetes management",
+    "url": "https://github.com/GlycemicGPT/GlycemicGPT",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T04:48:23+00:00"
+  },
+  {
+    "title": "Coldkey – Post-quantum age key generation and paper backup tool",
+    "url": "https://github.com/pike00/coldkey",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T04:02:09+00:00"
+  },
+  {
+    "title": "Access to frontier AI will soon be limited by economic and security constraints",
+    "url": "https://writing.antonleicht.me/p/cut-off",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-15T01:08:04+00:00"
+  },
+  {
+    "title": "LLM Policy for Rust Compiler",
+    "url": "https://github.com/rust-lang/rust-forge/pull/1040",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T23:37:21+00:00"
+  },
+  {
+    "title": "Have a Coherent AI Policy",
+    "url": "https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T23:24:45+00:00"
+  },
+  {
+    "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
+    "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T22:37:40+00:00"
+  },
+  {
+    "title": "The AI zombification of universities",
+    "url": "https://www.thenewcritic.com/p/the-great-zombification",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T18:37:08+00:00"
+  },
+  {
+    "title": "AI is making me dumb",
+    "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T18:19:28+00:00"
+  },
+  {
+    "title": "The people writing AI alignment policy are not whose work is being replaced",
+    "url": "https://danieltan.weblog.lol/2026/05/you-dont-align-an-ai-you-align-with-it",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T18:19:13+00:00"
+  },
+  {
+    "title": "Using Chinese AI models to get a degree",
+    "url": "https://nonogra.ph/using-chinese-ai-models-to-get-a-degree-05-14-2026",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T18:13:10+00:00"
+  },
+  {
+    "title": "EditLens: Quantifying the extent of AI editing in text (2025)",
+    "url": "https://arxiv.org/abs/2510.03154",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-13T19:22:14+00:00"
+  },
+  {
+    "title": "Sea's View on the Future of Agentic Software Development with Codex",
+    "url": "https://openai.com/index/sea-david-chen",
+    "source": "openai.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T20:30:00+00:00"
+  },
+  {
+    "title": "Work with Codex from anywhere",
+    "url": "https://openai.com/index/work-with-codex-from-anywhere",
+    "source": "openai.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T13:00:00+00:00"
+  },
+  {
+    "title": "Helping ChatGPT better recognize context in sensitive conversations",
+    "url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+    "source": "openai.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+    "source": "huggingface.co",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T18:55:01+00:00"
+  },
+  {
+    "title": "Unlocking asynchronicity in continuous batching",
+    "url": "https://huggingface.co/blog/continuous_async",
+    "source": "huggingface.co",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "How Claude Code works in large codebases: Best practices and where to start",
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+    "source": "claude.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "The founder's playbook: Building an AI-native startup",
+    "url": "https://claude.com/blog/the-founders-playbook",
+    "source": "claude.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+    "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+    "source": "anthropic.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "May 14, 2026Policy2028: Two scenarios for global AI leadership",
+    "url": "https://www.anthropic.com/research/2028-ai-leadership",
+    "source": "anthropic.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T00:00:00+00:00"
+  },
+  {
+    "title": "Not so locked in any more",
+    "url": "https://simonwillison.net/2026/May/14/not-so-locked-in/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T22:53:49+00:00"
+  },
+  {
+    "title": "Quoting Mitchell Hashimoto",
+    "url": "https://simonwillison.net/2026/May/14/mitchell-hashimoto/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T22:31:20+00:00"
+  },
+  {
+    "title": "datasette-ip-rate-limit 0.1a0",
+    "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/",
+    "source": "simonwillison.net",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T04:10:23+00:00"
+  },
+  {
+    "title": "What the jury will actually decide in the case of Elon Musk vs. Sam Altman",
+    "url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T22:47:51+00:00"
+  },
+  {
+    "title": "Elon Musk’s SpaceXAI has been bleeding staff since its merger",
+    "url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T21:30:44+00:00"
+  },
+  {
+    "title": "OpenAI says Codex is coming to your phone",
+    "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T20:58:55+00:00"
+  },
+  {
+    "title": "What happens when AI starts building itself?",
+    "url": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T19:57:20+00:00"
+  },
+  {
+    "title": "OpenAI is reportedly preparing legal action against Apple; it wouldn’t be the first partner to feel burned",
+    "url": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T19:12:03+00:00"
+  },
+  {
+    "title": "Clawdmeter turns your Claude Code usage stats into a tiny desktop dashboard",
+    "url": "https://techcrunch.com/2026/05/14/clawdmeter-turns-your-claude-code-usage-stats-into-a-tiny-desktop-dashboard/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T19:05:01+00:00"
+  },
+  {
+    "title": "Cerebras raises $5.5B, then stock pops $108%, in the first huge tech IPO of 2026",
+    "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T16:30:02+00:00"
+  },
+  {
+    "title": "Khosla Ventures is betting $10M on Ian Crosby, whose first startup, Bench, imploded",
+    "url": "https://techcrunch.com/2026/05/14/khosla-ventures-is-betting-10m-on-ian-crosby-whose-last-startup-bench-imploded/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T15:20:18+00:00"
+  },
+  {
+    "title": "Cisco cuts nearly 4,000 jobs to spend more on AI, reports ‘record quarterly revenue’",
+    "url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T14:01:14+00:00"
+  },
+  {
+    "title": "Two weeks left: Startup Battlefield 200 applications close May 27",
+    "url": "https://techcrunch.com/2026/05/14/two-weeks-left-startup-battlefield-200-applications-close-may-27/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T14:00:00+00:00"
+  },
+  {
+    "title": "Wirestock raises $23M to supply creative multimodal data to AI labs",
+    "url": "https://techcrunch.com/2026/05/14/wirestock-raises-23m-to-supply-multi-modal-data-to-ai-labs/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-15",
+    "pub_date": "2026-05-14T14:00:00+00:00"
+  }
+]
