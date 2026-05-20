@@ -1,0 +1,457 @@
+[
+  {
+    "title": "Learnings from 100K lines of Rust with AI (2025)",
+    "url": "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-20T10:04:28+00:00"
+  },
+  {
+    "title": "Infomaniak transitions to a foundation model to protect user data privacy",
+    "url": "https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-20T05:43:51+00:00"
+  },
+  {
+    "title": "Alternatives to HN for \"tech outside of AI\" discussion?",
+    "url": "https://news.ycombinator.com/item?id=48202486",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-20T02:43:07+00:00"
+  },
+  {
+    "title": "AI Didn't Break College. It Exposed What College Was",
+    "url": "https://greyenlightenment.com/2026/05/17/ai-didnt-break-college-it-exposed-what-college-already-was/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T23:24:48+00:00"
+  },
+  {
+    "title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T22:30:31+00:00"
+  },
+  {
+    "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+    "url": "https://openai.com/index/advancing-content-provenance/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T19:34:30+00:00"
+  },
+  {
+    "title": "Mistral AI acquires Emmi AI",
+    "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T19:14:12+00:00"
+  },
+  {
+    "title": "Graduates are booing pep talks on AI at college commencements",
+    "url": "https://www.boston25news.com/news/business/graduates-are-booing/A42H2XSTVQ2ZHHVBCKC3X7P32Y/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T18:18:02+00:00"
+  },
+  {
+    "title": "Graduates are booing pep talks on AI at college commencements",
+    "url": "https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:42:11+00:00"
+  },
+  {
+    "title": "AI, \"Humanity\", and Dr. Manhattan Syndrome: A Communications Intervention",
+    "url": "https://www.personfamiliar.com/p/ai-humanity-and-dr-manhattan-syndrome",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:22:45+00:00"
+  },
+  {
+    "title": "'You can hear me now or pay me later' Music exec tells graduates booing AI",
+    "url": "https://www.independent.co.uk/tv/news/ai-students-scott-borchetta-middle-tennessee-state-university-video-b2979573.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T16:14:31+00:00"
+  },
+  {
+    "title": "AI is too expensive",
+    "url": "https://www.wheresyoured.at/ai-is-too-expensive/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T15:59:03+00:00"
+  },
+  {
+    "title": "Going full AI engineer, not touching code anymore",
+    "url": "https://max.gp/writing/going-full-ai-engineer-not-touching-code-anymore/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T14:08:53+00:00"
+  },
+  {
+    "title": "Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks",
+    "url": "https://github.com/antoinezambelli/forge",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T12:23:07+00:00"
+  },
+  {
+    "title": "Show HN: Id-agent – Token efficient UUID alternative for AI agents",
+    "url": "https://github.com/vostride/id-agent",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T11:16:56+00:00"
+  },
+  {
+    "title": "Show HN: Beacon - The open-source layer for local AI agent visibility",
+    "url": "https://github.com/Asymptote-Labs/agent-beacon",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-18T18:45:55+00:00"
+  },
+  {
+    "title": "The next phase of OpenAI’s Education for Countries",
+    "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+    "source": "openai.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-20T00:00:00+00:00"
+  },
+  {
+    "title": "Introducing OpenAI for Singapore",
+    "url": "https://openai.com/index/introducing-openai-for-singapore",
+    "source": "openai.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T20:30:00+00:00"
+  },
+  {
+    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+    "url": "https://openai.com/index/advancing-content-provenance",
+    "source": "openai.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T10:45:00+00:00"
+  },
+  {
+    "title": "OlmoEarth v1.1: A more efficient family of models",
+    "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+    "source": "huggingface.co",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T18:38:09+00:00"
+  },
+  {
+    "title": "Introducing the Ettin Reranker Family",
+    "url": "https://huggingface.co/blog/ettin-reranker",
+    "source": "huggingface.co",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Fast-tracking genetic leads to reverse cellular aging",
+    "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-18T18:21:39+00:00"
+  },
+  {
+    "title": "Simulate real-world places with Project Genie and Street View",
+    "url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-17T19:53:18+00:00"
+  },
+  {
+    "title": "Introducing Gemini Omni",
+    "url": "https://deepmind.google/blog/introducing-gemini-omni/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-17T19:50:57+00:00"
+  },
+  {
+    "title": "Introducing Google Antigravity 2.0",
+    "url": "https://deepmind.google/blog/introducing-google-antigravity-2-0/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-17T19:43:45+00:00"
+  },
+  {
+    "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+    "url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-17T13:50:34+00:00"
+  },
+  {
+    "title": "Making it easier to understand how content was created and edited",
+    "url": "https://deepmind.google/blog/making-it-easier-to-understand-how-content-was-created-and-edited/",
+    "source": "deepmind.google",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-17T13:43:50+00:00"
+  },
+  {
+    "title": "Using Claude Code: The unreasonable effectiveness of HTML",
+    "url": "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html",
+    "source": "claude.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-20T00:00:00+00:00"
+  },
+  {
+    "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+    "url": "https://www.anthropic.com/news/anthropic-kpmg",
+    "source": "anthropic.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Widening the conversation on frontier AI",
+    "url": "https://www.anthropic.com/news/widening-conversation-ai",
+    "source": "anthropic.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Google just declared itself a contender in AI design at IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T21:33:30+00:00"
+  },
+  {
+    "title": "You can now talk to your Gmail inbox, as seen at Google IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T21:25:31+00:00"
+  },
+  {
+    "title": "How to use Google’s new AI agents to go beyond your standard searches",
+    "url": "https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T21:16:25+00:00"
+  },
+  {
+    "title": "From teen hacker to Iron Dome researcher, this founder raised $28M to fight AI phishing",
+    "url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T21:08:51+00:00"
+  },
+  {
+    "title": "Elon Musk said Sam Altman ‘stole’ a non-profit — but the trial showed he had similar aims",
+    "url": "https://techcrunch.com/2026/05/19/elon-musk-said-sam-altman-stole-a-non-profit-but-the-trial-showed-he-had-similar-aims/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T20:11:00+00:00"
+  },
+  {
+    "title": "Google takes a page out of Meta’s book, announces new audio-powered smart glasses at IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/google-takes-a-page-out-of-metas-book-announces-new-audio-powered-smart-glasses-at-io-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T19:15:31+00:00"
+  },
+  {
+    "title": "Google’s Genie world model can now simulate real streets with Street View",
+    "url": "https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:51:39+00:00"
+  },
+  {
+    "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+    "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:51:30+00:00"
+  },
+  {
+    "title": "Google Search as you know it is over",
+    "url": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:46:00+00:00"
+  },
+  {
+    "title": "OpenAI is making it easier to check if an image was made by their models",
+    "url": "https://techcrunch.com/2026/05/19/openai-is-making-it-easier-to-check-if-an-image-was-made-by-their-models/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google’s AI Studio now lets anyone build Android apps in minutes",
+    "url": "https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Agentic app coding gets an upgrade with Google’s release of Android CLI",
+    "url": "https://techcrunch.com/2026/05/19/agentic-app-coding-gets-an-upgrade-with-googles-release-of-android-cli/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google’s new Universal Cart wants to follow your entire shopping journey across the internet",
+    "url": "https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google introduces Gemini Spark, a 24/7 agentic assistant with Gmail integration, at IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google adds voice-based prompting to Docs and Keep",
+    "url": "https://techcrunch.com/2026/05/19/google-adds-voice-based-prompting-to-docs-and-keep/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google launches Antigravity 2.0 with an updated desktop app and CLI tool at IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google’s Gemini Omni turns images, audio, and text into video — and that’s just the start",
+    "url": "https://techcrunch.com/2026/05/19/googles-gemini-omni-turns-images-audio-and-text-into-video-and-thats-just-the-start/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "Google updates its Gemini app to take on ChatGPT and Claude at IO 2026",
+    "url": "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T17:45:00+00:00"
+  },
+  {
+    "title": "OpenAI co-founder Andrej Karpathy joins Anthropic’s pre-training team",
+    "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T15:43:04+00:00"
+  },
+  {
+    "title": "How to Add Vision Capabilities to a Local AI Agent Without Blowing Your VRAM",
+    "url": "https://www.mindstudio.ai/blog/add-vision-to-local-ai-agent-small-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Agent That Never Forgets: A Hybrid Memory Architecture",
+    "url": "https://www.mindstudio.ai/blog/ai-agent-hybrid-memory-architecture/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Persistent Memory System for AI Agents: Memarch vs Hermes Compared",
+    "url": "https://www.mindstudio.ai/blog/ai-agent-memory-systems-memarch-vs-hermes/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Video Generation Workflow with Claude Code and HyperFrames",
+    "url": "https://www.mindstudio.ai/blog/ai-video-generation-claude-code-hyperframes/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Anthropic's 2028 AI Leadership Essay? The Two Scenarios Explained",
+    "url": "https://www.mindstudio.ai/blog/anthropic-2028-ai-leadership-essay-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Position Your Brand for AI Search: The Truth Layer Strategy",
+    "url": "https://www.mindstudio.ai/blog/brand-positioning-for-ai-search-truth-layer/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code Agent View: How to Manage Multiple AI Agents in One Terminal",
+    "url": "https://www.mindstudio.ai/blog/claude-code-agent-view-multiple-agents/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code vs OpenAI Codex: How to Run Both on the Same Project",
+    "url": "https://www.mindstudio.ai/blog/claude-code-vs-codex-same-project-setup/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Small Business Plugin Packs: What They Are and How to Use Them",
+    "url": "https://www.mindstudio.ai/blog/claude-small-business-plugin-packs-guide/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Google Pomelo to Create On-Brand Marketing Assets for Free",
+    "url": "https://www.mindstudio.ai/blog/google-pomelo-free-ai-marketing-tool/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "MCP Servers vs CLI Tools for AI Agents: When to Use Each",
+    "url": "https://www.mindstudio.ai/blog/mcp-servers-vs-cli-tools-for-ai-agents/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Storyboards and Character Sheets to Get Better AI Video Results",
+    "url": "https://www.mindstudio.ai/blog/storyboards-character-sheets-ai-video-generation/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "What Is MiniCPM-V 4.6? A 1.3B Vision Model Built for Local AI Agents",
+    "url": "https://www.mindstudio.ai/blog/what-is-minicpm-v-4-6-vision-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Seedance 2.0? The AI Video Model Beating Sora on Consistency",
+    "url": "https://www.mindstudio.ai/blog/what-is-seedance-2-video-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Interpretation Economy? How AI Agents Are Replacing Search",
+    "url": "https://www.mindstudio.ai/blog/what-is-the-interpretation-economy/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  },
+  {
+    "title": "Zapier for AI Agents: How to Use Zaps to Automate Business Workflows Without Code",
+    "url": "https://www.mindstudio.ai/blog/zapier-ai-agents-business-workflow-automation/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-20",
+    "pub_date": "2026-05-19T00:00:00+00:00"
+  }
+]
