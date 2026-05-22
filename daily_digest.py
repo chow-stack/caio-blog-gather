@@ -19,6 +19,9 @@ CANDIDATES_DIR = SCRIPT_DIR / "candidates"
 EMAIL_FROM = "cdesouza202@gmail.com"
 EMAIL_TO = "cdesouza202@gmail.com"
 SCRAPE_TOP_N = 15
+SOURCE_CAPS = {
+    "mindstudio.ai": 3,
+}
 MODELS = [
     "gemini-2.5-flash",       # primary — best price-performance, stable GA
     "gemini-2.5-flash-lite",  # fallback — cheaper, higher quota headroom
@@ -59,6 +62,9 @@ patch notes
 - Social or political controversy without a clear insight about the technology itself
 - Geographic adoption stats or engagement metrics with no new capability shown
 - Duplicate coverage of the same story — include only the best source, drop the rest
+
+Per-source limits — you must not exceed these maximums when selecting:
+{source_caps_text}
 
 Candidates:
 {candidates_json}
@@ -153,6 +159,46 @@ def filter_by_recency(candidates: list[dict], hours: int = 48) -> list[dict]:
     return result
 
 
+def cap_per_source(candidates: list[dict], caps: dict[str, int] = SOURCE_CAPS) -> list[dict]:
+    counts: dict[str, int] = {}
+    result = []
+    for c in candidates:
+        src = c.get("source", "")
+        limit = caps.get(src)
+        if limit is not None:
+            counts[src] = counts.get(src, 0) + 1
+            if counts[src] > limit:
+                continue
+        result.append(c)
+    return result
+
+
+def backfill(selected: list[dict], all_candidates: list[dict], target: int) -> list[dict]:
+    """Add non-selected candidates (respecting SOURCE_CAPS) until we reach target count."""
+    if len(selected) >= target:
+        return selected
+    selected_urls = {s["url"] for s in selected}
+    counts: dict[str, int] = {}
+    for s in selected:
+        src = s.get("source", "")
+        if src in SOURCE_CAPS:
+            counts[src] = counts.get(src, 0) + 1
+    extras = []
+    for c in all_candidates:
+        if len(selected) + len(extras) >= target:
+            break
+        if c["url"] in selected_urls:
+            continue
+        src = c.get("source", "")
+        limit = SOURCE_CAPS.get(src)
+        if limit is not None and counts.get(src, 0) >= limit:
+            continue
+        if limit is not None:
+            counts[src] = counts.get(src, 0) + 1
+        extras.append(c)
+    return selected + extras
+
+
 def strip_fences(text: str) -> str:
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*", "", text)
@@ -190,9 +236,18 @@ def select_to_scrape(candidates: list[dict], client: genai.Client) -> tuple[list
     if not candidates:
         return [], None
     slim = [{"title": c["title"], "url": c["url"], "source": c["source"]} for c in candidates]
-    prompt = SELECT_PROMPT.format(candidates_json=json.dumps(slim, indent=2), top_n=SCRAPE_TOP_N)
+    source_caps_text = "\n".join(f"- {src}: max {n}" for src, n in SOURCE_CAPS.items()) or "(none)"
+    prompt = SELECT_PROMPT.format(
+        candidates_json=json.dumps(slim, indent=2),
+        top_n=SCRAPE_TOP_N,
+        source_caps_text=source_caps_text,
+    )
     text, model_used = call_gemini(client, prompt, json_mode=True)
-    return json.loads(strip_fences(text)), model_used
+    selected = json.loads(strip_fences(text))
+    capped = cap_per_source(selected)
+    if len(capped) < SCRAPE_TOP_N:
+        capped = backfill(capped, candidates, SCRAPE_TOP_N)
+    return capped, model_used
 
 
 async def scrape_one(crawler, run_config, item: dict) -> dict:
