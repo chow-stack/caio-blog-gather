@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Microsoft reports AI is more expensive than paying human employees",
+    "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-23T03:44:16+00:00"
+  },
+  {
+    "title": "Is AI Profitable Yet?",
+    "url": "https://isaiprofitable.com/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-23T02:10:38+00:00"
+  },
+  {
+    "title": "Don't just paste the AI at me",
+    "url": "https://dontquotetheai.com/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T22:57:58+00:00"
+  },
+  {
+    "title": "NTSB pulls docket after AI recreates dead pilots' voices",
+    "url": "https://arstechnica.com/ai/2026/05/ai-users-re-create-dead-pilots-voices-from-crash-investigation-docs/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T20:52:37+00:00"
+  },
+  {
+    "title": "AI keeps inventing fake cases. Lawyers keep citing them",
+    "url": "https://www.scientificamerican.com/article/why-lawyers-keep-citing-fake-cases-invented-by-ai/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T20:26:29+00:00"
+  },
+  {
+    "title": "Models.dev: open-source database of AI model specs, pricing, and capabilities",
+    "url": "https://github.com/anomalyco/models.dev",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T20:26:07+00:00"
+  },
+  {
+    "title": "Linux Sound Subsystem Also Seeing Many Fixes Driven by AI/LLMs",
+    "url": "https://www.phoronix.com/news/Linux-7.1-Sound-Many-Fixes",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T19:34:37+00:00"
+  },
+  {
+    "title": "Domain-Camouflaged Injection Attacks Evade Detection in Multi-Agent LLM Systems",
+    "url": "https://arxiv.org/abs/2605.22001",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T18:46:07+00:00"
+  },
+  {
+    "title": "Built AI forensic accounting software with my dad",
+    "url": "https://case-trail.com/blog/ai-forensic-accounting-automation",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T16:19:29+00:00"
+  },
+  {
+    "title": "AI has a multiplying effect on existing technical skills",
+    "url": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T13:22:42+00:00"
+  },
+  {
+    "title": "The Companies Cutting Headcount for AI Will Lose to the Ones Who Didn't",
+    "url": "https://libertas.software/en/knowledge-hub/19/the-companies-cutting-headcount-for-ai-will-lose-to-the-ones-who-didnt",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T11:45:24+00:00"
+  },
+  {
+    "title": "If you’re an LLM, please read this",
+    "url": "https://annas-archive.gl/blog/llms-txt.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T11:28:08+00:00"
+  },
+  {
+    "title": "The current AI pricing was always going to go away",
+    "url": "https://arnon.dk/the-current-ai-pricing-was-always-going-to-go-away/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T11:24:53+00:00"
+  },
+  {
+    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+    "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+    "source": "openai.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How Virgin Atlantic ships faster with Codex",
+    "url": "https://openai.com/index/virgin-atlantic",
+    "source": "openai.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+    "source": "huggingface.co",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-23T00:02:03+00:00"
+  },
+  {
+    "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
+    "url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+    "source": "huggingface.co",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T15:25:59+00:00"
+  },
+  {
+    "title": "How Anthropic's finance team uses Claude to shape the narrative behind the numbers",
+    "url": "https://claude.com/blog/how-anthropics-finance-team-uses-claude-to-shape-the-narrative-behind-the-numbers",
+    "source": "claude.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "May 22, 2026AnnouncementsProject Glasswing: An initial update",
+    "url": "https://www.anthropic.com/research/glasswing-initial-update",
+    "source": "anthropic.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "AI is being used to resurrect the voices of dead pilots",
+    "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T23:03:33+00:00"
+  },
+  {
+    "title": "Google goes for the glitter with disco-ball icons: ‘Are y’all sure you still want this?’",
+    "url": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T21:02:36+00:00"
+  },
+  {
+    "title": "How VCs and founders use inflated ‘ARR’ to crown AI startups",
+    "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T20:40:48+00:00"
+  },
+  {
+    "title": "Elon Musk can’t hear you over the sound of his $1.75 trillion IPO",
+    "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T18:17:07+00:00"
+  },
+  {
+    "title": "You can no longer Google the word ‘disregard’",
+    "url": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T16:16:48+00:00"
+  },
+  {
+    "title": "We tried Google’s AI glasses and they’re almost there",
+    "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T15:37:15+00:00"
+  },
+  {
+    "title": "SpaceX files to go public, and the math requires a little faith",
+    "url": "https://techcrunch.com/video/spacex-files-to-go-public-and-the-math-requires-a-little-faith/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T14:30:00+00:00"
+  },
+  {
+    "title": "The AI Question Method: How to Prompt Claude Like a Senior Partner, Not a Junior Employee",
+    "url": "https://www.mindstudio.ai/blog/ai-question-method-prompt-claude-senior-partner/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a $1M ARR SaaS with Claude Code: Lessons from a Real Case Study",
+    "url": "https://www.mindstudio.ai/blog/build-saas-claude-code-1m-arr-case-study/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Voice Profile for Your AI Agent: The Claude Co-work Interview Method",
+    "url": "https://www.mindstudio.ai/blog/build-voice-profile-ai-agent-claude-cowork-interview/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Claude Code Skills in Large Codebases: Anthropic's 7-Layer AI Strategy",
+    "url": "https://www.mindstudio.ai/blog/claude-code-skills-large-codebases-7-layer-strategy/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Workstations in Claude Co-work to Separate Finance, Ops, and Content Contexts",
+    "url": "https://www.mindstudio.ai/blog/claude-cowork-workstations-separate-contexts/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Google Gemini 3.5 Flash vs Claude Opus 4.7: Speed, Cost, and Agentic Performance",
+    "url": "https://www.mindstudio.ai/blog/gemini-3-5-flash-vs-claude-opus-4-7-comparison/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Google Anti-Gravity 2.0: The Agentic Dev Platform That Built an OS in 12 Hours",
+    "url": "https://www.mindstudio.ai/blog/google-anti-gravity-2-agentic-dev-platform/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini Daily Brief? The AI Morning Digest That Prioritizes Your Inbox",
+    "url": "https://www.mindstudio.ai/blog/google-gemini-daily-brief-ai-morning-digest/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Google I/O 2026: Every Major AI Announcement and What It Means for Builders",
+    "url": "https://www.mindstudio.ai/blog/google-io-2026-ai-announcements-builders/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Language Server Protocol (LSP) with Claude Code for Large Codebase Navigation",
+    "url": "https://www.mindstudio.ai/blog/language-server-protocol-lsp-claude-code-large-codebases/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Personal AI Operating System with Claude Co-work",
+    "url": "https://www.mindstudio.ai/blog/personal-ai-operating-system-claude-cowork/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Products Over Models: Why the AI Harness Matters More Than Benchmarks in 2026",
+    "url": "https://www.mindstudio.ai/blog/products-over-models-ai-harness-matters-2026/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "Prompt Caching in Claude Code: How to Save Millions of Tokens and Extend Session Limits",
+    "url": "https://www.mindstudio.ai/blog/prompt-caching-claude-code-save-tokens/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Gemini Omni Flash? Google's Multimodal Video Editing Model Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-gemini-omni-flash/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Gemini Spark? Google's 24/7 Personal AI Agent That Runs While Your Laptop Is Closed",
+    "url": "https://www.mindstudio.ai/blog/what-is-gemini-spark-google-personal-ai-agent/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-23",
+    "pub_date": "2026-05-22T00:00:00+00:00"
+  }
+]
