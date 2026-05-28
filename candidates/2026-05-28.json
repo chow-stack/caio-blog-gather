@@ -1,0 +1,527 @@
+[
+  {
+    "title": "AI sticker shock hits corporate America",
+    "url": "https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-28T10:39:32+00:00"
+  },
+  {
+    "title": "A Eureka machine that thinks like nature and explores what AI cannot",
+    "url": "https://iisc.ac.in/a-eureka-machine-that-thinks-like-nature-and-explores-what-ai-cannot/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-28T06:40:31+00:00"
+  },
+  {
+    "title": "Show HN: Open-Source AI Racing Harness",
+    "url": "https://www.elodin.systems/post/elodin-ai-grand-prix-race-sim-harness",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T20:37:42+00:00"
+  },
+  {
+    "title": "YouTube to automatically label AI-generated videos",
+    "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T20:00:51+00:00"
+  },
+  {
+    "title": "The AI tech job slaughter gets real",
+    "url": "https://www.computerworld.com/article/4175956/the-ai-tech-job-slaughter-gets-real.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T17:49:19+00:00"
+  },
+  {
+    "title": "Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction",
+    "url": "https://arxiv.org/abs/2605.21779",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T17:42:24+00:00"
+  },
+  {
+    "title": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+    "url": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T16:28:41+00:00"
+  },
+  {
+    "title": "Training our own AI models",
+    "url": "https://posthog.com/blog/training-ai-models",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T16:08:42+00:00"
+  },
+  {
+    "title": "Tech CEOs are apparently suffering from AI psychosis",
+    "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T15:20:47+00:00"
+  },
+  {
+    "title": "Why AI Agents Cannot Change Software Systems",
+    "url": "https://phroneses.com/articles/build/notes/agents-cannot-maintain-systems.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T13:46:38+00:00"
+  },
+  {
+    "title": "Ripgrep AI Policy",
+    "url": "https://github.com/BurntSushi/ripgrep/blob/master/AI_POLICY.md",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T11:40:49+00:00"
+  },
+  {
+    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+    "url": "https://openai.com/index/cisco",
+    "source": "openai.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T11:00:00+00:00"
+  },
+  {
+    "title": "Building self-improving tax agents with Codex",
+    "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+    "source": "openai.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T07:00:00+00:00"
+  },
+  {
+    "title": "Election information and safeguards in 2026",
+    "url": "https://openai.com/index/election-safeguards-2026",
+    "source": "openai.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Warp’s big bet on building open source with GPT-5.5",
+    "url": "https://openai.com/index/warp",
+    "source": "openai.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+    "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+    "source": "huggingface.co",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T17:20:29+00:00"
+  },
+  {
+    "title": "Reachy Mini goes fully local",
+    "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+    "source": "huggingface.co",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+    "url": "https://huggingface.co/blog/delta-weight-sync",
+    "source": "huggingface.co",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Zero Trust for AI agents",
+    "url": "https://claude.com/blog/zero-trust-for-ai-agents",
+    "source": "claude.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How CodeRabbit used Claude to build an agent orchestration system",
+    "url": "https://claude.com/blog/how-coderabbit-used-claude-to-build-an-agent-orchestration-system",
+    "source": "claude.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Using LLMs to secure source code",
+    "url": "https://claude.com/blog/using-llms-to-secure-source-code",
+    "source": "claude.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "May 27, 2026Economic ResearchCoding agents in the social sciences",
+    "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+    "source": "anthropic.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Vertu wants CEOs to run companies from an AI foldable starting at $6,880",
+    "url": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-28T07:00:00+00:00"
+  },
+  {
+    "title": "Why Google’s AI can’t spell Google (or anything else)",
+    "url": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-28T00:17:41+00:00"
+  },
+  {
+    "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
+    "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T20:10:00+00:00"
+  },
+  {
+    "title": "Payroll startup Remote says it grew revenue 50% per employee without adding headcount",
+    "url": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T19:39:45+00:00"
+  },
+  {
+    "title": "Your SEO strategy is optimized for a search engine that no longer exists.",
+    "url": "https://techcrunch.com/podcast/your-seo-strategy-is-optimized-for-a-search-engine-that-no-longer-exists/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T18:39:17+00:00"
+  },
+  {
+    "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
+    "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T18:00:00+00:00"
+  },
+  {
+    "title": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
+    "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T16:00:00+00:00"
+  },
+  {
+    "title": "Startup Battlefield 200 applications close today: Nominate a founder or submit your startup",
+    "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T14:15:00+00:00"
+  },
+  {
+    "title": "ElevenLabs’ new music-generation model can switch genres mid-track",
+    "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T14:14:10+00:00"
+  },
+  {
+    "title": "TechCrunch Disrupt 2026 Early Bird ticket savings end in 3 days",
+    "url": "https://techcrunch.com/2026/05/27/techcrunch-disrupt-2026-early-bird-ticket-savings-end-in-3-days/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T14:00:00+00:00"
+  },
+  {
+    "title": "SOND, a sleep tech startup from Bose’s former head of sleep, exits stealth with $7M",
+    "url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T14:00:00+00:00"
+  },
+  {
+    "title": "China is increasingly keeping its best AI talent to itself",
+    "url": "https://techcrunch.com/2026/05/27/china-is-increasingly-keeping-its-best-ai-talent-to-itself/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T13:48:41+00:00"
+  },
+  {
+    "title": "ClickHouse triples annualized revenue to $250M, charting a path toward an IPO",
+    "url": "https://techcrunch.com/2026/05/27/clickhouse-triples-annualized-revenue-to-250m-charting-a-path-toward-an-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T13:04:20+00:00"
+  },
+  {
+    "title": "YouTube will now automatically label AI videos",
+    "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T13:00:00+00:00"
+  },
+  {
+    "title": "Tech CEOs are apparently suffering from AI psychosis",
+    "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T12:30:00+00:00"
+  },
+  {
+    "title": "Robinhood now lets your AI agents trade stocks",
+    "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+    "source": "techcrunch.com",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T12:30:00+00:00"
+  },
+  {
+    "title": "What Is AI Job Displacement? How to Prepare Your Business for the Transition",
+    "url": "https://www.mindstudio.ai/blog/ai-job-displacement-how-to-prepare/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the AI Token Cost Crisis? Why Enterprise AI Bills Are Exploding",
+    "url": "https://www.mindstudio.ai/blog/ai-token-cost-crisis-enterprise/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Anthropic Managed Agents vs Google Anti-Gravity 2.0: Which Platform Wins?",
+    "url": "https://www.mindstudio.ai/blog/anthropic-managed-agents-vs-google-anti-gravity-2-0/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Apprenticeship Gap in AI? Why Your Team Gets Smarter but Your Company Doesn't",
+    "url": "https://www.mindstudio.ai/blog/apprenticeship-gap-in-ai/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code vs OpenAI Codex: 100-Hour Honest Comparison",
+    "url": "https://www.mindstudio.ai/blog/claude-code-vs-openai-codex-honest-comparison/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Google AI Search Mode for Business Research and Competitive Intelligence",
+    "url": "https://www.mindstudio.ai/blog/google-ai-search-mode-business-research/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Google AI Search Mode Explained: What It Means for Your Content Strategy",
+    "url": "https://www.mindstudio.ai/blog/google-ai-search-mode-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Hermes Agent vs Custom Claude Code Setup: Which Should You Build?",
+    "url": "https://www.mindstudio.ai/blog/hermes-agent-vs-custom-claude-code-setup-3/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Second Brain Knowledge Base: Step-by-Step",
+    "url": "https://www.mindstudio.ai/blog/how-to-build-ai-second-brain-knowledge-base/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How to Make AI Work Visible at Scale: Lessons from Shopify's River Agent",
+    "url": "https://www.mindstudio.ai/blog/how-to-make-ai-work-visible-shopify-river/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "Local AI vs Cloud AI in 2026: When to Run Models on Your Own Hardware",
+    "url": "https://www.mindstudio.ai/blog/local-ai-vs-cloud-ai-2026/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Modular Skill System in Claude Code for Multiple Clients",
+    "url": "https://www.mindstudio.ai/blog/modular-skill-system-claude-code-multiple-clients/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "n8n MCP Server: How to Build and Edit AI Workflows with Claude Code",
+    "url": "https://www.mindstudio.ai/blog/n8n-mcp-server-claude-code-workflows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "How to Run Open-Weight AI Models Locally with Ollama and LM Studio",
+    "url": "https://www.mindstudio.ai/blog/run-open-weight-ai-models-locally-ollama-lm-studio/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the AI Second Brain? How to Build a Knowledge Base That Agents Can Search",
+    "url": "https://www.mindstudio.ai/blog/what-is-ai-second-brain/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini 3.5 Flash? Speed, Cost, and Agentic Performance",
+    "url": "https://www.mindstudio.ai/blog/what-is-gemini-3-5-flash-4/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini Omni? The AI Video Editing Model Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-google-gemini-omni-2/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini Spark? The 24/7 Cloud AI Agent That Runs Without You",
+    "url": "https://www.mindstudio.ai/blog/what-is-google-gemini-spark-2/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-27T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the AI Adoption Gap? Why 85% of Employees Can Use AI but Only 25% Do",
+    "url": "https://www.mindstudio.ai/blog/ai-adoption-gap-why-employees-dont-use-ai/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "AI Agent Safety Is a System Problem, Not a Model Problem",
+    "url": "https://www.mindstudio.ai/blog/ai-agent-safety-system-problem-not-model-problem/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the AI Infrastructure Constraint? Why Microsoft Is Spending $190 Billion on Capex",
+    "url": "https://www.mindstudio.ai/blog/ai-infrastructure-constraint-microsoft-capex-compute/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "Andrej Karpathy Joins Anthropic: What the Karpathy Loop Means for AI Builders",
+    "url": "https://www.mindstudio.ai/blog/andrej-karpathy-joins-anthropic-karpathy-loop-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Modular Skill System in Claude Code That Scales Across Clients",
+    "url": "https://www.mindstudio.ai/blog/build-modular-skill-system-claude-code-multi-client/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "How Google AI Search Mode Changes Content Strategy for Businesses",
+    "url": "https://www.mindstudio.ai/blog/google-ai-search-mode-content-strategy-businesses/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini Personal Intelligence? How AI Search Connects to Your Data",
+    "url": "https://www.mindstudio.ai/blog/google-gemini-personal-intelligence-ai-search-your-data/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Google Gemini Spark for Business Automation: Gmail, Calendar, and Drive",
+    "url": "https://www.mindstudio.ai/blog/google-gemini-spark-business-automation-gmail-calendar-drive/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "Hermes Agent vs Custom Claude Code Setup: Hidden Costs of Off-the-Shelf AI Agents",
+    "url": "https://www.mindstudio.ai/blog/hermes-agent-vs-custom-claude-code-hidden-costs/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "Managed Agents Explained: Anthropic vs Google and What It Means for Builders",
+    "url": "https://www.mindstudio.ai/blog/managed-agents-anthropic-vs-google-comparison/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "OpenAI Solved a 78-Year-Old Math Problem: What AI Reasoning Breakthroughs Mean for Builders",
+    "url": "https://www.mindstudio.ai/blog/openai-solved-math-problem-ai-reasoning-breakthrough-builders/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Prompt Caching in Claude Code? How to Save Millions of Tokens",
+    "url": "https://www.mindstudio.ai/blog/prompt-caching-claude-code-save-tokens-2/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Recursive Self-Improvement in AI? The Karpathy Loop Explained",
+    "url": "https://www.mindstudio.ai/blog/recursive-self-improvement-karpathy-loop-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "Stable Audio 3.0: What Open-Weight AI Music Generation Means for Content Creators",
+    "url": "https://www.mindstudio.ai/blog/stable-audio-3-open-weight-music-generation-content-creators/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Voice Agents for Business: ElevenLabs, RAG, and Calendar Booking",
+    "url": "https://www.mindstudio.ai/blog/voice-agents-business-elevenlabs-rag-calendar-booking/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is an AI Operating System? How to Build One for Your Business with Claude Code",
+    "url": "https://www.mindstudio.ai/blog/what-is-ai-operating-system-build-with-claude-code/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Gemini 3.5 Flash? Google's Fastest Frontier Model for Agentic Workflows",
+    "url": "https://www.mindstudio.ai/blog/what-is-gemini-3-5-flash-google-fastest-frontier-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Gemini Spark? Google's 24/7 Cloud-Based AI Agent That Runs Without You",
+    "url": "https://www.mindstudio.ai/blog/what-is-gemini-spark-googles-cloud-ai-agent/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google Gemini Omni? The Any-Input-to-Video AI Model Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-google-gemini-omni-multimodal-video-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-05-28",
+    "pub_date": "2026-05-26T00:00:00+00:00"
+  }
+]
