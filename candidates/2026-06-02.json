@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Adafruit Receives Demand Letter from Fenwick Legal Counsel on Behalf of Flux.ai",
+    "url": "https://blog.adafruit.com/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-02T10:00:56+00:00"
+  },
+  {
+    "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
+    "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T20:55:15+00:00"
+  },
+  {
+    "title": "Remote work, not AI, has sidelined recent college graduates, research finds",
+    "url": "https://text.npr.org/nx-s1-5843076",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T20:27:42+00:00"
+  },
+  {
+    "title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
+    "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T19:18:52+00:00"
+  },
+  {
+    "title": "Build a Basic AI Agent from Scratch: Tools",
+    "url": "https://www.ruxu.dev/articles/ai/build-an-ai-agent-with-tools/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T17:40:00+00:00"
+  },
+  {
+    "title": "Amazon Shuts Down Internal AI Leaderboard After Employees Cheated",
+    "url": "https://www.404media.co/amazon-shuts-down-internal-ai-leaderboard-after-employees-cheated/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T17:31:57+00:00"
+  },
+  {
+    "title": "Hackers Asked Meta AI to Give Them Access to Instagram Accounts. It Worked",
+    "url": "https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T17:31:15+00:00"
+  },
+  {
+    "title": "AI Agent Guidelines for CS336 at Stanford",
+    "url": "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T16:41:49+00:00"
+  },
+  {
+    "title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
+    "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T16:33:59+00:00"
+  },
+  {
+    "title": "Florida sues OpenAI and Sam Altman over AI risks",
+    "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T16:02:04+00:00"
+  },
+  {
+    "title": "When AI Crosses the Line: The Matplotlib Incident",
+    "url": "https://members.sigmazero.cc/posts/when-ai-crosses-159174096?postId=when-ai-crosses-159174096",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T12:08:23+00:00"
+  },
+  {
+    "title": "Nvidia announces new AI chip for personal computers",
+    "url": "https://www.bbc.com/news/articles/crmp9mppvzro",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T10:33:25+00:00"
+  },
+  {
+    "title": "Codex is becoming a productivity tool for everyone",
+    "url": "https://openai.com/index/codex-for-knowledge-work",
+    "source": "openai.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-02T02:00:00+00:00"
+  },
+  {
+    "title": "Our views on AI policy and political advocacy",
+    "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+    "source": "openai.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T17:00:00+00:00"
+  },
+  {
+    "title": "Building the infrastructure for the Intelligence Age in Michigan",
+    "url": "https://openai.com/index/stargate-michigan-data-center",
+    "source": "openai.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T12:00:00+00:00"
+  },
+  {
+    "title": "OpenAI frontier models and Codex are now available on AWS",
+    "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+    "source": "openai.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T10:00:00+00:00"
+  },
+  {
+    "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+    "source": "huggingface.co",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T15:45:17+00:00"
+  },
+  {
+    "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+    "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+    "source": "huggingface.co",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T13:51:18+00:00"
+  },
+  {
+    "title": "Anthropic confidentially submits draft S-1 to the SEC",
+    "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+    "source": "anthropic.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "Alphabet plans to raise $80B to pay for AI buildout",
+    "url": "https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T22:55:09+00:00"
+  },
+  {
+    "title": "Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP",
+    "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T21:35:00+00:00"
+  },
+  {
+    "title": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents",
+    "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T20:03:40+00:00"
+  },
+  {
+    "title": "Water access is now a risk factor in SpaceX’s IPO",
+    "url": "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T18:19:53+00:00"
+  },
+  {
+    "title": "Anthropic files to go public",
+    "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T16:36:55+00:00"
+  },
+  {
+    "title": "This AI weather startup is out-forecasting government agencies",
+    "url": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T16:00:00+00:00"
+  },
+  {
+    "title": "DuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms",
+    "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T14:49:10+00:00"
+  },
+  {
+    "title": "The groupthink boom: what 3 top VCs really think about the AI frenzy",
+    "url": "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-30T14:49:27+00:00"
+  },
+  {
+    "title": "What Is the Agentic Context Management System? Folder Structures, Rules, and Injection",
+    "url": "https://www.mindstudio.ai/blog/agentic-context-management-system-folder-structures-rules/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Agent with Isolated Database Environments Using Ghost",
+    "url": "https://www.mindstudio.ai/blog/ai-agent-isolated-database-environments-fork-experiment/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Short Film with Seedance 2.0: Workflow, Voice Swap, and Cost",
+    "url": "https://www.mindstudio.ai/blog/ai-short-film-seedance-2-workflow-voice-swap-cost/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Database Forking for AI Agents? The Missing Piece in Agentic Development",
+    "url": "https://www.mindstudio.ai/blog/database-forking-ai-agents-agentic-development/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Demonstrate Human Judgment in the Age of AI: The Whiteboard Method",
+    "url": "https://www.mindstudio.ai/blog/demonstrate-human-judgment-age-of-ai-whiteboard-method/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Depth vs Width Distinction in Claude Code Agents? /goal vs Workflows",
+    "url": "https://www.mindstudio.ai/blog/depth-vs-width-claude-code-goal-vs-dynamic-workflows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "Dynamic Workflows vs /goal vs Agent Teams in Claude Code: Which Should You Use?",
+    "url": "https://www.mindstudio.ai/blog/dynamic-workflows-vs-goal-vs-agent-teams-claude-code/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "ElevenLabs Dubbing V2: How to Dub Videos While Preserving Your Voice and Emotion",
+    "url": "https://www.mindstudio.ai/blog/elevenlabs-dubbing-v2-preserve-voice-emotion/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Google Gemini Omni to Generate Video from a Sketched Camera Path",
+    "url": "https://www.mindstudio.ai/blog/gemini-omni-generate-video-sketched-camera-path/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Google's Gemini AI Glasses? Audio vs Display Versions Explained",
+    "url": "https://www.mindstudio.ai/blog/google-gemini-ai-glasses-audio-vs-display-explained-2/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Control Token Costs in Claude Code Dynamic Workflows",
+    "url": "https://www.mindstudio.ai/blog/how-to-control-token-costs-claude-code-dynamic-workflows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use ChatGPT in PowerPoint: Build, Update, Polish, and Understand Slides",
+    "url": "https://www.mindstudio.ai/blog/how-to-use-chatgpt-in-powerpoint/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Portable AI Agent Stack That Avoids Anthropic Lock-In",
+    "url": "https://www.mindstudio.ai/blog/portable-ai-agent-stack-avoid-anthropic-lock-in/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use AI to Prove Your Value at Work When Everyone Looks Productive",
+    "url": "https://www.mindstudio.ai/blog/prove-value-at-work-ai-age-judgment-framework/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Run Local AI on AMD: ROCm, LM Studio, Ollama, and ComfyUI Setup",
+    "url": "https://www.mindstudio.ai/blog/run-local-ai-amd-rocm-lm-studio-ollama-comfyui/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "Seedance 2.0 vs Gemini Omni for AI Short Film Production: Which Wins?",
+    "url": "https://www.mindstudio.ai/blog/seedance-2-vs-gemini-omni-ai-short-film-production/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Claude Opus 4.8 Dynamic Workflows? Parallel Sub-Agents Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-claude-opus-4-8-dynamic-workflows-parallel-sub-agents/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the /deep Research Command in Claude Code? Parallel Research Workflows Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-deep-research-command-claude-code/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Ultra Code Mode in Claude Code? X-High Effort Plus Dynamic Workflows",
+    "url": "https://www.mindstudio.ai/blog/what-is-ultra-code-mode-claude-code/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-06-01T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an Agentic Context Management System with Folder Structures and Markdown Files",
+    "url": "https://www.mindstudio.ai/blog/agentic-context-management-folder-structure-markdown/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use AI Agents with Isolated Database Environments: The Fork-and-Experiment Pattern",
+    "url": "https://www.mindstudio.ai/blog/ai-agents-isolated-database-fork-experiment-pattern/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "ChatGPT in PowerPoint: How to Use the Free Add-In to Build and Edit Slides",
+    "url": "https://www.mindstudio.ai/blog/chatgpt-in-powerpoint-free-add-in-tutorial/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "ChatGPT PowerPoint Add-In vs Microsoft Copilot: Which AI Slide Tool Is Better?",
+    "url": "https://www.mindstudio.ai/blog/chatgpt-powerpoint-add-in-vs-microsoft-copilot/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Prompt Caching and Token Management in Claude Code Dynamic Workflows",
+    "url": "https://www.mindstudio.ai/blog/claude-code-dynamic-workflows-token-management-cost/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code Dynamic Workflows vs Agent Teams vs Sub-Agents: Which Should You Use?",
+    "url": "https://www.mindstudio.ai/blog/claude-code-dynamic-workflows-vs-agent-teams-vs-sub-agents/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the /goal Command vs Dynamic Workflows in Claude Code? Depth vs Width Explained",
+    "url": "https://www.mindstudio.ai/blog/claude-code-goal-command-vs-dynamic-workflows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code Skill Audit with Dynamic Workflows: How to Score and Rank 40+ Skills at Once",
+    "url": "https://www.mindstudio.ai/blog/claude-code-skill-audit-dynamic-workflows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Claude Opus 4.8 Dynamic Workflows? How to Spawn Parallel Sub-Agents at Scale",
+    "url": "https://www.mindstudio.ai/blog/claude-opus-4-8-dynamic-workflows-parallel-sub-agents-2/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "Google Gemini AI Glasses Explained: Audio Version vs Display Version and What's Actually Shipping",
+    "url": "https://www.mindstudio.ai/blog/google-gemini-ai-glasses-audio-vs-display-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Agent That Avoids Vendor Lock-In: A 4-Step Framework",
+    "url": "https://www.mindstudio.ai/blog/how-to-build-ai-agent-avoid-vendor-lock-in/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Parallel Agent Execution to Build and Compare Multiple Product Strategies at Once",
+    "url": "https://www.mindstudio.ai/blog/parallel-agent-execution-compare-product-strategies/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the System Evolution Mindset for AI Agents? How to Turn Every Mistake Into a Rule",
+    "url": "https://www.mindstudio.ai/blog/system-evolution-mindset-ai-agents-harness-improvement/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Harness Engineering? The Mindset Shift That Separates Top AI Builders",
+    "url": "https://www.mindstudio.ai/blog/what-is-harness-engineering-mindset-shift/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-02",
+    "pub_date": "2026-05-31T00:00:00+00:00"
+  }
+]
