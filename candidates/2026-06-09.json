@@ -1,0 +1,576 @@
+[
+  {
+    "title": "Confidential submission of draft S-1 to the SEC",
+    "url": "https://openai.com/index/openai-submits-confidential-s-1",
+    "source": "openai.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T14:00:00+00:00"
+  },
+  {
+    "title": "Built to benefit everyone: our plan",
+    "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+    "source": "openai.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T01:30:00+00:00"
+  },
+  {
+    "title": "Introducing the OpenAI Economic Research Exchange",
+    "url": "https://openai.com/index/economic-research-exchange",
+    "source": "openai.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+    "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+    "source": "huggingface.co",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-09T10:46:19+00:00"
+  },
+  {
+    "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+    "url": "https://huggingface.co/blog/openenv-agentic-rl",
+    "source": "huggingface.co",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Observability for developers building connectors",
+    "url": "https://claude.com/blog/observability-for-developers-building-connectors",
+    "source": "claude.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+    "url": "https://claude.com/blog/claude-for-foundation-models",
+    "source": "claude.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Jun 8, 2026SciencePaving the way for agents in biology",
+    "url": "https://www.anthropic.com/research/agents-in-biology",
+    "source": "anthropic.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
+    "url": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-09T01:56:48+00:00"
+  },
+  {
+    "title": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
+    "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-09T00:45:56+00:00"
+  },
+  {
+    "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
+    "url": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T22:41:45+00:00"
+  },
+  {
+    "title": "Apple’s WWDC AI demos looked more real after $250M false ad settlement",
+    "url": "https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T22:39:57+00:00"
+  },
+  {
+    "title": "OpenAI files confidentially for IPO, following Anthropic",
+    "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T21:29:57+00:00"
+  },
+  {
+    "title": "Apple plays catch-up at WWDC",
+    "url": "https://techcrunch.com/2026/06/08/apple-plays-catch-up-at-wwdc/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T21:15:42+00:00"
+  },
+  {
+    "title": "Apple bets cheaper AI will woo small developers",
+    "url": "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T20:53:55+00:00"
+  },
+  {
+    "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence and more",
+    "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T19:41:32+00:00"
+  },
+  {
+    "title": "Apple just taught your iPhone to finish your sentences, your photos, and your workflows",
+    "url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:48:45+00:00"
+  },
+  {
+    "title": "Apple will let you build workflows using AI in its new Shortcuts app",
+    "url": "https://techcrunch.com/2026/06/08/apple-will-let-you-build-workflows-using-ai-in-its-new-shortcuts-app/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:45:12+00:00"
+  },
+  {
+    "title": "Apple’s Image Playground doesn’t suck anymore",
+    "url": "https://techcrunch.com/2026/06/08/apples-image-playground-doesnt-suck-anymore/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:38:07+00:00"
+  },
+  {
+    "title": "Apple’s Photos app is getting new AI editing features",
+    "url": "https://techcrunch.com/2026/06/08/apples-photos-app-is-getting-new-ai-editing-features/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:36:04+00:00"
+  },
+  {
+    "title": "Apple gives Siri its own dedicated app",
+    "url": "https://techcrunch.com/2026/06/08/apple-gives-siri-its-own-dedicated-app/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:33:42+00:00"
+  },
+  {
+    "title": "Apple is fixing the headache of splitting the bill with its new Siri in Camera feature",
+    "url": "https://techcrunch.com/2026/06/08/apple-is-fixing-the-headache-of-splitting-the-bill-with-its-new-siri-in-camera-feature/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T18:23:04+00:00"
+  },
+  {
+    "title": "Apple’s long-awaited AI Siri overhaul is finally here",
+    "url": "https://techcrunch.com/2026/06/08/apples-long-awaited-ai-siri-overhaul-is-finally-here/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T17:56:21+00:00"
+  },
+  {
+    "title": "Amazon now lets you design custom merch using AI",
+    "url": "https://techcrunch.com/2026/06/08/amazon-now-lets-you-design-custom-merch-using-ai/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T15:49:12+00:00"
+  },
+  {
+    "title": "WWDC 2026: What to expect, from Siri’s highly anticipated revamp to Apple Intelligence and iOS 27",
+    "url": "https://techcrunch.com/2026/06/08/wwdc-2026-what-to-expect-from-siris-highly-anticipated-revamp-to-apple-intelligence-and-ios-27/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T15:34:59+00:00"
+  },
+  {
+    "title": "The AI App Builder That Fits How PMs Actually Work",
+    "url": "https://www.mindstudio.ai/blog/ai-app-builder-for-pms/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use AI for Brand Voice Extraction: Build a Voice Profile in 15 Minutes",
+    "url": "https://www.mindstudio.ai/blog/ai-brand-voice-extraction-voice-profile/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Where the AI App Builder Category Is Headed in 2027",
+    "url": "https://www.mindstudio.ai/blog/ai-builder-category-2027-predictions/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Real Cost of AI-Generated Code Drift, and How to Stop It",
+    "url": "https://www.mindstudio.ai/blog/ai-generated-code-drift-cost-analysis/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Best AI App Builders With a Real Backend, Database, and Auth",
+    "url": "https://www.mindstudio.ai/blog/best-ai-app-builders-with-real-backend/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Best AI Tools for Building Internal Tools in 2026",
+    "url": "https://www.mindstudio.ai/blog/best-ai-tools-for-internal-tools/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Best Bolt.new Alternatives for Production Full-Stack Apps",
+    "url": "https://www.mindstudio.ai/blog/best-bolt-alternatives/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Best Lovable Alternatives in 2026: Past the Prototype",
+    "url": "https://www.mindstudio.ai/blog/best-lovable-alternatives/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Best Replit Agent Alternatives in 2026: Five That Ship Real Apps",
+    "url": "https://www.mindstudio.ai/blog/best-replit-agent-alternatives/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Body of Work File for Your AI Agent: Extract Your Core Ideas",
+    "url": "https://www.mindstudio.ai/blog/build-body-of-work-file-ai-agent/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Cache-Aware Streaming ASR: How NVIDIA Nemotron 3.5 Cuts Transcription Latency",
+    "url": "https://www.mindstudio.ai/blog/cache-aware-streaming-asr-nvidia-nemotron/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Mythos vs Claude Opus 4.8: What We Know About Anthropic's Next Model",
+    "url": "https://www.mindstudio.ai/blog/claude-mythos-vs-opus-4-8-what-we-know/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Death of the $50K Internal Tool Build (and What Survives It)",
+    "url": "https://www.mindstudio.ai/blog/death-of-fifty-thousand-internal-tool-build/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Is a Design Token System for AI Agents? How to Lock In Consistent Brand Visuals",
+    "url": "https://www.mindstudio.ai/blog/design-token-system-ai-agents-brand-visuals/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Compiler Comparison: Is the LLM Actually a Compiler?",
+    "url": "https://www.mindstudio.ai/blog/is-llm-a-compiler-analysis/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Lovable's Backend Push Reveals About the Spec-Layer Race",
+    "url": "https://www.mindstudio.ai/blog/lovable-backend-push-spec-layer-race/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Microsoft MAI Models Explained: Thinking, Code, Image, Transcribe, and Voice",
+    "url": "https://www.mindstudio.ai/blog/microsoft-mai-models-explained-build-2026/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The mindstudio.json Manifest: The One File a Remy Project Requires",
+    "url": "https://www.mindstudio.ai/blog/mindstudio-json-manifest-explained/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Minimax M3: The 1M Token Coding Model That Claims to Beat GPT 5.5 on SWEbench",
+    "url": "https://www.mindstudio.ai/blog/minimax-m3-coding-model-1m-context-swebench/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The 'Build It For Me' Shift: Why No-Code Gave Way to AI App Builders",
+    "url": "https://www.mindstudio.ai/blog/no-code-vs-ai-app-builder-shift/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The One Layer of Your AI-Built App You Actually Own",
+    "url": "https://www.mindstudio.ai/blog/open-source-ai-app-builder-meaning/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "How to Watch a Remy App Run in Production, End to End",
+    "url": "https://www.mindstudio.ai/blog/remy-observability-monitoring-production/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Scenarios: How Remy's Agent-Authored Test Cases Work",
+    "url": "https://www.mindstudio.ai/blog/remy-scenarios-test-data-seeding/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Manifest, Methods, Tables, Roles, Interfaces, Scenarios: The Remy Vocabulary",
+    "url": "https://www.mindstudio.ai/blog/remy-vocabulary-manifest-methods-tables-roles/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Unit Economics of $30 Full-Stack Apps (Yes, Really)",
+    "url": "https://www.mindstudio.ai/blog/unit-economics-thirty-dollar-fullstack-apps/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "The Vertical Internal-Tool Market Is About to Restructure",
+    "url": "https://www.mindstudio.ai/blog/vertical-internal-tools-restructure/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Does 'Full-Stack' Actually Mean in an AI App Builder?",
+    "url": "https://www.mindstudio.ai/blog/what-full-stack-means-ai-app-builder/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Microsoft Scout? The AI Autopilot Agent for Windows Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-microsoft-scout-ai-autopilot-windows/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Miso One? The Open-Source Voice Model That Sounds Like a Real Human",
+    "url": "https://www.mindstudio.ai/blog/what-is-miso-one-open-source-voice-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "What Is NVIDIA Nemotron 3.5 ASR? The Streaming Speech-to-Text Model Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-nvidia-nemotron-3-5-asr/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "Word Boosting in AI Transcription: How to Fix Product Names and Rare Vocabulary",
+    "url": "https://www.mindstudio.ai/blog/word-boosting-ai-transcription-custom-vocabulary/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-08T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use AI for Ad Creative Variation at Scale: The Marketing Sub-Agent Pattern",
+    "url": "https://www.mindstudio.ai/blog/ai-ad-creative-variation-marketing-sub-agent-pattern/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build an AI Brand Voice System: Voice Profile, Body of Work, and Design Tokens",
+    "url": "https://www.mindstudio.ai/blog/ai-brand-voice-system-voice-profile-body-of-work-design-tokens/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Anthropic RSI Report: Three Scenarios for the Future of AI and What They Mean for Builders",
+    "url": "https://www.mindstudio.ai/blog/anthropic-rsi-report-three-futures-builders-guide/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Anthropic's Three AI Futures: Plateau, Human-Guided Acceleration, or Full RSI",
+    "url": "https://www.mindstudio.ai/blog/anthropic-three-ai-futures-plateau-acceleration-rsi/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "ChatGPT Memory Dreaming Update: How to Audit and Optimize Your Memory Profile",
+    "url": "https://www.mindstudio.ai/blog/chatgpt-memory-dreaming-update-audit-optimize/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code Skills for Non-Technical Teams: How to Build, Name, and Structure Them",
+    "url": "https://www.mindstudio.ai/blog/claude-code-skills-non-technical-teams-build-structure/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Mythos vs Claude Opus 4.8: What's the Difference?",
+    "url": "https://www.mindstudio.ai/blog/claude-mythos-vs-claude-opus-4-8/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Design Tokens with AI Agents: Consistent Brand Visuals Across Every Output",
+    "url": "https://www.mindstudio.ai/blog/design-tokens-ai-agents-consistent-brand-visuals/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How Anthropic's Non-Engineering Teams Use Claude Code: 4 Patterns That Work",
+    "url": "https://www.mindstudio.ai/blog/how-anthropic-non-engineering-teams-use-claude-code/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How to Build a Brand Voice Profile for AI: Extract Your Voice in 15 Minutes",
+    "url": "https://www.mindstudio.ai/blog/how-to-build-brand-voice-profile-for-ai/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use AI for Brand Identity: Voice, Body of Work, and Visual Design Tokens",
+    "url": "https://www.mindstudio.ai/blog/how-to-use-ai-for-brand-identity-voice-body-of-work-design-tokens/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "How to Use Perplexity Computer for Business Automation: Connectors, Skills, and Tasks",
+    "url": "https://www.mindstudio.ai/blog/how-to-use-perplexity-computer-business-automation/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Ideogram 4.0: The Best Open-Weight Image Model You Can Fine-Tune",
+    "url": "https://www.mindstudio.ai/blog/ideogram-4-open-weight-image-model-fine-tune/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Local AI Inference with RTX Spark: What Changes When You Run LLMs On-Device",
+    "url": "https://www.mindstudio.ai/blog/local-ai-inference-rtx-spark-llm-on-device/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "MAI Transcribe 1.5: Is Microsoft's New Model the Best Transcription AI?",
+    "url": "https://www.mindstudio.ai/blog/mai-transcribe-1-5-microsoft-transcription-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Microsoft Build 2026: MAI Models, Scout Agent, and RTX Spark Explained",
+    "url": "https://www.mindstudio.ai/blog/microsoft-build-2026-mai-models-scout-agent-rtx-spark/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Miso One Voice Model: The Open-Source TTS That Sounds Like a Real Human",
+    "url": "https://www.mindstudio.ai/blog/miso-one-voice-model-open-source-tts/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "NVIDIA Nemotron 3 Ultra: The 550B Open-Weight Model Built for AI Agents",
+    "url": "https://www.mindstudio.ai/blog/nvidia-nemotron-3-ultra-550b-open-weight-agent-model/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Perplexity Computer vs OpenClaw: Which AI Agent Platform Should You Use?",
+    "url": "https://www.mindstudio.ai/blog/perplexity-computer-vs-openclaw-comparison/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "Recraft 2.0 vs GPT Image 2 vs Ideogram 4.0: Which AI Image Model Wins?",
+    "url": "https://www.mindstudio.ai/blog/recraft-2-vs-gpt-image-2-vs-ideogram-4-comparison/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Slot Machine Method for AI Agents? Why Restarting Beats Correcting",
+    "url": "https://www.mindstudio.ai/blog/slot-machine-method-ai-agents-restart-vs-correct/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the Intelligence Staircase? How AI Capability Jumps Work",
+    "url": "https://www.mindstudio.ai/blog/what-is-intelligence-staircase-ai-capability-jumps/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Perplexity Computer? The Hosted AI Agent Alternative to OpenClaw",
+    "url": "https://www.mindstudio.ai/blog/what-is-perplexity-computer-hosted-ai-agent/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Project Glasswing? Anthropic's Controlled Cybersecurity AI Rollout",
+    "url": "https://www.mindstudio.ai/blog/what-is-project-glasswing-anthropic-cybersecurity-ai/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is Recursive Self-Improvement in AI? Anthropic's RSI Report Explained",
+    "url": "https://www.mindstudio.ai/blog/what-is-recursive-self-improvement-ai-anthropic-rsi-report/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  },
+  {
+    "title": "What Is the RTX Spark Chip? NVIDIA's AI-First GPU-CPU for Local Model Inference",
+    "url": "https://www.mindstudio.ai/blog/what-is-rtx-spark-nvidia-ai-chip-local-inference/",
+    "source": "mindstudio.ai",
+    "date_found": "2026-06-09",
+    "pub_date": "2026-06-07T00:00:00+00:00"
+  }
+]
