@@ -1,0 +1,219 @@
+[
+  {
+    "title": "Generative AI Is Having Its Herbalife Moment",
+    "url": "https://www.whatwelo.st/p/generative-ai-is-having-its-herbalife",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-19T05:37:51+00:00"
+  },
+  {
+    "title": "GLM-5.2: The Most Powerful Open Model yet and the Brutal Reality of Running It",
+    "url": "https://vettedconsumer.com/glm-5-2-the-most-powerful-open-weight-model-yet-and-the-brutal-reality-of-running-it-locally/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-19T01:58:00+00:00"
+  },
+  {
+    "title": "Amazon investigating engineers who criticized AI data center expansion",
+    "url": "https://www.cnbc.com/2026/06/18/amazon-engineers-ai-data-center-opposition.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T20:14:15+00:00"
+  },
+  {
+    "title": "The AI Hate Progression",
+    "url": "https://www.xodium.net/2026/06/the-ai-hate-progression.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T18:30:33+00:00"
+  },
+  {
+    "title": "Ask HN: What tools are you using for AI-assisted code review?",
+    "url": "https://news.ycombinator.com/item?id=48587808",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T16:25:27+00:00"
+  },
+  {
+    "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+    "url": "https://simonwillison.net/2026/Jun/17/glm-52/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T15:58:09+00:00"
+  },
+  {
+    "title": "Bernie Sanders unveils plan to give the public direct ownership of AI companies",
+    "url": "https://apnews.com/article/bernie-sanders-ai-public-ownership-57b9f20d96490083e2749adba0f13977",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-17T23:38:24+00:00"
+  },
+  {
+    "title": "New usage analytics and updated spend controls for enterprises",
+    "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+    "source": "openai.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T17:00:00+00:00"
+  },
+  {
+    "title": "Improving health intelligence in ChatGPT",
+    "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+    "source": "openai.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T11:00:00+00:00"
+  },
+  {
+    "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+    "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+    "source": "openai.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T08:00:00+00:00"
+  },
+  {
+    "title": "MosaicLeaks: Can your research agent keep a secret?",
+    "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+    "source": "huggingface.co",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T18:13:13+00:00"
+  },
+  {
+    "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+    "url": "https://huggingface.co/blog/peft-beyond-lora",
+    "source": "huggingface.co",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+    "url": "https://huggingface.co/blog/is-it-agentic-enough",
+    "source": "huggingface.co",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "Securing the future of AI agents",
+    "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+    "source": "deepmind.google",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-16T15:46:31+00:00"
+  },
+  {
+    "title": "Centrally manage authorization for MCP connectors",
+    "url": "https://claude.com/blog/enterprise-managed-auth",
+    "source": "claude.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more",
+    "url": "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+    "source": "claude.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Code now supports artifacts",
+    "url": "https://claude.com/blog/artifacts-in-claude-code",
+    "source": "claude.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "Jun 18, 2026Frontier Red TeamProject Fetch: Phase two",
+    "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+    "source": "anthropic.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T00:00:00+00:00"
+  },
+  {
+    "title": "The US says ASML’s top chip tool may be in China. ASML says it isn’t",
+    "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-19T07:59:12+00:00"
+  },
+  {
+    "title": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
+    "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-19T00:51:11+00:00"
+  },
+  {
+    "title": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
+    "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T21:20:13+00:00"
+  },
+  {
+    "title": "Snap spins off AI video team into new company, Dotmo, due to costs",
+    "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T20:30:00+00:00"
+  },
+  {
+    "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+    "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T19:59:22+00:00"
+  },
+  {
+    "title": "Almost half of US singles feel negatively about AI in dating, Match says",
+    "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T18:51:46+00:00"
+  },
+  {
+    "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+    "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T18:22:13+00:00"
+  },
+  {
+    "title": "AI data centers just got a government-mandated fast lane to the grid",
+    "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T17:49:23+00:00"
+  },
+  {
+    "title": "The smartphone era created an attention crisis — slow tech is fixing it",
+    "url": "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T17:16:30+00:00"
+  },
+  {
+    "title": "‘Queer Eye’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
+    "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T16:55:04+00:00"
+  },
+  {
+    "title": "General Intuition in talks to raise $300M at around $2B valuation",
+    "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T15:20:37+00:00"
+  },
+  {
+    "title": "A tech worker-backed PAC is bringing a $5M knife to Big Tech’s $100M gunfight",
+    "url": "https://techcrunch.com/2026/06/18/a-tech-worker-backed-pac-is-bringing-a-5m-knife-to-big-techs-100m-gunfight/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T15:13:21+00:00"
+  },
+  {
+    "title": "Pixi’s new iOS app turns text messages into interactive AR experiences",
+    "url": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-19",
+    "pub_date": "2026-06-18T12:00:00+00:00"
+  }
+]
