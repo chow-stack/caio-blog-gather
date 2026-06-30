@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Why Won't Europe Build AI Data Centers in Iceland?",
+    "url": "https://mrkt30.com/why-wont-europe-build-ai-data-centers-in-iceland/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-30T01:30:40+00:00"
+  },
+  {
+    "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
+    "url": "https://longcat.chat/blog/longcat-2.0/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-30T00:30:11+00:00"
+  },
+  {
+    "title": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API",
+    "url": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T18:03:26+00:00"
+  },
+  {
+    "title": "Amazon Is Awash with AI-Written Guideslop for Games That Aren't Even Out",
+    "url": "https://kotaku.com/amazon-ai-game-guidebooks-alien-isolation-gears-of-war-2000711365",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T16:39:38+00:00"
+  },
+  {
+    "title": "Working With AI: A concrete example",
+    "url": "https://htmx.org/essays/working-with-ai/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T14:53:41+00:00"
+  },
+  {
+    "title": "Tidal AI Policy",
+    "url": "https://tidal.com/ai-policy",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T13:09:03+00:00"
+  },
+  {
+    "title": "Anthropic CEO: Open-Source AI is getting dangerous (2023)",
+    "url": "https://xcancel.com/coinbureau/status/2071330294452666695",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T09:11:33+00:00"
+  },
+  {
+    "title": "AI boom risks global financial crash, warn central bankers",
+    "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T01:25:04+00:00"
+  },
+  {
+    "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
+    "url": "https://www.phantafield.com/whitepaper",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T01:23:38+00:00"
+  },
+  {
+    "title": "Better Images of AI",
+    "url": "https://betterimagesofai.org/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T23:50:58+00:00"
+  },
+  {
+    "title": "We need tech news sources which exclude AI",
+    "url": "https://news.ycombinator.com/item?id=48713041",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T23:49:50+00:00"
+  },
+  {
+    "title": "Jimmy is a tool to convert your notes from different formats to Markdown",
+    "url": "https://marph91.github.io/jimmy/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T21:09:32+00:00"
+  },
+  {
+    "title": "Show HN: Bash4LLM+ – A lightweight, dependency-free Bash wrapper for LLM APIs",
+    "url": "https://github.com/kamaludu/bash4llm/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T19:43:10+00:00"
+  },
+  {
+    "title": "Show HN: NanoEuler – GPT-2 scale model in pure C/CUDA from scratch",
+    "url": "https://github.com/JustVugg/nanoeuler",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T19:38:14+00:00"
+  },
+  {
+    "title": "Professor denounces mass AI fraud on an exam at Brown",
+    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T16:41:12+00:00"
+  },
+  {
+    "title": "Reflections on software engineering in the age of AI",
+    "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T16:17:38+00:00"
+  },
+  {
+    "title": "Google limits Meta's use of its Gemini AI models",
+    "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T13:30:06+00:00"
+  },
+  {
+    "title": "ACL 1.0: A source-available commercial license for the AI era",
+    "url": "https://www.auditablelicense.org/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-28T09:45:58+00:00"
+  },
+  {
+    "title": "DiScoFormer: One transformer for density and score, across distributions",
+    "url": "https://huggingface.co/blog/allenai/discoformer",
+    "source": "huggingface.co",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T18:02:48+00:00"
+  },
+  {
+    "title": "Claude in Microsoft Foundry is now generally available",
+    "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+    "source": "claude.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T00:00:00+00:00"
+  },
+  {
+    "title": "Introducing the Claude apps gateway for Amazon Bedrock and Google Cloud",
+    "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+    "source": "claude.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T00:00:00+00:00"
+  },
+  {
+    "title": "Crypto exchange OKX wants AI agents to hire and pay each other",
+    "url": "https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-30T09:00:00+00:00"
+  },
+  {
+    "title": "The AI jobs debate just got messier",
+    "url": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-30T04:01:00+00:00"
+  },
+  {
+    "title": "Vibe coding platform Base44 launches own model as AI startups seek defensibility",
+    "url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-30T02:28:41+00:00"
+  },
+  {
+    "title": "Gemini’s personalized AI image generation is now free for US users",
+    "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T20:12:59+00:00"
+  },
+  {
+    "title": "Anthropic and Gov. Newsom forge deal allowing California government to use Claude at half price",
+    "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T18:10:26+00:00"
+  },
+  {
+    "title": "South Korean tech giants commit over $550B to ease ‘RAMageddon’",
+    "url": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T18:07:48+00:00"
+  },
+  {
+    "title": "Arena, the AI leaderboard everyone uses, is now a $100M business",
+    "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T17:39:17+00:00"
+  },
+  {
+    "title": "Cursor now has a mobile app for guiding your coding agent on the go",
+    "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T17:03:50+00:00"
+  },
+  {
+    "title": "TIDAL cracks down on AI music by cutting off monetization",
+    "url": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T16:29:04+00:00"
+  },
+  {
+    "title": "Robot hand company settles Tesla trade secret suit and announces $11M raise",
+    "url": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T14:00:08+00:00"
+  },
+  {
+    "title": "Omen AI’s plan to optimize data centers is all wet",
+    "url": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
+    "source": "techcrunch.com",
+    "date_found": "2026-06-30",
+    "pub_date": "2026-06-29T13:00:00+00:00"
+  }
+]
