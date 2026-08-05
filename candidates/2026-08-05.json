@@ -1,0 +1,240 @@
+[
+  {
+    "title": "Rust-lang/rust is adopting an LLM policy",
+    "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-05T05:52:24+00:00"
+  },
+  {
+    "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+    "url": "https://arxiv.org/abs/2607.29377",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-05T04:36:44+00:00"
+  },
+  {
+    "title": "White House excludes open models from framework to test advanced AI capabilities",
+    "url": "https://www.axios.com/2026/08/04/trump-ai-framework-open-models",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T23:50:34+00:00"
+  },
+  {
+    "title": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+    "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T22:01:41+00:00"
+  },
+  {
+    "title": "Security Incident INC-2026-07-28-01 – UK AI Security Institute [pdf]",
+    "url": "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T21:52:58+00:00"
+  },
+  {
+    "title": "AI Data Centers Are Driving Up Power Bills – This Map Shows Where",
+    "url": "https://www.gadgetreview.com/ai-data-centers-are-driving-up-power-bills-this-map-shows-where",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T17:57:15+00:00"
+  },
+  {
+    "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+    "url": "https://mistral.ai/news/shieldstral/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T16:36:05+00:00"
+  },
+  {
+    "title": "Show HN: Ex-Deloitte auditor open-sourced the whole SOC 2 method for your AI",
+    "url": "https://github.com/Chiaro-HQ/methodology",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T16:27:03+00:00"
+  },
+  {
+    "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+    "url": "https://arxiv.org/abs/2602.16763",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T16:10:39+00:00"
+  },
+  {
+    "title": "The AI Demand Bubble",
+    "url": "https://www.wheresyoured.at/the-ai-demand-bubble/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T15:51:51+00:00"
+  },
+  {
+    "title": "Cloudflare enforces engineering standards using AI",
+    "url": "https://blog.cloudflare.com/engineering-standards-enforcement/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T15:49:50+00:00"
+  },
+  {
+    "title": "Computer Anthology: A continuously evolving benchmark family for AI agents",
+    "url": "https://vetto.ai/companies/computer-anthology-terminal-tasks.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T14:38:41+00:00"
+  },
+  {
+    "title": "It's not a fear of \"AI communism\"; it's a fear of competitive market capitalism",
+    "url": "http://observationalepidemiology.blogspot.com/2026/07/its-not-fear-of-ai-communism-its-fear.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T14:07:30+00:00"
+  },
+  {
+    "title": "AI-Generated Images Discourage Me from Reading Your Blog",
+    "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T11:30:17+00:00"
+  },
+  {
+    "title": "Show HN: Fine-tune an 8B model on a 4 GB laptop GPU",
+    "url": "https://github.com/MakazhanAlpamys/Soup",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T11:17:57+00:00"
+  },
+  {
+    "title": "An Honest Review of AI Programming",
+    "url": "https://mropert.github.io/2026/08/04/an_honest_review_of_ai_programming/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T09:35:15+00:00"
+  },
+  {
+    "title": "The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers",
+    "url": "https://yegge.ai/essays/model-welfare/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-03T23:27:02+00:00"
+  },
+  {
+    "title": "Third-party cyber evaluations involving OpenAI models",
+    "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+    "source": "openai.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T19:00:00+00:00"
+  },
+  {
+    "title": "New ways to learn and teach with ChatGPT Work and Codex",
+    "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+    "source": "openai.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T00:00:00+00:00"
+  },
+  {
+    "title": "Deploy local agents everywhere with LFM2.5-2.6B",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+    "source": "huggingface.co",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T13:58:29+00:00"
+  },
+  {
+    "title": "A guide to cost visibility and control in Claude",
+    "url": "https://claude.com/blog/a-guide-to-cost-visibility-and-control-in-claude",
+    "source": "claude.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T00:00:00+00:00"
+  },
+  {
+    "title": "Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+    "url": "https://www.anthropic.com/news/tino-cuellar",
+    "source": "anthropic.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T00:00:00+00:00"
+  },
+  {
+    "title": "AI makes weather prediction better. Can WindBorne make it lucrative?",
+    "url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-05T11:00:00+00:00"
+  },
+  {
+    "title": "SpaceX has bought $329M worth of Tesla Megapacks so far this year",
+    "url": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T21:07:26+00:00"
+  },
+  {
+    "title": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+    "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T20:05:26+00:00"
+  },
+  {
+    "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+    "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T19:48:40+00:00"
+  },
+  {
+    "title": "Meet Wrinkles, an app that uncovers the hidden stories of the places around you",
+    "url": "https://techcrunch.com/2026/08/04/meet-wrinkles-an-ai-app-that-uncovers-the-hidden-stories-of-the-places-around-you/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T19:34:34+00:00"
+  },
+  {
+    "title": "Nvidia doesn’t mess around: A week after open AI industry group formed, it’s already showing progress",
+    "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T19:28:49+00:00"
+  },
+  {
+    "title": "Spotify expands AI remix and covers project with Merlin partnership",
+    "url": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T15:50:06+00:00"
+  },
+  {
+    "title": "Texas halts new data centers as governor calls for audits",
+    "url": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T15:42:35+00:00"
+  },
+  {
+    "title": "Elon Musk spends half his time talking robots and AI on Tesla earnings calls",
+    "url": "https://techcrunch.com/2026/08/04/elon-musk-spends-half-his-time-talking-robots-and-ai-on-tesla-earnings-calls/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T15:20:06+00:00"
+  },
+  {
+    "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+    "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T14:03:01+00:00"
+  },
+  {
+    "title": "Is the future of data centers portable? Runware builds a pod to find out",
+    "url": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T13:00:00+00:00"
+  },
+  {
+    "title": "EON wants to move the data superhighway from ocean fiber to space lasers",
+    "url": "https://techcrunch.com/2026/08/04/eon-wants-to-move-the-data-superhighway-from-ocean-fiber-to-space-lasers/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-05",
+    "pub_date": "2026-08-04T12:00:00+00:00"
+  }
+]
