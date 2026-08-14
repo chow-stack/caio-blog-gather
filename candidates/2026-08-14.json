@@ -1,0 +1,128 @@
+[
+  {
+    "title": "The builder’s guide to GPT‑5.6",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "source": "openai.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T11:00:00+00:00"
+  },
+  {
+    "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "source": "openai.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T10:00:00+00:00"
+  },
+  {
+    "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+    "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+    "source": "openai.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T09:00:00+00:00"
+  },
+  {
+    "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+    "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+    "source": "huggingface.co",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T17:16:04+00:00"
+  },
+  {
+    "title": "What We Learned by Reproducing 2,200 papers from ICML",
+    "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+    "source": "huggingface.co",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T00:00:00+00:00"
+  },
+  {
+    "title": "Introducing Gemini 3.7 Flash",
+    "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+    "source": "deepmind.google",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T17:04:18+00:00"
+  },
+  {
+    "title": "Securing the frontier: How JetBrains evaluates and deploys Claude Fable 5",
+    "url": "https://claude.com/blog/how-jetbrains-evaluates-and-deploys-claude-fable-5",
+    "source": "claude.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T00:00:00+00:00"
+  },
+  {
+    "title": "Claude Tag now reads even more of the room",
+    "url": "https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room",
+    "source": "claude.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T00:00:00+00:00"
+  },
+  {
+    "title": "Self-service data analytics in Slack: how Anthropic deploys Claude Tag for ad-hoc questions",
+    "url": "https://claude.com/blog/self-service-data-analytics-in-slack-how-anthropic-deploys-claude-tag-for-ad-hoc-questions",
+    "source": "claude.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T00:00:00+00:00"
+  },
+  {
+    "title": "Writer introduces new AI model and upgraded harness to contain token costs",
+    "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T21:13:24+00:00"
+  },
+  {
+    "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+    "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T20:14:39+00:00"
+  },
+  {
+    "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+    "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T19:22:40+00:00"
+  },
+  {
+    "title": "IBM partners with OpenAI to bolster enterprise AI push",
+    "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T19:19:49+00:00"
+  },
+  {
+    "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
+    "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T18:28:14+00:00"
+  },
+  {
+    "title": "OpenAI hires new CRO as executive shake-up continues",
+    "url": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T17:07:13+00:00"
+  },
+  {
+    "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps",
+    "url": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T15:30:52+00:00"
+  },
+  {
+    "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
+    "url": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T15:08:00+00:00"
+  },
+  {
+    "title": "Apple in talks to pay publishers to provide Siri with current news: report",
+    "url": "https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-14",
+    "pub_date": "2026-08-13T14:34:43+00:00"
+  }
+]
