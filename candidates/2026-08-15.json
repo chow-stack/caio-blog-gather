@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+    "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-15T07:31:46+00:00"
+  },
+  {
+    "title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
+    "url": "https://chenxiachan.github.io/thoughtdag/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-15T04:42:07+00:00"
+  },
+  {
+    "title": "Show HN: Deltix – AI Driven Testing",
+    "url": "https://app.deltix.ai",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-15T02:42:14+00:00"
+  },
+  {
+    "title": "Z.ai Security Disclosure",
+    "url": "https://cvd.z.ai",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T19:22:00+00:00"
+  },
+  {
+    "title": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
+    "url": "https://arxiv.org/abs/2608.12700",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T16:57:14+00:00"
+  },
+  {
+    "title": "AI by Hand",
+    "url": "https://www.byhand.ai/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T15:58:59+00:00"
+  },
+  {
+    "title": "Google is making private AI practical with homomorphic encryption",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T15:43:10+00:00"
+  },
+  {
+    "title": "When Genius Fails: The Intellectual Arrogance of the AI Labs",
+    "url": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T14:34:49+00:00"
+  },
+  {
+    "title": "AI Model Atlas – visualizing populations of ML models as interconnected 3D graph",
+    "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T14:22:39+00:00"
+  },
+  {
+    "title": "HashAgent – Share an AI agent as a URL, runs locally via WebGPU",
+    "url": "https://hashagent.pages.dev/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T12:57:02+00:00"
+  },
+  {
+    "title": "How AI text watermarking works",
+    "url": "https://declaude.org/watermarking/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T23:16:55+00:00"
+  },
+  {
+    "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+    "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T19:25:38+00:00"
+  },
+  {
+    "title": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
+    "url": "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T19:04:52+00:00"
+  },
+  {
+    "title": "AI Is Threatening Natural Resources for Billions",
+    "url": "https://unric.org/en/ais-environmental-costs-threaten-water-land-and-climate/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T18:28:20+00:00"
+  },
+  {
+    "title": "AI At Home Part 1: A Box Of Scraps",
+    "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T16:22:05+00:00"
+  },
+  {
+    "title": "Text AI watermarks will always be trivial to remove",
+    "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T15:07:10+00:00"
+  },
+  {
+    "title": "AI Generated 3D Models Flood Market, but Almost No One Is Buying Them",
+    "url": "https://www.404media.co/ai-generated-3d-models-flood-market-but-almost-no-one-is-buying-them/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T13:57:01+00:00"
+  },
+  {
+    "title": "AI agents lie, cheat and steal. That is putting off users",
+    "url": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T13:28:45+00:00"
+  },
+  {
+    "title": "Choosing an AI model: one prompt, 11 models, different results",
+    "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-13T13:05:29+00:00"
+  },
+  {
+    "title": "State of Open Models: Summer 2026 Observations",
+    "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+    "source": "huggingface.co",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T00:00:00+00:00"
+  },
+  {
+    "title": "Maximizing the value of your Claude Code sessions",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "source": "claude.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T00:00:00+00:00"
+  },
+  {
+    "title": "How Claude’s text watermark works",
+    "url": "https://www.anthropic.com/news/claude-text-watermark",
+    "source": "anthropic.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T00:00:00+00:00"
+  },
+  {
+    "title": "Google will now allow users to remove visible watermark from its AI generations",
+    "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T16:13:40+00:00"
+  },
+  {
+    "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+    "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T15:43:28+00:00"
+  },
+  {
+    "title": "Kog is going deeper to squeeze more inference out of GPUs",
+    "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T14:50:11+00:00"
+  },
+  {
+    "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
+    "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T14:05:00+00:00"
+  },
+  {
+    "title": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
+    "url": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-15",
+    "pub_date": "2026-08-14T14:00:00+00:00"
+  }
+]
