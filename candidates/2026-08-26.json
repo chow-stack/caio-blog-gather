@@ -1,0 +1,135 @@
+[
+  {
+    "title": "How loveholidays is making everyone a builder with Codex",
+    "url": "https://openai.com/index/loveholidays",
+    "source": "openai.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-26T00:00:00+00:00"
+  },
+  {
+    "title": "The full stack behind abundant intelligence",
+    "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "source": "openai.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T07:05:00+00:00"
+  },
+  {
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "url": "https://openai.com/index/jalapeno-first-results",
+    "source": "openai.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T07:00:00+00:00"
+  },
+  {
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "url": "https://openai.com/index/introducing-admin-plugin",
+    "source": "openai.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T00:00:00+00:00"
+  },
+  {
+    "title": "Granite 4.2 LLMs: How They're Built",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+    "source": "huggingface.co",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T15:14:14+00:00"
+  },
+  {
+    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+    "source": "huggingface.co",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T11:39:24+00:00"
+  },
+  {
+    "title": "Claude's memory works everywhere, and you decide what's in it",
+    "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+    "source": "claude.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T00:00:00+00:00"
+  },
+  {
+    "title": "Bain & Company joins the Claude Partner Network as a Global Premier partner",
+    "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner",
+    "source": "claude.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T00:00:00+00:00"
+  },
+  {
+    "title": "Funding better evaluations of AI’s impact on wellbeing",
+    "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+    "source": "anthropic.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T00:00:00+00:00"
+  },
+  {
+    "title": "Runable hits $21M to bet AI agents can go from building businesses to growing them",
+    "url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-26T11:00:00+00:00"
+  },
+  {
+    "title": "India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call",
+    "url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-26T03:30:00+00:00"
+  },
+  {
+    "title": "Robotics startup Generalist reaches $3B valuation, sources say",
+    "url": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-26T00:40:59+00:00"
+  },
+  {
+    "title": "OpenAI loses a top data center exec as stream of high-profile departures continues",
+    "url": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-26T00:06:20+00:00"
+  },
+  {
+    "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+    "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T19:03:47+00:00"
+  },
+  {
+    "title": "Claude Cowork finally remembers what you told the app in chat",
+    "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T17:50:33+00:00"
+  },
+  {
+    "title": "Gamma acquires Accel-backed design startup Lica",
+    "url": "https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T15:00:00+00:00"
+  },
+  {
+    "title": "OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show",
+    "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T14:22:04+00:00"
+  },
+  {
+    "title": "Accel-backed Keenable is indexing the web for AI agents",
+    "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T13:00:00+00:00"
+  },
+  {
+    "title": "‘The world seems to be ready’: An interview with OpenAI head of product Thibault Sottiaux",
+    "url": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+    "source": "techcrunch.com",
+    "date_found": "2026-08-26",
+    "pub_date": "2026-08-25T12:00:00+00:00"
+  }
+]
