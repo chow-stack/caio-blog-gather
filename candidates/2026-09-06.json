@@ -1,0 +1,65 @@
+[
+  {
+    "title": "AI, Tools and Transformation",
+    "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-06T02:12:46+00:00"
+  },
+  {
+    "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+    "url": "https://github.com/okf-memory/okf-agent-memory",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T22:15:52+00:00"
+  },
+  {
+    "title": "America's two largest school districts impose AI moratoriums",
+    "url": "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T21:43:22+00:00"
+  },
+  {
+    "title": "How AI is breaking the British state",
+    "url": "https://www.economist.com/leaders/2026/08/06/how-ai-is-breaking-the-british-state",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T21:05:35+00:00"
+  },
+  {
+    "title": "Show HN: We Beat MLPerf: Modern Storage for KV Offload and LLM Training",
+    "url": "https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T17:32:20+00:00"
+  },
+  {
+    "title": "AMD unveils Threadripper Halo Station, an AI workstation packing 96 cores",
+    "url": "https://www.tomshardware.com/pc-components/cpus/amd-unveils-threadripper-halo-station-an-ai-workstation-packing-96-cores-and-dual-liquid-cooled-mi350p-accelerators-the-most-powerful-workstation-in-the-world-can-run-trillion-parameter-models-says-amd",
+    "source": "news.ycombinator.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T13:09:53+00:00"
+  },
+  {
+    "title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
+    "url": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
+    "source": "techcrunch.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T22:49:55+00:00"
+  },
+  {
+    "title": "Hikers rescued after using Google Gemini for planning",
+    "url": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
+    "source": "techcrunch.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T19:35:24+00:00"
+  },
+  {
+    "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+    "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+    "source": "techcrunch.com",
+    "date_found": "2026-09-06",
+    "pub_date": "2026-09-05T18:05:27+00:00"
+  }
+]
