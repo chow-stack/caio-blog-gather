@@ -1,0 +1,1 @@
+"""Configurable AI digest pipeline."""

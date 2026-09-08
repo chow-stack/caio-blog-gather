@@ -1,0 +1,90 @@
+[digest]
+name = "Caio's AI Brief"
+tagline = "The AI news worth knowing"
+max_articles = 12
+recency_hours = 48
+top_stories = 4
+seen_retention_days = 60
+
+[models]
+primary = "gemini-3.5-flash"
+fallbacks = ["gemini-3.5-flash-lite"]
+
+[email]
+from = "cdesouza202@gmail.com"
+to = ["cdesouza202@gmail.com"]
+smtp_host = "smtp.gmail.com"
+smtp_port = 587
+show_candidate_count = false
+show_model = false
+
+[theme]
+accent = "#635bff"
+background = "#f4f3ef"
+surface = "#ffffff"
+text = "#171717"
+muted = "#737373"
+border = "#e7e5e4"
+
+[sections]
+top_stories = "Top stories"
+important_developments = "Important developments"
+builder_tools = "Builder tools & open source"
+market_signals = "Market signals"
+other_notable = "Also worth knowing"
+
+[[sources]]
+name = "Hacker News"
+url = "https://hnrss.org/newest?q=AI+model+OR+AI+tool+OR+LLM&points=20"
+enabled = true
+priority = 5
+max_articles = 20
+
+[[sources]]
+name = "OpenAI"
+url = "https://openai.com/news/rss.xml"
+enabled = true
+priority = 10
+max_articles = 6
+
+[[sources]]
+name = "Hugging Face"
+url = "https://huggingface.co/blog/feed.xml"
+enabled = true
+priority = 8
+max_articles = 6
+
+[[sources]]
+name = "Google DeepMind"
+url = "https://deepmind.google/blog/rss.xml"
+enabled = true
+priority = 9
+max_articles = 6
+
+[[sources]]
+name = "Claude"
+url = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml"
+enabled = true
+priority = 8
+max_articles = 6
+
+[[sources]]
+name = "Anthropic News"
+url = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"
+enabled = true
+priority = 9
+max_articles = 6
+
+[[sources]]
+name = "Anthropic Research"
+url = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
+enabled = true
+priority = 9
+max_articles = 6
+
+[[sources]]
+name = "TechCrunch AI"
+url = "https://techcrunch.com/category/artificial-intelligence/feed/"
+enabled = true
+priority = 4
+max_articles = 8

@@ -1,4 +1,5 @@
 crawl4ai
 feedparser
 google-genai
+Jinja2
 python-dotenv

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{{ digest_name }}</title>
+  <style>
+    body { margin: 0; padding: 0; background: {{ theme.background }}; color: {{ theme.text }}; }
+    table { border-collapse: collapse; }
+    a { color: inherit; }
+    @media only screen and (max-width: 640px) {
+      .shell { width: 100% !important; }
+      .pad { padding-left: 20px !important; padding-right: 20px !important; }
+      .headline { font-size: 28px !important; }
+    }
+  </style>
+</head>
+<body>
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">{{ preheader }}</div>
+  <table role="presentation" width="100%" style="background:{{ theme.background }};">
+    <tr>
+      <td align="center" style="padding:28px 12px 48px;">
+        <table role="presentation" class="shell" width="640" style="width:640px;max-width:640px;">
+          <tr>
+            <td class="pad" style="padding:0 28px 18px;">
+              <table role="presentation" width="100%">
+                <tr>
+                  <td>
+                    <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:{{ theme.accent }};">{{ digest_name }}</div>
+                    <div style="padding-top:5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:13px;color:{{ theme.muted }};">{{ tagline }}</div>
+                  </td>
+                  <td align="right" valign="top" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:12px;color:{{ theme.muted }};">{{ date_label }}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="pad" style="background:{{ theme.surface }};border:1px solid {{ theme.border }};border-radius:18px;padding:34px 36px 38px;box-shadow:0 8px 30px rgba(0,0,0,.04);">
+              {% if digest.empty_reason %}
+                <div class="headline" style="font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.12;letter-spacing:-.02em;">Nothing new today.</div>
+                <p style="margin:15px 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.65;color:{{ theme.muted }};">{{ digest.empty_reason }} The system is running normally.</p>
+              {% else %}
+                {% if digest.tldr %}
+                  <div style="margin-bottom:32px;padding:22px 24px;background:{{ theme.background }};border-radius:13px;border-left:4px solid {{ theme.accent }};">
+                    <div style="margin-bottom:13px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:{{ theme.accent }};">Today in AI</div>
+                    {% for takeaway in digest.tldr %}
+                      <table role="presentation" width="100%"{% if not loop.last %} style="margin-bottom:10px;"{% endif %}>
+                        <tr>
+                          <td valign="top" width="18" style="padding-top:1px;font-family:Arial,sans-serif;font-size:15px;color:{{ theme.accent }};">•</td>
+                          <td style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.5;color:{{ theme.text }};">{{ takeaway }}</td>
+                        </tr>
+                      </table>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                {% for key in section_order %}
+                  {% set items = digest.get(key, []) %}
+                  {% if items %}
+                    <div style="{% if not loop.first %}border-top:1px solid {{ theme.border }};padding-top:28px;{% endif %}{% if not loop.last %}margin-bottom:28px;{% endif %}">
+                      <div style="margin-bottom:17px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:{{ theme.muted }};">{{ sections[key] }}</div>
+                      {% for story in items %}
+                        <div style="{% if not loop.last %}margin-bottom:24px;{% endif %}">
+                          <a href="{{ story.url }}" style="font-family:Georgia,'Times New Roman',serif;font-size:{% if key == 'top_stories' %}22{% else %}18{% endif %}px;font-weight:700;line-height:1.25;text-decoration:none;color:{{ theme.text }};">{{ story.title }}</a>
+                          <div style="margin-top:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:{{ theme.accent }};">{{ story.source }}</div>
+                          <p style="margin:9px 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:14px;line-height:1.6;color:{{ theme.text }};">{{ story.what }}</p>
+                          {% if story.bullets %}
+                            <ul style="margin:9px 0 0;padding-left:20px;">
+                              {% for bullet in story.bullets %}
+                                <li style="margin-bottom:5px;padding-left:2px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:13px;line-height:1.55;color:{{ theme.muted }};">{{ bullet }}</li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                          <div style="margin-top:10px;"><a href="{{ story.url }}" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:12px;font-weight:700;text-decoration:none;color:{{ theme.accent }};">Read article →</a></div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="pad" style="padding:20px 28px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:11px;line-height:1.6;color:{{ theme.muted }};">
+              {{ article_total }} article{% if article_total != 1 %}s{% endif %}{% if show_candidate_count %} selected from {{ candidate_total }} candidates{% endif %}.
+              {% if show_model and models_used %}Generated with {{ models_used|join(' + ') }}.{% endif %}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

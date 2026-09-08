@@ -29,20 +29,16 @@ jobs:
       - name: Install browser (crawl4ai / Patchright)
         run: crawl4ai-setup
 
-      - name: Run gather.py
-        run: python gather.py
-
-      - name: Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add candidates/ seen_urls.json
-          git diff --staged --quiet || git commit -m "gather: $(date -u +%Y-%m-%d)"
-          git push
-
-      - name: Run daily_digest.py
+      - name: Build and send digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        run: python daily_digest.py
+        run: python run.py
 
+      - name: Save delivered-story state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/seen.json
+          git diff --staged --quiet || git commit -m "state: $(date -u +%Y-%m-%d)"
+          git push
