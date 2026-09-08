@@ -88,3 +88,59 @@ url = "https://techcrunch.com/category/artificial-intelligence/feed/"
 enabled = true
 priority = 4
 max_articles = 8
+
+[[sources]]
+name = "The Verge AI"
+url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+enabled = true
+priority = 7
+max_articles = 5
+
+[[sources]]
+name = "GitHub AI & ML"
+url = "https://github.blog/ai-and-ml/feed/"
+enabled = true
+priority = 9
+max_articles = 5
+
+[[sources]]
+name = "MIT News AI"
+url = "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml"
+enabled = true
+priority = 8
+max_articles = 4
+
+[[sources]]
+name = "The Gradient"
+url = "https://thegradient.pub/rss/"
+enabled = true
+priority = 8
+max_articles = 3
+
+[[sources]]
+name = "AIhub"
+url = "https://aihub.org/feed/?cat=-473"
+enabled = true
+priority = 7
+max_articles = 3
+
+[[sources]]
+name = "KDnuggets"
+url = "https://www.kdnuggets.com/feed"
+enabled = true
+priority = 6
+max_articles = 3
+
+[[sources]]
+name = "The Guardian AI"
+url = "https://www.theguardian.com/technology/artificialintelligenceai/rss"
+enabled = true
+priority = 5
+max_articles = 3
+
+[[sources]]
+name = "Redwood Research"
+url = "https://blog.redwoodresearch.org/feed"
+enabled = true
+priority = 7
+max_articles = 2
