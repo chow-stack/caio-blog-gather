@@ -7,7 +7,7 @@ from pathlib import Path
 from digest.config import load_config
 from digest.email import render_html
 from digest.feeds import is_junk
-from digest.generator import validate_digest
+from digest.generator import call_model, validate_digest
 from digest.state import load_seen, save_seen
 
 
@@ -97,6 +97,43 @@ class DigestValidationTests(unittest.TestCase):
         self.assertEqual(missing, 1)
         self.assertEqual(validated["top_stories"], [])
         self.assertEqual(validated["other_notable"][0]["url"], scraped[0]["url"])
+
+
+class ModelTests(unittest.TestCase):
+    def test_model_calls_use_chat_api(self):
+        class Response:
+            text = '{"ok": true}'
+
+        class Chat:
+            def __init__(self):
+                self.messages = []
+
+            def send_message(self, message):
+                self.messages.append(message)
+                return Response()
+
+        class Chats:
+            def __init__(self):
+                self.created = []
+
+            def create(self, **kwargs):
+                chat = Chat()
+                self.created.append((kwargs, chat))
+                return chat
+
+        class Client:
+            def __init__(self):
+                self.chats = Chats()
+
+        client = Client()
+        text, model = call_model(client, "Return JSON", ["gemini-test-model"])
+
+        self.assertEqual(text, '{"ok": true}')
+        self.assertEqual(model, "gemini-test-model")
+        create_args, chat = client.chats.created[0]
+        self.assertEqual(create_args["model"], "gemini-test-model")
+        self.assertEqual(create_args["config"].response_mime_type, "application/json")
+        self.assertEqual(chat.messages, ["Return JSON"])
 
 
 if __name__ == "__main__":

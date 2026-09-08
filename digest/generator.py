@@ -24,7 +24,8 @@ def call_model(client: genai.Client, prompt: str, models: list[str]) -> tuple[st
     for model in models:
         for attempt in range(3):
             try:
-                response = client.models.generate_content(model=model, contents=prompt, config=config)
+                chat = client.chats.create(model=model, config=config)
+                response = chat.send_message(prompt)
                 return response.text, model
             except genai_errors.APIError as exc:
                 if exc.code not in (429, 503):
