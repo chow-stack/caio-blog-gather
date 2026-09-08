@@ -195,7 +195,13 @@ def main() -> None:
     config = load_config(args.config)
     if args.preview:
         now = datetime.now(timezone.utc)
-        path, _, _ = save_preview(config, sample_digest(), [], [], now)
+        path, _, _ = save_preview(
+            config,
+            sample_digest(),
+            [],
+            [config["models"]["primary"]],
+            now,
+        )
         print(f"Sample preview written to {path}")
         return
     asyncio.run(run_pipeline(config, args.dry_run))

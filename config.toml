@@ -1,9 +1,9 @@
 [digest]
 name = "Caio's AI Brief"
 tagline = "The AI news worth knowing"
-max_articles = 12
+max_articles = 10
 recency_hours = 48
-top_stories = 4
+top_stories = 3
 seen_retention_days = 60
 
 [models]
@@ -16,15 +16,15 @@ to = ["cdesouza202@gmail.com"]
 smtp_host = "smtp.gmail.com"
 smtp_port = 587
 show_candidate_count = false
-show_model = false
+show_model = true
 
 [theme]
-accent = "#635bff"
-background = "#f4f3ef"
+accent = "#3157d5"
+background = "#f6f7f9"
 surface = "#ffffff"
-text = "#171717"
-muted = "#737373"
-border = "#e7e5e4"
+text = "#182230"
+muted = "#667085"
+border = "#e4e7ec"
 
 [sections]
 top_stories = "Top stories"

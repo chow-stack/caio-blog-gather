@@ -65,12 +65,13 @@ class EmailTests(unittest.TestCase):
                 "article_total": 0,
                 "candidate_total": 0,
                 "show_candidate_count": False,
-                "show_model": False,
-                "models_used": [],
+                "show_model": True,
+                "models_used": ["gemini-test-model"],
             },
         )
         self.assertIn("&lt;script&gt;", html)
         self.assertNotIn("<script>bad()", html)
+        self.assertIn("Model: gemini-test-model", html)
 
 
 class DigestValidationTests(unittest.TestCase):
