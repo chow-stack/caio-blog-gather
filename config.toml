@@ -11,8 +11,10 @@ primary = "gemini-3.5-flash"
 fallbacks = ["gemini-3.5-flash-lite"]
 
 [email]
-from = "cdesouza202@gmail.com"
-to = ["cdesouza202@gmail.com"]
+# Leave these empty and set DIGEST_EMAIL_FROM / DIGEST_EMAIL_TO in .env or as
+# GitHub Actions secrets so personal addresses never land in the repository.
+from = ""
+to = []
 smtp_host = "smtp.gmail.com"
 smtp_port = 587
 show_candidate_count = false

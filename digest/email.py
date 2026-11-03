@@ -48,6 +48,8 @@ def format_subject(digest: dict, digest_name: str, date_label: str) -> str:
 
 
 def send_email(config: dict, subject: str, html: str, plain_text: str, password: str) -> None:
+    if not config.get("from") or not config.get("to"):
+        raise RuntimeError("Set DIGEST_EMAIL_FROM and DIGEST_EMAIL_TO (or [email] in config.toml) to send email")
     message = EmailMessage()
     message["Subject"] = subject
     message["From"] = config["from"]
